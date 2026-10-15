@@ -1,0 +1,97 @@
+# PARTE 1. BRIEFING
+
+**Objetivo da página**
+Apresentar o posicionamento profissional de Telma Woerle de Lima Soares como especialista e pesquisadora em inteligência artificial, professora do Instituto de Informática da UFG e diretora executiva do CEIA (Centro de Excelência em Inteligência Artificial). Não é página de venda nem de captura de lead com material gratuito, é uma página de credibilidade e direcionamento de contato.
+
+**Público-alvo e problema**
+Três perfis principais chegam até essa página:
+
+- Empresas em busca de projetos de PD&I ou de divulgar oportunidades. Frase real que usam: "preciso do CEIA para resolver um problema."
+- Jornalistas em busca de uma opinião de autoridade sobre inteligência artificial.
+- Pesquisadores em busca de oportunidade de atuar nos projetos do CEIA. Frase real que usam: "gostaria de trabalhar no CEIA."
+
+Objeções que esses públicos costumam carregar antes mesmo de procurar:
+- Muitos acham que o CEIA é puramente acadêmico, sem aplicação prática.
+- Parte dos pesquisadores acredita que o CEIA só presta serviço e não faz pesquisa de fato.
+- Empresas em geral não sabem que o CEIA entra como coinvestidor nos projetos de PD&I.
+- Algumas empresas presumem que o processo de contratação é lento por se tratar de universidade pública.
+
+**Oferta e transformação**
+Não há produto ou serviço fechado nessa página. O que existe é um direcionamento certo conforme o perfil de quem chega:
+- Pesquisadores interessados em atuar no CEIA: encaminhados para o banco de talentos ou para a gestão de RH.
+- Empresas: dependendo do porte e da demanda, encaminhadas para a equipe de PD&I ou para agendar reunião direta com Telma.
+- Jornalistas: encaminhados para a equipe de assessoria de comunicação.
+
+**Provas reais disponíveis**
+- Mais de 20 anos de experiência com inovação, tecnologia e inteligência artificial.
+- Professora do Instituto de Informática da UFG há mais de 13 anos.
+- Diretora executiva do CEIA desde 2022.
+- Foi coordenadora dos Programas de Pós-Graduação Stricto Sensu do INF/UFG em três períodos (2010–2011, 2015–2019, 2019–2021); no segundo período liderou a criação do curso de Doutorado próprio.
+- Foco de atuação em meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas.
+- Foi pesquisadora principal de projetos de PD&I com a iniciativa privada que deram origem ao CEIA e ao Bacharelado em Inteligência Artificial, pioneiro no Brasil.
+- Responsável pela Olimpíada de Inteligência Artificial Aplicada para alunos do 9º ano do fundamental e médio (coordenou a Olimpíada Brasileira de Robótica em Goiás até 2022).
+- Já coordenou projetos com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood, entre outras.
+- Já coordenou diretamente mais de 15 projetos de PD&I.
+- O CEIA, sob sua gestão, já executou mais de 150 projetos de PD&I.
+- Captação de mais de R$ 500 milhões nos últimos 5 anos.
+- Mais de 1.000 pesquisadores envolvidos nas iniciativas do CEIA.
+- Mais de 150 milhões de brasileiros atendidos por meio dos parceiros do CEIA.
+- Depoimentos literais de clientes ou parceiros: [PENDENTE: nenhum depoimento com texto literal foi fornecido até agora]
+
+**Objeções e como responder**
+- "O CEIA é só academia": mostrar volume de projetos executados com empresas e captação privada como prova de aplicação prática.
+- "O CEIA só presta serviço, não pesquisa": reforçar o foco de pesquisa (meta-learning, aprendizado por reforço, otimização multiobjetivo) que sustenta os projetos aplicados.
+- "Empresas não sabem que o CEIA coinveste": deixar isso explícito na página, como diferencial.
+- "Processo lento por ser universidade pública": [PENDENTE: definir uma frase ou dado concreto sobre agilidade de resposta, caso exista]
+
+**Ação desejada**
+Contato via WhatsApp, com mensagem genérica de abertura (mesmo botão para os três perfis).
+Texto exato da mensagem: Olá agradeço o seu contato. Você está falando com Telma - Diretora da CEIA, Como posso ajudá-lo?
+
+**Identidade visual e materiais disponíveis**
+Você confirmou que tem identidade visual definida e fotos profissionais disponíveis.
+Cores, logo (pessoal ou do CEIA) e arquivos específicos: [PENDENTE: levar os arquivos/paleta para a aula]
+
+**Pendências**
+1. Texto literal da mensagem de abertura do WhatsApp.
+2. Arquivos de identidade visual (cores, logo, fotos).
+3. Depoimentos literais, se quiser incluir prova social em formato de citação.
+4. Dado concreto sobre agilidade de resposta, se quiser rebater a objeção de lentidão.
+
+---
+
+# PARTE 2. RASCUNHO DE COPY
+
+**Headline**
+Inteligência artificial que sai do laboratório e chega ao Brasil real
+
+**Subheadline**
+Professora da UFG, diretora executiva do CEIA e à frente de projetos que já captaram mais de R$ 500 milhões em parcerias de pesquisa, desenvolvimento e inovação
+
+**Seção do problema**
+Empresas que buscam o CEIA costumam dizer a mesma coisa: preciso de alguém que resolva esse problema com inteligência artificial. Pesquisadores dizem que gostariam de trabalhar no CEIA. Jornalistas procuram uma opinião de quem realmente está dentro da pesquisa e da aplicação prática, não só na teoria.
+
+Ainda existe quem pense que o CEIA é um centro acadêmico distante da indústria, ou que só presta serviço sem fazer pesquisa de verdade. E boa parte das empresas nem sabe que o CEIA entra como coinvestidor nos projetos que desenvolve.
+
+**Seção da solução**
+Há mais de 20 anos trabalhando com inovação, tecnologia e inteligência artificial, e há mais de 13 anos como professora do Instituto de Informática da UFG, hoje dirijo o CEIA, o Centro de Excelência em Inteligência Artificial. Fui pesquisadora principal em projetos de PD&I com a iniciativa privada que deram origem ao próprio CEIA e ao Bacharelado em Inteligência Artificial, o primeiro do Brasil.
+
+Dependendo de quem procura, o caminho é diferente: pesquisadores são direcionados ao banco de talentos ou à gestão de RH, empresas conversam com a equipe de PD&I ou entram direto na minha agenda, jornalistas falam com a assessoria de comunicação.
+
+**Benefícios concretos**
+Mais de 15 projetos de PD&I coordenados diretamente.
+Mais de 150 projetos de PD&I executados pelo CEIA.
+Mais de R$ 500 milhões captados nos últimos 5 anos.
+Mais de 1.000 pesquisadores envolvidos nas iniciativas do CEIA.
+Mais de 150 milhões de brasileiros atendidos por meio dos parceiros do CEIA.
+
+**Prova social**
+[PENDENTE: nenhum depoimento com texto literal disponível até o momento]
+
+**Quem sou eu**
+Sou professora do Instituto de Informática da UFG, atuo nas disciplinas de algoritmos e estruturas de dados, heurísticas e modelagem multiobjetivo, e aprendizado de máquina por reforço. Minha pesquisa tem foco em meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas. Fui coordenadora dos Programas de Pós-Graduação Stricto Sensu do INF/UFG em três períodos, e liderei a criação do curso de Doutorado próprio. Hoje sou diretora executiva do CEIA e sou responsável pela Olimpíada de Inteligência Artificial Aplicada para alunos do 9º ano do fundamental e médio.
+
+**Chamada para ação**
+Texto do botão: Falar comigo no WhatsApp
+Frase de apoio: conte em poucas palavras o que você procura, empresa, pesquisa ou imprensa, e eu direciono para o time certo
+Mensagem que já vai preenchida na conversa: [PENDENTE: texto literal ainda não definido]
