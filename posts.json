@@ -1,5 +1,5 @@
 {
-  "_instrucoes": "Mantenha as 3 publicações mais recentes no topo. Campos: url (link do post), data (texto livre), texto (resumo ou primeiras linhas do post). Opcional: embed (URL de incorporação oficial do LinkedIn, formato https://www.linkedin.com/embed/feed/update/urn:li:share:ID) — se preenchido, o post oficial é exibido no lugar do cartão. Os itens abaixo são EXEMPLOS e devem ser substituídos.",
+  "_instrucoes": "Mantenha as 3 publicações mais recentes no topo. Campos: url (link do post), data (texto livre), texto (resumo ou primeiras linhas do post). Opcional: embed (URL de incorporação oficial do LinkedIn, formato https://www.linkedin.com/embed/feed/update/urn:li:share:ID) — se preenchido, o post oficial é exibido no lugar do cartão.",
   "posts": [
     {
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514032269473255424/",
@@ -9,14 +9,15 @@
     },
     {
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7511872699183366145/",
-      "data": "Julho de 2026",
+      "data": "Outubro de 2026",
       "texto": "Entrevista à revista Exame sobre inteligência artificial no Brasil.",
       "embed": "https://www.linkedin.com/embed/feed/update/urn:li:activity:7511872699183366145"
     },
     {
-      "url": "https://www.linkedin.com/in/telma-soares/recent-activity/all/",
-      "data": "Julho de 2026",
-      "texto": "[EXEMPLO] Ordem do Mérito Anhanguera. A maior honraria do Estado de Goiás, recebida ao lado de Anderson Soares. Um reconhecimento que pertence a cada pesquisador, estudante, parceiro e gestor público que apostou no CEIA."
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7509689905887928320/",
+      "data": "Setembro de 2026",
+      "texto": "Entrevista à revista Exame sobre o ritmo de desenvolvimento da inteligência artificial.",
+      "embed": "https://www.linkedin.com/embed/feed/update/urn:li:activity:7509689905887928320"
     }
   ]
 }
