@@ -3,338 +3,645 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Telma Woerle de Lima Soares | Pesquisadora em inteligência artificial e diretora executiva do CEIA</title>
-<meta name="description" content="Professora do Instituto de Informática da UFG e diretora executiva do CEIA. Conduzo projetos de PD&amp;I em inteligência artificial para empresas, pesquisadores e imprensa.">
-<meta property="og:title" content="Telma Woerle de Lima Soares | Inteligência artificial aplicada">
-<meta property="og:description" content="Professora da UFG e diretora executiva do CEIA, com projetos de pesquisa, desenvolvimento e inovação em inteligência artificial ao lado da iniciativa privada.">
+<title>Telma Soares | Inteligência artificial aplicada, pesquisa e formação de talentos</title>
+<meta name="description" content="Telma Woerle de Lima Soares, professora do Instituto de Informática da UFG e diretora executiva do CEIA. Projetos de PD&amp;I em inteligência artificial com empresas, formação de pesquisadores e fonte para a imprensa.">
+<meta property="og:title" content="Telma Soares | Inteligência artificial que sai do laboratório">
+<meta property="og:description" content="Professora da UFG e diretora executiva do CEIA. Mais de 150 projetos de PD&amp;I executados pelo centro, Bacharelado em IA pioneiro no Brasil e participação frequente na imprensa sobre IA no país.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#00195B">
-<link rel="icon" href="logo-ceia-topo.png">
+<meta property="og:image" content="img/foto-original-3.jpg">
+<meta name="theme-color" content="#1B3983">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z' fill='%231B3983'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-weight='800' font-size='28' fill='%23fff'%3ETS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!--
+  PENDÊNCIAS DE CONTEÚDO (não aparecem na página):
+  1. (Resolvido) LinkedIn e Lattes incluídos no rodapé.
+  2. Fotos foto-grupo-1, foto-grupo-2, foto-institucional e foto-discurso: lançamento do convênio
+     CEIA 2.0 com o Governo de Goiás (confirmado pela Telma). Fotos de palco: Rio Innovation Week 2026.
+     Fotos estudio-*.jpg: ensaio de estúdio mais antigo.
+  2b. Confirmar o ano do reconhecimento AI Nations (timeline usa 2024, data da página do INF/UFG).
+  3. Consentimento das pessoas que aparecem nas fotos (estudantes, painelistas, equipe).
+  4. Depoimentos literais de parceiros, se houver prova social em formato de citação.
+  5. Dado concreto sobre prazo de resposta a empresas, para fortalecer a seção "O que costumam pensar".
+  6. Números: validar com a comunicação do CEIA antes de cada atualização.
+-->
+
 <style>
 :root{
-  /* paleta do manual de marca do CEIA */
-  --azul:#00195B;         /* azul institucional */
-  --azul-medio:#011C56;
-  --azul-claro:#1452E7;   /* azul de destaque */
-  --azul-vivo:#195CFC;
-  --teal:#06B8AC;         /* verde-agua de apoio */
-  --areia:#f2f5fc;
-  --branco:#ffffff;
-  --texto:#12172b;
-  --texto-suave:#4a5570;
-  --linha:#dbe3f5;
-  --verde:#128c4a;        /* botao do WhatsApp */
-  --max:1120px;
-  /* grafismo do manual, formas com um canto reto */
-  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%2300195B' fill-opacity='0.06'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
-  --padrao-escuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.055'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+  /* Paleta institucional do CEIA (manual de marca) */
+  --azul-escuro:#1B3983;
+  --azul:#1C4AB8;
+  --azul-claro:#2866E5;
+  --verde:#0CD4AA;
+  /* Camada pessoal: neutros quentes para diferenciar o site pessoal do institucional */
+  --papel:#FBF9F4;
+  --areia:#F1EDE3;
+  --linha:#E1DCCF;
+  --tinta:#141A2E;
+  --tinta-suave:#4B5570;
+  --branco:#FFFFFF;
+  --whats:#128C4A;
+  --max:1160px;
+  --raio:28px;
+  --sombra:0 18px 50px rgba(27,57,131,.14);
+  --padrao-escuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%231B3983' fill-opacity='0.045'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{
   font-family:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
-  color:var(--texto);
-  background:var(--branco);
-  font-size:17px;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
+  color:var(--tinta);background:var(--papel);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased
 }
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
-section{padding:64px 0}
-h1,h2,h3{line-height:1.2;letter-spacing:-0.02em;font-weight:700}
-h1{font-size:2rem}
-h2{font-size:1.6rem;margin-bottom:14px}
-h3{font-size:1.1rem;margin-bottom:8px}
+section{padding:72px 0;scroll-margin-top:72px}
+h1,h2,h3{line-height:1.12;letter-spacing:-0.025em;font-weight:800;color:var(--azul-escuro)}
+h1{font-size:2.3rem}
+h2{font-size:1.8rem;margin-bottom:18px;max-width:22ch}
+h3{font-size:1.12rem;margin-bottom:8px;letter-spacing:-0.01em}
 p{margin-bottom:16px}
 .olho{
-  font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
-  font-weight:700;color:var(--azul-claro);margin-bottom:14px;display:block
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;
+  color:var(--azul);margin-bottom:16px
 }
+.olho::before{content:"";width:22px;height:3px;background:var(--verde);border-radius:2px}
+.lead{font-size:1.12rem;color:var(--tinta-suave);max-width:58ch}
+.texto-largo{max-width:66ch}
+.link{color:var(--azul-claro);font-weight:600;text-decoration:none;border-bottom:2px solid rgba(40,102,229,.25)}
+.link:hover{border-bottom-color:var(--azul-claro)}
+
+/* forma da marca: cantos arredondados com um canto reto (grafismo do CEIA) */
+.forma{border-radius:var(--raio) var(--raio) var(--raio) 0;overflow:hidden}
+.forma-alt{border-radius:0 var(--raio) var(--raio) var(--raio);overflow:hidden}
 
 /* topo */
-.topo{
-  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);
-  backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)
-}
-.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
-.topo .wrap>a.btn{flex:none}
-.marca{display:flex;align-items:center;gap:12px;font-weight:700;font-size:.98rem;letter-spacing:-0.01em;color:var(--azul)}
-.marca img{width:34px;height:34px;object-fit:contain;flex:none}
-.marca b{font-weight:700}
-.marca span{display:block;font-weight:500;font-size:.76rem;color:var(--texto-suave);letter-spacing:0}
+.topo{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--azul-escuro)}
+.monograma{width:38px;height:38px;flex:none}
+.marca b{display:block;font-weight:800;font-size:1.05rem;letter-spacing:-0.02em;line-height:1.1}
+.marca span{display:block;font-size:.72rem;font-weight:500;color:var(--tinta-suave);letter-spacing:.02em}
+.nav{display:none;gap:26px;font-size:.92rem;font-weight:600}
+.nav a{text-decoration:none;color:var(--tinta-suave);padding:6px 0;border-bottom:2px solid transparent}
+.nav a:hover{color:var(--azul-escuro);border-bottom-color:var(--verde)}
 
-/* botao */
+/* botões */
 .btn{
-  display:inline-flex;align-items:center;gap:10px;
-  background:var(--verde);color:#fff;text-decoration:none;
-  font-weight:600;font-size:1rem;padding:15px 24px;border-radius:999px;
-  line-height:1.2;transition:transform .15s ease,background .15s ease;
-  box-shadow:0 6px 18px rgba(18,140,74,.22)
+  display:inline-flex;align-items:center;gap:10px;background:var(--whats);color:#fff;text-decoration:none;
+  font-weight:700;font-size:1rem;padding:15px 24px;border-radius:999px;line-height:1.2;
+  transition:transform .15s ease,background .15s ease,box-shadow .15s ease;box-shadow:0 10px 24px rgba(18,140,74,.25)
 }
 .btn:hover{background:#0f7a40;transform:translateY(-1px)}
 .btn svg{width:20px;height:20px;flex:none;fill:#fff}
 .btn.pequeno{padding:11px 18px;font-size:.9rem;box-shadow:none}
-.apoio{font-size:.92rem;color:var(--texto-suave);margin-top:14px;max-width:460px}
+.btn.azul{background:var(--azul-escuro);box-shadow:0 10px 24px rgba(27,57,131,.22)}
+.btn.azul:hover{background:#142c66}
+.btn.vazado{background:transparent;color:var(--azul-escuro);border:2px solid var(--azul-escuro);box-shadow:none}
+.btn.vazado:hover{background:var(--azul-escuro);color:#fff}
+.apoio{font-size:.92rem;color:var(--tinta-suave);margin-top:14px;max-width:46ch}
 
 /* hero */
-.hero{
-  background:var(--areia) var(--padrao-claro) repeat;
-  border-bottom:1px solid var(--linha);padding:56px 0 0;position:relative
+.hero{padding:40px 0 0;background:var(--papel) var(--padrao-claro) repeat;position:relative;overflow:hidden}
+.hero .wrap{display:grid;gap:34px;align-items:center}
+.hero-texto{padding-bottom:40px}
+.hero h1{font-size:2.35rem;margin:10px 0 18px;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--azul-claro)}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.hero-foto{position:relative}
+.hero-foto .forma{aspect-ratio:4/5;background:var(--areia);box-shadow:var(--sombra)}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.hero-foto::before{
+  content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;
+  border-radius:var(--raio) var(--raio) var(--raio) 0;background:var(--azul-escuro) var(--padrao-escuro) repeat;z-index:-1
 }
-.hero-grid{display:grid;gap:32px;align-items:end}
-.hero h1{font-size:2.15rem;margin-bottom:16px}
-.hero .lead{font-size:1.08rem;color:var(--texto-suave);max-width:600px}
-.hero-foto{position:relative;border-radius:120px 120px 0 0;overflow:hidden;background:#dfe6f7}
-.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.selo{
+  position:absolute;left:-10px;bottom:28px;background:#fff;border-radius:18px 18px 18px 0;
+  padding:14px 18px;box-shadow:var(--sombra);max-width:250px;font-size:.86rem;line-height:1.35
+}
+.selo strong{display:block;color:var(--azul-escuro);font-size:1rem;margin-bottom:2px}
+.selo span{color:var(--tinta-suave)}
 
-/* numeros */
-.numeros{background:var(--azul) var(--padrao-escuro) repeat;color:#fff}
-.numeros h2{color:#fff}
-.numeros .olho{color:var(--teal)}
-.grade-num{display:grid;gap:20px;margin-top:26px}
-.num{border-top:2px solid rgba(6,184,172,.55);padding-top:14px}
-.num strong{display:block;font-size:1.75rem;font-weight:700;letter-spacing:-0.03em}
-.num span{font-size:.95rem;color:#c3d3f7}
+/* faixa de cargos */
+.faixa{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff;padding:22px 0}
+.faixa ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 34px;font-size:.92rem;font-weight:500;color:#cfd9f3}
+.faixa li{display:flex;align-items:center;gap:10px}
+.faixa li::before{content:"";width:8px;height:8px;border-radius:50% 50% 50% 0;background:var(--verde);flex:none}
 
-/* cartoes */
-.cartoes{display:grid;gap:20px;margin-top:26px}
+/* destaques recentes */
+.destaques{padding-bottom:40px}
+.cabeca-linha{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:28px}
+.cabeca-linha h2{margin-bottom:0}
+.grade-destaques{display:grid;gap:22px}
+.destaque-card a{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;height:100%}
+.destaque-card .img{aspect-ratio:16/10;background:var(--areia);margin-bottom:8px}
+.destaque-card img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.destaque-card a:hover img{transform:scale(1.03)}
+.destaque-card .meta{font-size:.78rem;color:var(--tinta-suave)}
+.destaque-card .meta b{color:var(--azul-claro);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;margin-right:6px}
+.destaque-card h3{font-size:1.15rem;margin:0;color:var(--tinta)}
+.destaque-card a:hover h3{color:var(--azul)}
+.destaque-card p{font-size:.95rem;color:var(--tinta-suave);margin:0;flex:1}
+.destaque-card .ir{font-size:.9rem;font-weight:700;color:var(--azul-escuro);display:inline-flex;gap:8px;margin-top:4px}
+.destaque-card .ir::after{content:"→";transition:transform .15s ease}
+.destaque-card a:hover .ir::after{transform:translateX(4px)}
+
+/* frentes que lidero */
+.frentes{background:var(--areia)}
+.grade-frentes{display:grid;gap:18px;margin-top:30px}
+.frente{background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 26px 24px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden}
+.frente::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--azul-escuro),var(--azul-claro) 70%,var(--verde))}
+.frente-num{position:absolute;top:18px;right:22px;font-size:2.4rem;font-weight:800;color:var(--areia);letter-spacing:-0.04em;line-height:1}
+.frente .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
+.frente h3{margin:2px 0 6px;max-width:26ch}
+.frente .metrica{background:var(--papel);border-radius:14px 14px 14px 0;padding:12px 14px;color:var(--tinta-suave);font-size:.92rem;line-height:1.35;margin:0 0 8px}
+.frente .metrica strong{display:block;font-size:1.7rem;font-weight:800;color:var(--azul-escuro);letter-spacing:-0.03em;line-height:1.1}
+.frente p{color:var(--tinta-suave);font-size:.97rem}
+.frente p:not(.metrica){flex:1}
+.frente .link-cta{display:inline-flex;align-items:center;gap:8px;color:var(--azul-escuro);font-weight:700;text-decoration:none;font-size:.95rem}
+.frente .link-cta::after{content:"→";transition:transform .15s ease}
+.frente .link-cta:hover::after{transform:translateX(4px)}
+
+/* perfis */
+.cartoes{display:grid;gap:18px;margin-top:30px}
 .cartao{
-  border:1px solid var(--linha);border-radius:28px 28px 28px 0;padding:26px;background:#fff;
-  position:relative;overflow:hidden
+  background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;
+  padding:28px 26px 24px;display:flex;flex-direction:column;gap:6px;position:relative
 }
-.cartao::before{
-  content:"";position:absolute;top:0;left:0;width:100%;height:4px;
-  background:linear-gradient(90deg,var(--azul-claro),var(--teal))
+.cartao .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
+.cartao h3{margin-top:4px}
+.cartao p{color:var(--tinta-suave);font-size:.98rem;flex:1}
+.cartao .link-cta{display:inline-flex;align-items:center;gap:8px;color:var(--azul-escuro);font-weight:700;text-decoration:none;font-size:.95rem;margin-top:6px}
+.cartao .link-cta::after{content:"→";transition:transform .15s ease}
+.cartao .link-cta:hover::after{transform:translateX(4px)}
+.cartao .fala{
+  font-size:.9rem;color:var(--azul-escuro);background:var(--areia);padding:10px 14px;border-radius:14px 14px 14px 0;
+  font-style:italic;margin:4px 0 10px;flex:none
 }
-.cartao p:last-child{margin-bottom:0}
-.cartao a{color:var(--azul-claro);font-weight:600;text-decoration:none;border-bottom:2px solid rgba(30,58,138,.25)}
-.cartao a:hover{border-bottom-color:var(--azul-claro)}
-.cartao .tag{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--azul-claro);display:block;margin-bottom:10px}
 
-.claro{background:var(--areia)}
+/* números */
+.numeros{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff}
+.numeros h2,.numeros .olho{color:#fff}
+.numeros .lead{color:#c9d5f2}
+.grade-num{display:grid;gap:22px;margin-top:30px}
+.num{border-top:2px solid rgba(12,212,170,.6);padding-top:14px}
+.num strong{display:block;font-size:2rem;font-weight:800;letter-spacing:-0.03em;line-height:1.05;margin-bottom:6px}
+.num span{font-size:.94rem;color:#c9d5f2;line-height:1.4;display:block}
+.numeros .nota{font-size:.82rem;color:#9fb0dc;margin:28px 0 0}
 
-/* objecoes */
-.objecao{border-left:3px solid var(--teal);padding:4px 0 4px 20px;margin-bottom:28px}
-.objecao h3{color:var(--azul)}
-.objecao p:last-child{margin-bottom:0}
+/* destaque com foto (IA que sai do laboratório) */
+.destaque{background:var(--areia)}
+.destaque .wrap{display:grid;gap:36px;align-items:center}
+.destaque .foto{aspect-ratio:4/5;box-shadow:var(--sombra)}
+.destaque .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.objecoes{display:grid;gap:18px;margin-top:26px}
+.objecao{background:#fff;border-left:4px solid var(--verde);border-radius:0 18px 18px 0;padding:18px 20px}
+.objecao h3{font-size:1rem;color:var(--azul-escuro);margin-bottom:6px}
+.objecao p{margin:0;font-size:.96rem;color:var(--tinta-suave)}
 
 /* sobre */
-.sobre-grid{display:grid;gap:32px;align-items:start}
-.sobre-foto img{border-radius:120px 24px 120px 0;width:100%;height:auto}
-.lista{list-style:none;margin-top:8px}
-.lista li{padding:12px 0;border-bottom:1px solid var(--linha);font-size:.98rem}
-.lista li:last-child{border-bottom:none}
-.sobre-grid a{color:var(--azul-claro);font-weight:600;text-decoration:none;border-bottom:2px solid rgba(20,82,231,.25)}
-.sobre-grid a:hover{border-bottom-color:var(--azul-claro)}
+.sobre .wrap{display:grid;gap:36px;align-items:start}
+.sobre .foto{aspect-ratio:3/4;box-shadow:var(--sombra)}
+.sobre .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
+.linha-tempo{list-style:none;margin-top:10px;border-left:2px solid var(--linha);padding-left:22px}
+.linha-tempo li{position:relative;padding:0 0 20px}
+.linha-tempo li::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50% 50% 50% 0;background:var(--verde);border:2px solid var(--papel)}
+.linha-tempo b{display:block;color:var(--azul-escuro);font-weight:700}
+.linha-tempo span{color:var(--tinta-suave);font-size:.95rem}
+.temas{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.temas li{list-style:none;font-size:.82rem;font-weight:600;color:var(--azul-escuro);background:#fff;border:1px solid var(--linha);padding:7px 12px;border-radius:999px}
+
+/* formação */
+.formacao{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff}
+.formacao h2,.formacao .olho{color:#fff}
+.formacao .lead,.formacao p{color:#d4ddf3}
+.formacao .wrap{display:grid;gap:34px;align-items:center}
+.mosaico-form{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:12px}
+.mosaico-form figure{margin:0;background:#122a66}
+.mosaico-form figure:first-child{grid-row:1/3}
+.mosaico-form img{width:100%;height:100%;object-fit:cover}
+.mosaico-form figure:first-child img{aspect-ratio:3/4}
+.mosaico-form figure:not(:first-child) img{aspect-ratio:4/3}
+.pontos{list-style:none;margin-top:8px;display:grid;gap:14px}
+.pontos li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
+.pontos li strong{color:var(--verde);font-weight:800;font-size:1.3rem;line-height:1.1;min-width:3.4ch}
+.pontos li span{color:#d4ddf3;font-size:.98rem}
+.link-claro{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--verde)}
+.link-claro:hover{color:var(--verde)}
+
+/* imprensa */
+.imprensa .cabeca{display:grid;gap:28px;align-items:end;margin-bottom:36px}
+.imprensa .foto-imprensa{aspect-ratio:5/4;box-shadow:var(--sombra);max-width:520px;justify-self:end;width:100%}
+.imprensa .foto-imprensa img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+.citacao-grande{
+  background:var(--areia);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 28px 22px;position:relative;margin-top:8px
+}
+.citacao-grande::before{content:"“";position:absolute;top:-6px;left:22px;font-size:5rem;line-height:1;color:var(--verde);font-weight:800}
+.citacao-grande blockquote{font-size:1.2rem;font-weight:600;color:var(--azul-escuro);line-height:1.4;letter-spacing:-0.01em;margin:16px 0 12px}
+.citacao-grande cite{font-style:normal;font-size:.86rem;color:var(--tinta-suave)}
+.lista-imprensa{list-style:none;border-top:1px solid var(--linha)}
+.lista-imprensa li{border-bottom:1px solid var(--linha)}
+.lista-imprensa a{display:grid;gap:6px;padding:20px 0;text-decoration:none;color:inherit;transition:background .15s ease}
+.lista-imprensa a:hover{background:rgba(255,255,255,.7)}
+.lista-imprensa .meta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:.8rem;color:var(--tinta-suave)}
+.lista-imprensa .veiculo{font-weight:700;color:var(--azul-claro);letter-spacing:.06em;text-transform:uppercase;font-size:.74rem}
+.lista-imprensa .tipo{background:var(--areia);padding:2px 9px;border-radius:999px;font-weight:600;font-size:.72rem}
+.lista-imprensa h3{font-size:1.08rem;margin:0;color:var(--tinta)}
+.lista-imprensa p{margin:0;font-size:.94rem;color:var(--tinta-suave)}
+.lista-imprensa q{font-style:italic;color:var(--azul-escuro)}
+.lista-imprensa .ano{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-suave);padding:18px 0 6px;border-bottom:none}
+.imprensa .rodape-imprensa{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.imprensa .rodape-imprensa p{margin:0;font-size:.92rem;color:var(--tinta-suave);max-width:60ch}
 
 /* galeria */
-.galeria{display:grid;gap:12px;margin-top:26px}
-.galeria figure{margin:0;border-radius:24px 24px 24px 0;overflow:hidden;background:#dfe6f7}
-.galeria img{width:100%;aspect-ratio:3/2;height:auto;object-fit:cover;object-position:center 40%}
-.galeria figcaption{font-size:.85rem;color:var(--texto-suave);padding:10px 12px;background:#fff}
-
-/* pendente */
-.pendente{
-  display:inline-block;background:#fff4d6;border:1px dashed #c99a06;color:#7a5c00;
-  padding:6px 12px;border-radius:8px;font-size:.88rem;font-weight:600
+.galeria{background:var(--areia)}
+.mosaico{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
+.mosaico figure{margin:0;position:relative;background:#fff}
+.mosaico img{width:100%;height:auto;object-fit:cover;aspect-ratio:3/2}
+.mosaico figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;font-size:.8rem;color:#fff;font-weight:500;
+  background:linear-gradient(180deg,rgba(20,26,46,0) 0%,rgba(20,26,46,.78) 100%)
 }
 
-/* cta final */
-.cta{
-  background:linear-gradient(120deg,var(--azul) 0%,#082a8f 55%,var(--azul-claro) 100%);
-  color:#fff;text-align:left;position:relative;overflow:hidden
-}
+/* cta */
+.cta{background:linear-gradient(120deg,var(--azul-escuro) 0%,var(--azul) 55%,var(--azul-claro) 100%);color:#fff;position:relative;overflow:hidden}
 .cta::after{content:"";position:absolute;inset:0;background:var(--padrao-escuro) repeat;pointer-events:none}
-.cta .wrap{position:relative;z-index:1}
-.cta h2{color:#fff;font-size:1.8rem}
-.cta p{color:#d5e0fb;max-width:560px}
-.cta .olho{color:var(--teal)}
-.cta .btn{margin-top:8px}
+.cta .wrap{position:relative;z-index:1;display:grid;gap:28px;align-items:center}
+.cta h2,.cta .olho{color:#fff}
+.cta p{color:#d7e1fb;max-width:52ch}
+.cta .caminhos{list-style:none;display:grid;gap:10px;font-size:.95rem;color:#e6ecfb}
+.cta .caminhos li{display:flex;gap:10px;align-items:baseline}
+.cta .caminhos li::before{content:"";width:8px;height:8px;flex:none;border-radius:50% 50% 50% 0;background:var(--verde);transform:translateY(-1px)}
+.cta .caminhos b{color:#fff}
+.cta .acao{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px}
+.cta .acao p{font-size:.95rem;margin-bottom:18px}
 
-/* rodape */
-footer{background:var(--azul);color:#a9bae4;padding:44px 0 36px;font-size:.9rem}
+/* rodapé */
+footer{background:#0F2258;color:#a9b7df;padding:48px 0 36px;font-size:.9rem}
 footer a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
-footer a:hover{border-bottom-color:var(--teal)}
+footer a:hover{border-bottom-color:var(--verde)}
 footer p{margin-bottom:10px}
-.logo-rodape{width:170px;margin-bottom:22px}
-.rodape-grid{display:grid;gap:26px}
-.rodape-grid h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.rodape-grid{display:grid;gap:30px}
+.rodape-grid h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--verde);margin-bottom:12px}
+.rodape-marca{display:flex;align-items:center;gap:12px;color:#fff;margin-bottom:14px}
+.rodape-marca b{font-size:1.1rem;font-weight:800;letter-spacing:-0.02em}
+.logo-ceia{width:160px;margin-bottom:14px;opacity:.95}
 .redes{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
-.redes a{
-  display:inline-flex;align-items:center;justify-content:center;
-  width:44px;height:44px;border:1px solid rgba(255,255,255,.3);
-  border-radius:50% 50% 50% 0;background:rgba(255,255,255,.06);
-  transition:background .15s ease,border-color .15s ease
-}
-.redes a:hover{border-color:var(--teal);background:rgba(6,184,172,.2)}
+.redes a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.3);border-radius:50% 50% 50% 0;background:rgba(255,255,255,.06);transition:background .15s ease,border-color .15s ease}
+.redes a:hover{border-color:var(--verde);background:rgba(12,212,170,.18)}
 .redes svg{width:20px;height:20px;fill:#fff}
-.creditos{border-top:1px solid rgba(255,255,255,.16);margin-top:28px;padding-top:20px;font-size:.84rem}
+.creditos{border-top:1px solid rgba(255,255,255,.14);margin-top:30px;padding-top:20px;font-size:.82rem;color:#8d9cc9}
 .creditos p:last-child{margin-bottom:0}
 
-@media (min-width:760px){
-  body{font-size:18px}
-  section{padding:88px 0}
-  h1{font-size:2.9rem}
-  h2{font-size:2rem}
-  .hero{padding-top:72px}
-  .hero h1{font-size:3rem}
-  .hero-grid{grid-template-columns:1.15fr .85fr;gap:48px}
-  .hero-texto{padding-bottom:72px}
-  .hero-foto{height:520px}
-  .grade-num{grid-template-columns:repeat(3,1fr);gap:28px 32px}
+/* botão flutuante no celular */
+.flutuante{position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--whats);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(18,140,74,.35)}
+.flutuante svg{width:28px;height:28px;fill:#fff}
+
+@media (min-width:720px){
   .cartoes{grid-template-columns:repeat(3,1fr)}
-  .sobre-grid{grid-template-columns:.85fr 1.15fr;gap:48px}
-  .galeria{grid-template-columns:repeat(3,1fr)}
-  .cta .wrap{display:flex;align-items:center;justify-content:space-between;gap:40px}
-  .rodape-grid{grid-template-columns:1.5fr 1fr;gap:48px}
+  .grade-destaques{grid-template-columns:repeat(3,1fr)}
+  .grade-frentes{grid-template-columns:repeat(3,1fr);gap:22px}
+  .grade-num{grid-template-columns:repeat(2,1fr)}
+  .mosaico{grid-template-columns:repeat(3,1fr)}
+  .lista-imprensa a{grid-template-columns:150px 1fr;gap:6px 26px;align-items:start}
+  .lista-imprensa .meta{flex-direction:column;align-items:flex-start;gap:6px;grid-row:1/3}
+  .lista-imprensa h3,.lista-imprensa p{grid-column:2}
+  .cta .wrap{grid-template-columns:1.1fr .9fr;gap:44px}
 }
+@media (min-width:960px){
+  body{font-size:18px}
+  section{padding:100px 0}
+  h1{font-size:3.3rem}
+  h2{font-size:2.3rem}
+  .nav{display:flex}
+  .hero{padding-top:56px}
+  .hero .wrap{grid-template-columns:1.05fr .95fr;gap:56px}
+  .hero h1{font-size:3.4rem}
+  .hero-texto{padding-bottom:64px}
+  .hero-foto{margin:0 10px 30px 0}
+  .grade-num{grid-template-columns:repeat(4,1fr);gap:30px 28px}
+  .destaque .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}
+  .sobre .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}
+  .formacao .wrap{grid-template-columns:1.1fr .9fr;gap:64px}
+  .imprensa .cabeca{grid-template-columns:1fr 1fr;gap:56px}
+  .rodape-grid{grid-template-columns:1.4fr 1fr 1fr;gap:48px}
+  .flutuante{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.cartao .link-cta::after{transition:none}}
 </style>
 </head>
 <body>
 
 <header class="topo">
   <div class="wrap">
-    <div class="marca">
-      <img src="logo-ceia-topo.png" alt="Logo do CEIA">
-      <div><b>Telma Woerle de Lima Soares</b><span>Diretora executiva do CEIA, professora do INF/UFG</span></div>
-    </div>
-    <a class="btn pequeno" href="https://wa.me/5562981008111?text=Ola%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">
+    <a class="marca" href="#topo" aria-label="Telma Soares, início da página">
+      <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3983"/><stop offset="1" stop-color="#2866E5"/></linearGradient></defs>
+        <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="url(#g1)"/>
+        <text x="32" y="42" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
+        <circle cx="52" cy="12" r="5" fill="#0CD4AA"/>
+      </svg>
+      <div><b>Telma Soares</b><span>Inteligência artificial aplicada</span></div>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#frentes">Frentes</a>
+      <a href="#sobre">Trajetória</a>
+      <a href="#formacao">Formação</a>
+      <a href="#imprensa">Na imprensa</a>
+    </nav>
+    <a class="btn pequeno" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
       WhatsApp
     </a>
   </div>
 </header>
 
-<main>
+<main id="topo">
 
-  <section class="hero" id="topo">
-    <div class="wrap hero-grid">
+  <section class="hero">
+    <div class="wrap">
       <div class="hero-texto">
-        <span class="olho">Inteligência artificial aplicada</span>
-        <h1>Inteligência artificial que sai do laboratório e chega ao Brasil real</h1>
-        <p class="lead">Professora do Instituto de Informática da UFG, diretora executiva do CEIA e à frente de projetos que já captaram mais de R$ 500 milhões em parcerias de pesquisa, desenvolvimento e inovação.</p>
-        <a class="btn" href="https://wa.me/5562981008111?text=Ola%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
-          Falar comigo no WhatsApp
-        </a>
-        <p class="apoio">Conte em poucas palavras o que você procura, empresa, pesquisa ou imprensa, e eu direciono para o time certo.</p>
+        <span class="olho">Telma Woerle de Lima Soares</span>
+        <h1>Inteligência artificial que sai do laboratório e chega ao <em>Brasil real</em></h1>
+        <p class="lead">Professora do Instituto de Informática da UFG, fundadora e diretora executiva do CEIA, o Centro de Excelência em Inteligência Artificial. Sob minha gestão, o centro já executou mais de 150 projetos de PD&amp;I com empresas e captou mais de R$ 500 milhões em cinco anos.</p>
+        <div class="acoes">
+          <a class="btn" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Falar comigo no WhatsApp
+          </a>
+          <a class="btn vazado" href="#imprensa">Ver participações na imprensa</a>
+        </div>
+        <p class="apoio">Empresa, pesquisa ou imprensa: me conte em poucas palavras o que você procura e eu direciono para o time certo.</p>
       </div>
       <div class="hero-foto">
-        <img src="foto-perfil.jpg" alt="Telma Woerle de Lima Soares, diretora executiva do CEIA" width="1400" height="2100">
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <span class="olho">Para quem esta página serve</span>
-      <h2>Cada perfil tem um caminho</h2>
-      <p>Três públicos chegam até mim: empresas que precisam resolver um problema com inteligência artificial, pesquisadores que querem atuar nos projetos do CEIA e jornalistas que buscam uma fonte com atuação na pesquisa e na aplicação prática. O contato começa no mesmo lugar, o encaminhamento é diferente para cada um.</p>
-      <div class="cartoes">
-        <div class="cartao">
-          <span class="tag">Empresas</span>
-          <h3>Projetos de PD&amp;I em inteligência artificial</h3>
-          <p>Avalio a sua demanda e direciono para a equipe adequada. O CEIA participa como coinvestidor nos projetos que desenvolve.</p>
+        <div class="forma">
+          <img src="img/foto-original-3.jpg" alt="Telma Soares em pé no corredor do Instituto de Informática da UFG" width="1600" height="1067" fetchpriority="high">
         </div>
-        <div class="cartao">
-          <span class="tag">Pesquisadores</span>
-          <h3>Oportunidades de atuação no CEIA</h3>
-          <p>O melhor caminho para participar do CEIA é fazer o seu cadastro no nosso banco de talentos, pelo <a href="https://portal.ceia.inf.ufg.br/banco-de-talentos" target="_blank" rel="noopener">Portal CEIA</a>.</p>
-        </div>
-        <div class="cartao">
-          <span class="tag">Imprensa</span>
-          <h3>Entrevistas e posicionamento sobre IA</h3>
-          <p>Falo sobre pesquisa e aplicação de inteligência artificial no Brasil, com dados dos projetos que acompanho de perto. Me conte a pauta e o prazo, a assessoria de comunicação organiza a agenda.</p>
+        <div class="selo">
+          <strong>1º lugar no Prêmio Embrapii</strong>
+          <span>Em 2022, entre 85 unidades, pela avaliação das empresas que contrataram projetos com o CEIA.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="numeros">
+  <div class="faixa" aria-label="Cargos e vínculos">
     <div class="wrap">
-      <span class="olho">Números</span>
+      <ul>
+        <li>Diretora executiva do CEIA desde 2022</li>
+        <li>Professora do INF/UFG há mais de 13 anos</li>
+        <li>Doutora em Ciências de Computação e Matemática Computacional pela USP</li>
+        <li>Ordem do Mérito Anhanguera, 2026</li>
+        <li>IT Forum Mulheres, 2026</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="destaques" id="destaques" aria-labelledby="destaques-titulo">
+    <div class="wrap">
+      <div class="cabeca-linha">
+        <div>
+          <span class="olho">Destaques recentes</span>
+          <h2 id="destaques-titulo">O que está acontecendo agora</h2>
+        </div>
+        <a class="link" href="#imprensa">Ver todas as participações</a>
+      </div>
+      <div class="grade-destaques">
+        <article class="destaque-card">
+          <a href="https://itforum.com.br/it-forum-mulheres-2026-conheca-as-profissionais-reconhecidas-nesta-edicao/" target="_blank" rel="noopener">
+            <div class="img forma"><img src="img/estudio-1921.jpg" alt="Telma Soares sorri, com a mão apoiada no queixo, em retrato de estúdio" loading="lazy" style="object-position:50% 25%"></div>
+            <span class="meta"><b>Reconhecimento</b> IT Forum, outubro de 2026</span>
+            <h3>IT Forum Mulheres 2026: entre as 35 profissionais reconhecidas</h3>
+            <p>Segunda edição da lista do IT Forum, que avalia impacto no ecossistema, inovação, liderança, contribuição para diversidade e visibilidade pública.</p>
+            <span class="ir">Ver a lista no IT Forum</span>
+          </a>
+        </article>
+        <article class="destaque-card">
+          <a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
+            <div class="img forma"><img src="img/foto-evento-5.jpg" alt="Telma Soares fala ao microfone no palco, em pé, com telão do CEIA ao fundo" loading="lazy" style="object-position:30% 40%"></div>
+            <span class="meta"><b>Entrevista</b> Exame, setembro de 2026</span>
+            <h3>Frear o ritmo da IA pode consolidar quem já está na frente</h3>
+            <p>Uma pausa sem fiscalização externa e sem acesso para universidades tende a concentrar a tecnologia nas empresas que já lideram.</p>
+            <span class="ir">Ler na Exame</span>
+          </a>
+        </article>
+        <article class="destaque-card">
+          <a href="https://www.jornalopcao.com.br/ultimas-noticias/diretores-do-ceia-da-ufg-recebem-ordem-do-merito-anhanguera-apos-transformar-goias-em-polo-nacional-de-inteligencia-artificial-849704/" target="_blank" rel="noopener">
+            <div class="img forma"><img src="img/estudio-1912.jpg" alt="Telma Soares sorri, sentada, em retrato de estúdio" loading="lazy" style="object-position:50% 20%"></div>
+            <span class="meta"><b>Reconhecimento</b> Governo de Goiás, julho de 2026</span>
+            <h3>Ordem do Mérito Anhanguera, ao lado de Anderson Soares</h3>
+            <p>A maior honraria do Estado de Goiás. Um reconhecimento que pertence a cada pesquisador, estudante, parceiro e gestor público que apostou no CEIA.</p>
+            <span class="ir">Ler a notícia</span>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="frentes" id="frentes">
+    <div class="wrap">
+      <span class="olho">Frentes que lidero</span>
+      <h2>Três frentes, um mesmo objetivo: IA feita no Brasil que chega às empresas</h2>
+      <p class="lead">Cada frente tem um resultado que dá para medir. Nenhuma delas é trabalho de uma pessoa só.</p>
+      <div class="grade-frentes">
+        <article class="frente">
+          <span class="frente-num">01</span>
+          <span class="tag">Centro de PD&amp;I</span>
+          <h3>CEIA, Centro de Excelência em Inteligência Artificial</h3>
+          <p class="metrica"><strong>+150</strong> projetos de PD&amp;I executados com empresas</p>
+          <p>Cofundei o CEIA em 2019 e sou diretora executiva desde 2022. Como Unidade Embrapii, o centro divide com a empresa o investimento em pesquisa. Em 2022, ficamos em 1º lugar no Prêmio Embrapii entre 85 unidades, pela avaliação das próprias empresas contratantes.</p>
+          <a class="link-cta" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Falo%20em%20nome%20de%20uma%20empresa%20e%20quero%20avaliar%20um%20projeto%20de%20PD%26I%20em%20intelig%C3%AAncia%20artificial%20com%20o%20CEIA." target="_blank" rel="noopener">Apresentar uma demanda</a>
+        </article>
+        <article class="frente">
+          <span class="frente-num">02</span>
+          <span class="tag">Parcerias globais</span>
+          <h3>Ecossistema com big techs e organismos internacionais</h3>
+          <p class="metrica"><strong>1ª</strong> instituição latino-americana no programa AI for Good da ONU</p>
+          <p>O CEIA faz parte do programa NVIDIA AI Nations. Pesquisadores do centro lançaram com o Google o GAIA, modelo aberto em português do Brasil. Em 2026, os materiais de formação do CEIA entraram na plataforma AI for Good.</p>
+          <a class="link-cta" href="https://www.jornalopcao.com.br/educacao/ufg-leva-cursos-de-inteligencia-artificial-para-plataforma-global-da-onu-834755/" target="_blank" rel="noopener">Ler sobre o AI for Good</a>
+        </article>
+        <article class="frente">
+          <span class="frente-num">03</span>
+          <span class="tag">Talentos</span>
+          <h3>Bacharelado em IA e Olimpíada de IA Aplicada</h3>
+          <p class="metrica"><strong>1º</strong> bacharelado em inteligência artificial do Brasil, criado em 2020</p>
+          <p>O curso nasceu de projetos de PD&amp;I com empresas e forma a equipe que hoje executa esses projetos. Na outra ponta, a Olimpíada de IA Aplicada, pela qual sou responsável, oferece R$ 420 mil em prêmios na edição de 2026.</p>
+          <a class="link-cta" href="#formacao">Ver a frente de formação</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="numeros" id="numeros">
+    <div class="wrap">
+      <span class="olho">Em números</span>
       <h2>O que já foi construído</h2>
+      <p class="lead">Resultado de muitas mãos: pesquisadores, estudantes, empresas parceiras e gestores públicos que apostaram em inteligência artificial feita em Goiás.</p>
       <div class="grade-num">
-        <div class="num"><strong>+20 anos</strong><span>de experiência com inovação, tecnologia e inteligência artificial</span></div>
-        <div class="num"><strong>+13 anos</strong><span>como professora do Instituto de Informática da UFG</span></div>
-        <div class="num"><strong>+15</strong><span>projetos de PD&amp;I coordenados diretamente por mim</span></div>
         <div class="num"><strong>+150</strong><span>projetos de PD&amp;I executados pelo CEIA</span></div>
-        <div class="num"><strong>+R$ 500 milhões</strong><span>captados nos últimos 5 anos</span></div>
+        <div class="num"><strong>+R$ 500 mi</strong><span>captados nos últimos 5 anos em parcerias de pesquisa, desenvolvimento e inovação</span></div>
         <div class="num"><strong>+1.000</strong><span>pesquisadores envolvidos nas iniciativas do CEIA</span></div>
-        <div class="num"><strong>+150 milhões</strong><span>de brasileiros atendidos por meio dos parceiros do CEIA</span></div>
-        <div class="num"><strong>Desde 2022</strong><span>na direção executiva do CEIA</span></div>
-        <div class="num"><strong>Acordo Certo, Bancorbrás, Copel Distribuição, iFood</strong><span>algumas das empresas com projetos que já coordenei</span></div>
+        <div class="num"><strong>+150 mi</strong><span>de brasileiros atendidos por meio dos parceiros do CEIA</span></div>
+        <div class="num"><strong>+15</strong><span>projetos de PD&amp;I coordenados diretamente por mim, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood</span></div>
+        <div class="num"><strong>+20 anos</strong><span>de trabalho com inovação, tecnologia e inteligência artificial</span></div>
+        <div class="num"><strong>2020</strong><span>primeira turma do Bacharelado em Inteligência Artificial do Brasil, na UFG</span></div>
+        <div class="num"><strong>3 anos seguidos</strong><span>com o Prêmio Embrapii de projeto mais inovador, de 2022 a 2024</span></div>
       </div>
+      <p class="nota">Números atualizados em outubro de 2026 com base nas informações institucionais do CEIA.</p>
     </div>
   </section>
 
-  <section class="claro">
+  <section class="destaque" id="aplicada">
     <div class="wrap">
-      <span class="olho">O que costumam pensar</span>
-      <h2>Quatro ideias que vale corrigir</h2>
-
-      <div class="objecao">
-        <h3>O CEIA é só academia</h3>
-        <p>São mais de 150 projetos de PD&amp;I executados com empresas e mais de R$ 500 milhões captados nos últimos 5 anos, boa parte com a iniciativa privada. A aplicação prática é o dia a dia do centro.</p>
-      </div>
-
-      <div class="objecao">
-        <h3>O CEIA só presta serviço, não faz pesquisa</h3>
-        <p>Os projetos aplicados se sustentam em pesquisa de fato, com foco em meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas. Foi essa base que deu origem ao Bacharelado em Inteligência Artificial, pioneiro no Brasil.</p>
-      </div>
-
-      <div class="objecao">
-        <h3>Empresas não sabem que o CEIA coinveste</h3>
-        <p>O CEIA entra como coinvestidor nos projetos de PD&amp;I que desenvolve, ou seja, o risco e o investimento são compartilhados com a empresa parceira.</p>
-      </div>
-
-      <div class="objecao">
-        <h3>O processo é lento por ser universidade pública</h3>
-        <p><span class="pendente">[PENDENTE: definir uma frase ou dado concreto sobre agilidade de resposta, por exemplo prazo médio para a primeira reunião ou para a proposta]</span></p>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap sobre-grid">
-      <div class="sobre-foto">
-        <img src="foto-retrato.jpg" alt="Retrato de Telma Woerle de Lima Soares" loading="lazy">
+      <div class="foto forma-alt">
+        <img src="img/estudio-1936.jpg" alt="Telma Soares de blazer preto, sorrindo, em retrato de estúdio" loading="lazy" width="1067" height="1600" style="object-position:50% 25%">
       </div>
       <div>
-        <span class="olho">Quem sou eu</span>
-        <h2>Pesquisa, sala de aula e projetos com empresas, ao mesmo tempo</h2>
-        <p>Há mais de 20 anos trabalho com inovação, tecnologia e inteligência artificial, e há mais de 13 anos sou professora do Instituto de Informática da UFG. Hoje dirijo o <a href="https://ceia.ufg.br/" target="_blank" rel="noopener">CEIA</a>, o Centro de Excelência em Inteligência Artificial da UFG.</p>
-        <p>Atuo nas disciplinas de algoritmos e estruturas de dados, heurísticas e modelagem multiobjetivo, e aprendizado de máquina por reforço. Minha pesquisa tem foco em meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas. Fui pesquisadora principal em projetos de PD&amp;I com a iniciativa privada que deram origem ao próprio CEIA e ao Bacharelado em Inteligência Artificial, o primeiro do país.</p>
-        <ul class="lista">
-          <li>Diretora executiva do CEIA desde 2022.</li>
-          <li>Professora do Instituto de Informática da UFG há mais de 13 anos.</li>
-          <li>Coordenadora dos Programas de Pós-Graduação Stricto Sensu do INF/UFG em três períodos, 2010 a 2011, 2015 a 2019 e 2019 a 2021. No segundo período, liderei a criação do curso de Doutorado próprio.</li>
-          <li>Responsável pela Olimpíada de Inteligência Artificial Aplicada para alunos do 9º ano do ensino fundamental e do ensino médio. Coordenei a Olimpíada Brasileira de Robótica em Goiás até 2022.</li>
+        <span class="olho">IA que sai do laboratório</span>
+        <h2>Quatro ideias sobre o CEIA que vale corrigir</h2>
+        <p class="lead">Quem chega até nós costuma trazer uma destas impressões. Os fatos ajudam a ajustar a conversa logo no início.</p>
+        <div class="objecoes">
+          <div class="objecao">
+            <h3>"O CEIA é só academia."</h3>
+            <p>São mais de 150 projetos de PD&amp;I executados com empresas e mais de R$ 500 milhões captados em cinco anos, boa parte com a iniciativa privada. Aplicação prática é o dia a dia do centro.</p>
+          </div>
+          <div class="objecao">
+            <h3>"O CEIA só presta serviço, não faz pesquisa."</h3>
+            <p>Os projetos aplicados se sustentam em pesquisa de fato: meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas. Foi essa base que deu origem ao Bacharelado em IA.</p>
+          </div>
+          <div class="objecao">
+            <h3>"A empresa paga a conta inteira."</h3>
+            <p>Não. O CEIA entra como coinvestidor nos projetos de PD&amp;I que desenvolve, por meio do modelo Embrapii. Risco e investimento são compartilhados com a empresa parceira.</p>
+          </div>
+          <div class="objecao">
+            <h3>"Universidade pública é lenta."</h3>
+            <p>O primeiro contato chega direto a mim, e o encaminhamento para a equipe de PD&amp;I acontece a partir dessa conversa, sem intermediários.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre">
+    <div class="wrap">
+      <div class="foto forma">
+        <img src="img/foto-perfil.jpg" alt="Retrato de Telma Soares em estúdio" loading="lazy" width="1067" height="1600">
+      </div>
+      <div>
+        <span class="olho">Trajetória</span>
+        <h2>De projetos com empresas a um centro de referência em IA</h2>
+        <p class="texto-largo">Há mais de 20 anos trabalho com inovação, tecnologia e inteligência artificial. Sou doutora em Ciências de Computação e Matemática Computacional pela USP e, há mais de 13 anos, professora do Instituto de Informática da UFG. Hoje dirijo o <a class="link" href="https://ceia.ufg.br/" target="_blank" rel="noopener">CEIA</a>, que fundei com Anderson Soares em 2019 no campus Samambaia, em Goiânia.</p>
+        <p class="texto-largo">O CEIA começou com projetos de PD&amp;I com a iniciativa privada, nos quais fui pesquisadora principal. Já coordenei diretamente mais de 15 projetos, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood. Hoje o centro reúne mais de 1.000 pesquisadores e atende, por meio dos parceiros, mais de 150 milhões de brasileiros.</p>
+        <ul class="temas" aria-label="Temas de pesquisa">
+          <li>Meta-learning</li><li>Aprendizado por reforço</li><li>Otimização multiobjetivo</li><li>Meta-heurísticas</li>
+        </ul>
+        <ul class="linha-tempo">
+          <li><b>2019</b><span>Projetos de PD&amp;I com a iniciativa privada viram um centro. Fundamos o CEIA no Instituto de Informática da UFG.</span></li>
+          <li><b>2020</b><span>O CEIA se torna Unidade Embrapii: empresas passam a dividir com o centro o investimento em pesquisa. No mesmo ano, começa o Bacharelado em IA, que forma a equipe dos projetos.</span></li>
+          <li><b>2022</b><span>Assumo a direção executiva. No mesmo ano, o CEIA fica em 1º lugar no Prêmio Embrapii, entre 85 unidades, pela avaliação das próprias empresas contratantes.</span></li>
+          <li><b>2022 a 2024</b><span>Três anos seguidos com o Prêmio Embrapii de projeto mais inovador. Os de 2022 e 2023 coordenei com Anderson Soares.</span></li>
+          <li><b>2024</b><span>Parceria com a NVIDIA no programa AI Nations. O AKCIT, centro de competência associado ao CEIA, é o primeiro grupo de pesquisa da América Latina reconhecido pelo programa.</span></li>
+          <li><b>2025</b><span>Pesquisadores do CEIA lançam com o Google o GAIA, modelo aberto em português do Brasil.</span></li>
+          <li><b>2026</b><span>Lançamos a pedra fundamental da sede própria do CEIA. No mesmo ano, o centro se torna a primeira instituição latino-americana no programa AI for Good da ONU.</span></li>
+          <li><b>2026</b><span>Ordem do Mérito Anhanguera, concedida pelo Governo de Goiás, ao lado de Anderson Soares. Em outubro, entro na lista IT Forum Mulheres, com 35 profissionais reconhecidas em tecnologia no país.</span></li>
+        </ul>
+        <p style="margin-top:8px">Produção acadêmica completa no <a class="link" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">Currículo Lattes</a>. Atualizações sobre o CEIA e inteligência artificial no meu <a class="link" href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="formacao" id="formacao">
+    <div class="wrap">
+      <div>
+        <span class="olho">Talento é o produto</span>
+        <h2>Formar quem vai construir a IA do país</h2>
+        <p class="lead">Investir em bolsas é investir em pessoas. Por isso o CEIA paga bolsa a estudantes desde a graduação, dentro de projetos reais com empresas, e já trouxe de volta mais de 15 pesquisadores que trabalhavam fora do Brasil.</p>
+        <ul class="pontos">
+          <li><strong>1º</strong><span>Bacharelado em Inteligência Artificial do Brasil, criado na UFG em 2020. Hoje, o curso tem alunos de estados como Bahia, Rio Grande do Sul, Roraima e Acre.</span></li>
+          <li><strong>3</strong><span>séries de e-books gratuitos do <a class="link-claro" href="https://ianasescolas.com.br/" target="_blank" rel="noopener">IA nas Escolas</a>, programa que idealizei e que o CEIA lançou em 2025: material de IA alinhado à BNCC para professores e estudantes do fundamental I e II e do ensino médio, com formação gratuita para professores.</span></li>
+          <li><strong>9º</strong><span>ano em diante: sou responsável pela Olimpíada de Inteligência Artificial Aplicada e coordenei a Olimpíada Brasileira de Robótica em Goiás de 2016 a 2022.</span></li>
         </ul>
       </div>
+      <div class="mosaico-form">
+        <figure class="forma"><img src="img/foto-original-239.jpg" alt="Telma Soares orienta um estudante em laboratório de computadores do INF/UFG" loading="lazy"></figure>
+        <figure class="forma-alt"><img src="img/foto-original-225.jpg" alt="Telma Soares em aula para turma de estudantes, com apresentação do CEIA ao fundo" loading="lazy"></figure>
+        <figure class="forma"><img src="img/foto-original-221.jpg" alt="Telma Soares trabalha no notebook vestindo a camisa do CEIA e do INF" loading="lazy" style="object-position:60% 35%"></figure>
+      </div>
     </div>
   </section>
 
-  <section class="claro">
+  <section class="imprensa" id="imprensa">
+    <div class="wrap">
+      <div class="cabeca">
+        <div>
+          <span class="olho">Na imprensa</span>
+          <h2>O que tenho dito sobre IA no Brasil</h2>
+          <p class="lead">Entrevistas e reportagens em que falei sobre infraestrutura, dado em português, formação de talentos e projetos aplicados. Os links levam ao conteúdo original de cada veículo.</p>
+          <div class="citacao-grande">
+            <blockquote>Você faz a sua inteligência própria, você resolve um problema regional, um problema do país.</blockquote>
+            <cite>Exame, outubro de 2026</cite>
+          </div>
+        </div>
+        <div class="foto-imprensa forma">
+          <img src="img/estudio-1951.jpg" alt="Telma Soares de blazer preto e braços cruzados, em retrato de estúdio" loading="lazy" width="1067" height="1600" style="object-position:50% 30%">
+        </div>
+      </div>
+
+      <ul class="lista-imprensa">
+        <li><a href="https://exame.com/inteligencia-artificial/por-que-a-ia-no-brasil-pode-dar-certo-mesmo-sem-um-concorrente-do-chatgpt/" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">Exame</span><span>1 de outubro de 2026</span><span class="tipo">Reportagem</span></span>
+          <h3>Por que a IA no Brasil pode dar certo mesmo sem um concorrente do ChatGPT</h3>
+          <p><q>Existem outros tipos de IAs brasileiras que a gente poderia desenvolver.</q></p>
+        </a></li>
+        <li><a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">Exame</span><span>14 de setembro de 2026</span><span class="tipo">Entrevista</span></span>
+          <h3>Frear ritmo da IA pode consolidar quem já está na frente, diz diretora do CEIA</h3>
+          <p><q>Eu teria muito cuidado em transformar superinteligência em uma categoria técnica ou jurídica neste momento.</q></p>
+        </a></li>
+        <li><a href="https://www.correiobraziliense.com.br/brasil/2026/08/7490336-ufg-amplia-aposta-em-inteligencia-artificial.html" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">Correio Braziliense</span><span>31 de agosto de 2026</span><span class="tipo">Reportagem</span></span>
+          <h3>UFG amplia aposta em inteligência artificial</h3>
+          <p>Sobre o convênio do CEIA com o Governo de Goiás e o lugar do Brasil na cadeia da IA. <q>Se analisarmos historicamente, o Brasil cresceu muito como fornecedor de commodities.</q></p>
+        </a></li>
+        <li><a href="https://exame.com/inteligencia-artificial/brasil-esta-atras-na-corrida-por-uma-ia-propria-diz-diretora-do-ceia/" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">Exame</span><span>14 de julho de 2026</span><span class="tipo">Entrevista</span></span>
+          <h3>Brasil está atrás na corrida por uma IA própria, diz diretora do CEIA</h3>
+          <p>Faltam infraestrutura e dado público em português, mas há espaço para IA soberana em nichos como saúde e biodiversidade, onde o dado é brasileiro.</p>
+        </a></li>
+        <li><a href="https://exame.com/inteligencia-artificial/por-que-um-centro-de-ia-em-goias-compra-tantos-chips-da-nvidia/" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">Exame</span><span>14 de julho de 2026</span><span class="tipo">Entrevista</span></span>
+          <h3>Por que um centro de IA em Goiás compra tantos chips da Nvidia</h3>
+          <p><q>Toda vez que chega um novo equipamento, existe uma curva de aprendizado para adaptar as IAs a essas novas arquiteturas.</q></p>
+        </a></li>
+        <li><a href="https://opopular.com.br/economia/o-cerebro-que-comanda-o-centro-de-ia-da-ufg-1.3116875" target="_blank" rel="noopener">
+          <span class="meta"><span class="veiculo">O Popular</span><span class="tipo">Perfil</span></span>
+          <h3>O cérebro que comanda o centro de IA da UFG</h3>
+          <p>Perfil sobre a criação do primeiro Bacharelado em IA do Brasil e a liderança de uma mulher em uma área com predominância masculina.</p>
+        </a></li>
+      </ul>
+
+      <div class="rodape-imprensa">
+        <p>Jornalistas: temas em que posso contribuir incluem infraestrutura de IA no Brasil, dado em português, soberania com foco em nichos, formação de talentos e projetos de PD&amp;I com empresas.</p>
+        <a class="btn azul" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Sou%20jornalista%20e%20gostaria%20de%20agendar%20uma%20entrevista%20sobre%20intelig%C3%AAncia%20artificial." target="_blank" rel="noopener">Propor uma pauta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="galeria" id="bastidores">
     <div class="wrap">
       <span class="olho">Bastidores</span>
-      <h2>Do laboratório à operação das empresas</h2>
-      <div class="galeria">
-        <figure><img src="foto-robo.jpg" alt="Telma ao lado de um robô humanoide em laboratório" loading="lazy"><figcaption>Pesquisa aplicada em robótica e inteligência artificial</figcaption></figure>
-        <figure><img src="foto-laboratorio.jpg" alt="Telma com estudantes em laboratório do Instituto de Informática" loading="lazy"><figcaption>Formação de pesquisadores no INF/UFG</figcaption></figure>
-        <figure><img src="foto-palestra.jpg" alt="Telma em evento sobre inovação" loading="lazy"><figcaption>Participação em eventos de inovação e tecnologia</figcaption></figure>
+      <h2>Do laboratório ao palco</h2>
+      <p class="lead">Palco, gestão pública e laboratório. O trabalho acontece nesses lugares, quase sempre com outras pessoas no enquadramento.</p>
+      <div class="mosaico">
+        <figure class="forma"><img src="img/foto-evento-4.jpg" alt="Telma Soares com os demais participantes do painel sobre IA para infraestrutura crítica, no palco da Rio Innovation Week" loading="lazy"><figcaption>Painel sobre IA para infraestrutura crítica, Rio Innovation Week 2026</figcaption></figure>
+        <figure class="forma"><img src="img/foto-grupo-2.jpg" alt="Telma Soares com gestores públicos no lançamento do convênio CEIA 2.0 com o Governo de Goiás" loading="lazy"><figcaption>Lançamento do convênio CEIA 2.0 com o Governo de Goiás</figcaption></figure>
+        <figure class="forma"><img src="img/foto-robo.jpg" alt="Telma Soares sorri ao lado de robô humanoide do CEIA" loading="lazy"><figcaption>Robótica e IA no CEIA</figcaption></figure>
       </div>
-      <p style="margin-top:24px"><span class="pendente">[PENDENTE: confirmar as legendas das fotos, local, evento e ano de cada uma]</span></p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <span class="olho">Prova social</span>
-      <h2>Depoimentos de parceiros</h2>
-      <p><span class="pendente">[PENDENTE: nenhum depoimento com texto literal de cliente ou parceiro foi fornecido até o momento]</span></p>
     </div>
   </section>
 
@@ -343,10 +650,16 @@ footer p{margin-bottom:10px}
       <div>
         <span class="olho">Contato</span>
         <h2>Me conte o que você procura</h2>
-        <p>Empresa, pesquisa ou imprensa, a conversa começa no mesmo lugar e eu direciono para o time certo.</p>
+        <p>A conversa começa no mesmo lugar para todo mundo. A partir da primeira mensagem, eu direciono para o time certo.</p>
+        <ul class="caminhos">
+          <li><span><b>Empresas:</b> equipe de PD&amp;I ou reunião direta comigo, conforme a demanda.</span></li>
+          <li><span><b>Pesquisadores:</b> banco de talentos do Portal CEIA e gestão de RH.</span></li>
+          <li><span><b>Imprensa:</b> assessoria de comunicação do CEIA para agenda e materiais.</span></li>
+        </ul>
       </div>
-      <div>
-        <a class="btn" href="https://wa.me/5562981008111?text=Ola%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">
+      <div class="acao">
+        <p>WhatsApp (62) 98100-8111. Em poucas palavras: quem é você, de onde fala e o que precisa.</p>
+        <a class="btn" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
           Falar comigo no WhatsApp
         </a>
@@ -360,13 +673,26 @@ footer p{margin-bottom:10px}
   <div class="wrap">
     <div class="rodape-grid">
       <div>
-        <img class="logo-rodape" src="logo-ceia-rodape.png" alt="Logo do CEIA, Centro de Excelência em Inteligência Artificial" loading="lazy">
-        <p>Telma Woerle de Lima Soares, professora do Instituto de Informática da UFG e diretora executiva do CEIA.</p>
-        <p><a href="https://wa.me/5562981008111?text=Ola%2C%20Gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener">WhatsApp (62) 98100-8111</a></p>
-        <p><span class="pendente">[PENDENTE: LinkedIn pessoal e currículo Lattes]</span></p>
+        <div class="rodape-marca">
+          <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true" width="34" height="34">
+            <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="#2866E5"/>
+            <text x="32" y="42" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
+            <circle cx="52" cy="12" r="5" fill="#0CD4AA"/>
+          </svg>
+          <b>Telma Soares</b>
+        </div>
+        <p>Telma Woerle de Lima Soares. Professora do Instituto de Informática da Universidade Federal de Goiás e diretora executiva do CEIA, Centro de Excelência em Inteligência Artificial.</p>
+        <p><a href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp (62) 98100-8111</a></p>
+      </div>
+      <div>
+        <h4>Perfis</h4>
+        <p><a href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p><a href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">Currículo Lattes</a></p>
+        <p><a href="https://portal.ceia.inf.ufg.br/banco-de-talentos" target="_blank" rel="noopener">Banco de talentos do CEIA</a></p>
       </div>
       <div>
         <h4>CEIA UFG</h4>
+        <img class="logo-ceia" src="img/logo-ceia-branco.png" alt="CEIA, Centro de Excelência em Inteligência Artificial" loading="lazy">
         <p><a href="https://ceia.ufg.br/" target="_blank" rel="noopener">ceia.ufg.br</a></p>
         <div class="redes">
           <a href="https://www.linkedin.com/company/centrodeexcelenciaemia" target="_blank" rel="noopener" aria-label="LinkedIn do CEIA" title="LinkedIn do CEIA">
@@ -382,10 +708,14 @@ footer p{margin-bottom:10px}
       </div>
     </div>
     <div class="creditos">
-      <p>Identidade visual baseada no manual de marca do CEIA, Centro de Excelência em Inteligência Artificial da Universidade Federal de Goiás.</p>
+      <p>Site pessoal de Telma Woerle de Lima Soares. Identidade visual derivada do manual de marca do CEIA, Centro de Excelência em Inteligência Artificial da Universidade Federal de Goiás. Fotos: acervo pessoal e CEIA.</p>
     </div>
   </div>
 </footer>
+
+<a class="flutuante" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
+</a>
 
 </body>
 </html>
