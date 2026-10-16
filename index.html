@@ -8,7 +8,10 @@
 <meta property="og:title" content="Telma Soares | Inteligência artificial que sai do laboratório">
 <meta property="og:description" content="Professora da UFG e diretora executiva do CEIA. Mais de 150 projetos de PD&amp;I executados pelo centro, Bacharelado em IA pioneiro no Brasil e participação frequente na imprensa sobre IA no país.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="img/foto-original-3.jpg">
+<meta property="og:image" content="https://telmaw.github.io/siteTelma/img/foto-original-3.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1067">
+<meta property="og:url" content="https://telmaw.github.io/siteTelma/">
 <meta name="theme-color" content="#1B3983">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z' fill='%231B3983'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-weight='800' font-size='28' fill='%23fff'%3ETS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +29,10 @@
   4. Depoimentos literais de parceiros, se houver prova social em formato de citação.
   5. Dado concreto sobre prazo de resposta a empresas, para fortalecer a seção "O que costumam pensar".
   6. Números: validar com a comunicação do CEIA antes de cada atualização.
+  7. og:image e og:url usam https://telmaw.github.io/siteTelma/ (GitHub Pages). Se o site for
+     publicado em domínio próprio, trocar esse endereço.
+  8. Arquivos originais (fotos em alta, logos, manual de marca, briefing) ficam em _originais/,
+     pasta que o GitHub Pages não publica. A página usa apenas img/.
 -->
 
 <style>
@@ -56,7 +63,7 @@ body{
   color:var(--tinta);background:var(--papel);
   font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased
 }
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
 section{padding:72px 0;scroll-margin-top:72px}
@@ -113,7 +120,7 @@ p{margin-bottom:16px}
 .hero h1{font-size:2.35rem;margin:10px 0 18px;max-width:14ch}
 .hero h1 em{font-style:normal;color:var(--azul-claro)}
 .hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.hero-foto{position:relative}
+.hero-foto{position:relative;isolation:isolate}
 .hero-foto .forma{aspect-ratio:4/5;background:var(--areia);box-shadow:var(--sombra)}
 .hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .hero-foto::before{
@@ -254,7 +261,6 @@ p{margin-bottom:16px}
 .lista-imprensa h3{font-size:1.08rem;margin:0;color:var(--tinta)}
 .lista-imprensa p{margin:0;font-size:.94rem;color:var(--tinta-suave)}
 .lista-imprensa q{font-style:italic;color:var(--azul-escuro)}
-.lista-imprensa .ano{font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-suave);padding:18px 0 6px;border-bottom:none}
 .imprensa .rodape-imprensa{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
 .imprensa .rodape-imprensa p{margin:0;font-size:.92rem;color:var(--tinta-suave);max-width:60ch}
 
@@ -368,7 +374,7 @@ footer p{margin-bottom:10px}
       <div class="hero-texto">
         <span class="olho">Telma Woerle de Lima Soares</span>
         <h1>Inteligência artificial que sai do laboratório e chega ao <em>Brasil real</em></h1>
-        <p class="lead">Professora do Instituto de Informática da UFG, fundadora e diretora executiva do CEIA, o Centro de Excelência em Inteligência Artificial. Sob minha gestão, o centro já executou mais de 150 projetos de PD&amp;I com empresas e captou mais de R$ 500 milhões em cinco anos.</p>
+        <p class="lead">Professora do Instituto de Informática da UFG, cofundadora e diretora executiva do CEIA, o Centro de Excelência em Inteligência Artificial. Sob minha gestão, o centro já executou mais de 150 projetos de PD&amp;I com empresas e captou mais de R$ 500 milhões em cinco anos.</p>
         <div class="acoes">
           <a class="btn" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
@@ -414,7 +420,7 @@ footer p{margin-bottom:10px}
       <div class="grade-destaques">
         <article class="destaque-card">
           <a href="https://itforum.com.br/it-forum-mulheres-2026-conheca-as-profissionais-reconhecidas-nesta-edicao/" target="_blank" rel="noopener">
-            <div class="img forma"><img src="img/estudio-1921.jpg" alt="Telma Soares sorri, com a mão apoiada no queixo, em retrato de estúdio" loading="lazy" style="object-position:50% 25%"></div>
+            <div class="img forma"><img src="img/estudio-1921.jpg" alt="Telma Soares sorri, com a mão apoiada no queixo, em retrato de estúdio" loading="lazy" style="object-position:50% 25%" width="1067" height="1600"></div>
             <span class="meta"><b>Reconhecimento</b> IT Forum, outubro de 2026</span>
             <h3>IT Forum Mulheres 2026: entre as 35 profissionais reconhecidas</h3>
             <p>Segunda edição da lista do IT Forum, que avalia impacto no ecossistema, inovação, liderança, contribuição para diversidade e visibilidade pública.</p>
@@ -423,7 +429,7 @@ footer p{margin-bottom:10px}
         </article>
         <article class="destaque-card">
           <a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
-            <div class="img forma"><img src="img/foto-evento-5.jpg" alt="Telma Soares fala ao microfone no palco, em pé, com telão do CEIA ao fundo" loading="lazy" style="object-position:30% 40%"></div>
+            <div class="img forma"><img src="img/foto-evento-5.jpg" alt="Telma Soares fala ao microfone no palco, em pé, com telão do CEIA ao fundo" loading="lazy" style="object-position:30% 40%" width="1600" height="1067"></div>
             <span class="meta"><b>Entrevista</b> Exame, setembro de 2026</span>
             <h3>Frear o ritmo da IA pode consolidar quem já está na frente</h3>
             <p>Uma pausa sem fiscalização externa e sem acesso para universidades tende a concentrar a tecnologia nas empresas que já lideram.</p>
@@ -432,7 +438,7 @@ footer p{margin-bottom:10px}
         </article>
         <article class="destaque-card">
           <a href="https://www.jornalopcao.com.br/ultimas-noticias/diretores-do-ceia-da-ufg-recebem-ordem-do-merito-anhanguera-apos-transformar-goias-em-polo-nacional-de-inteligencia-artificial-849704/" target="_blank" rel="noopener">
-            <div class="img forma"><img src="img/estudio-1912.jpg" alt="Telma Soares sorri, sentada, em retrato de estúdio" loading="lazy" style="object-position:50% 20%"></div>
+            <div class="img forma"><img src="img/estudio-1912.jpg" alt="Telma Soares sorri, sentada, em retrato de estúdio" loading="lazy" style="object-position:50% 20%" width="1067" height="1600"></div>
             <span class="meta"><b>Reconhecimento</b> Governo de Goiás, julho de 2026</span>
             <h3>Ordem do Mérito Anhanguera, ao lado de Anderson Soares</h3>
             <p>A maior honraria do Estado de Goiás. Um reconhecimento que pertence a cada pesquisador, estudante, parceiro e gestor público que apostou no CEIA.</p>
@@ -568,9 +574,9 @@ footer p{margin-bottom:10px}
         </ul>
       </div>
       <div class="mosaico-form">
-        <figure class="forma"><img src="img/foto-original-239.jpg" alt="Telma Soares orienta um estudante em laboratório de computadores do INF/UFG" loading="lazy"></figure>
-        <figure class="forma-alt"><img src="img/foto-original-225.jpg" alt="Telma Soares em aula para turma de estudantes, com apresentação do CEIA ao fundo" loading="lazy"></figure>
-        <figure class="forma"><img src="img/foto-original-221.jpg" alt="Telma Soares trabalha no notebook vestindo a camisa do CEIA e do INF" loading="lazy" style="object-position:60% 35%"></figure>
+        <figure class="forma"><img src="img/foto-original-239.jpg" alt="Telma Soares orienta um estudante em laboratório de computadores do INF/UFG" loading="lazy" width="1067" height="1600"></figure>
+        <figure class="forma-alt"><img src="img/foto-original-225.jpg" alt="Telma Soares em aula para turma de estudantes, com apresentação do CEIA ao fundo" loading="lazy" width="1600" height="1067"></figure>
+        <figure class="forma"><img src="img/foto-original-221.jpg" alt="Telma Soares trabalha no notebook vestindo a camisa do CEIA e do INF" loading="lazy" style="object-position:60% 35%" width="1067" height="1600"></figure>
       </div>
     </div>
   </section>
@@ -638,9 +644,9 @@ footer p{margin-bottom:10px}
       <h2>Do laboratório ao palco</h2>
       <p class="lead">Palco, gestão pública e laboratório. O trabalho acontece nesses lugares, quase sempre com outras pessoas no enquadramento.</p>
       <div class="mosaico">
-        <figure class="forma"><img src="img/foto-evento-4.jpg" alt="Telma Soares com os demais participantes do painel sobre IA para infraestrutura crítica, no palco da Rio Innovation Week" loading="lazy"><figcaption>Painel sobre IA para infraestrutura crítica, Rio Innovation Week 2026</figcaption></figure>
-        <figure class="forma"><img src="img/foto-grupo-2.jpg" alt="Telma Soares com gestores públicos no lançamento do convênio CEIA 2.0 com o Governo de Goiás" loading="lazy"><figcaption>Lançamento do convênio CEIA 2.0 com o Governo de Goiás</figcaption></figure>
-        <figure class="forma"><img src="img/foto-robo.jpg" alt="Telma Soares sorri ao lado de robô humanoide do CEIA" loading="lazy"><figcaption>Robótica e IA no CEIA</figcaption></figure>
+        <figure class="forma"><img src="img/foto-evento-4.jpg" alt="Telma Soares com os demais participantes do painel sobre IA para infraestrutura crítica, no palco da Rio Innovation Week" loading="lazy" width="1600" height="1067"><figcaption>Painel sobre IA para infraestrutura crítica, Rio Innovation Week 2026</figcaption></figure>
+        <figure class="forma"><img src="img/foto-grupo-2.jpg" alt="Telma Soares com gestores públicos no lançamento do convênio CEIA 2.0 com o Governo de Goiás" loading="lazy" width="1280" height="854"><figcaption>Lançamento do convênio CEIA 2.0 com o Governo de Goiás</figcaption></figure>
+        <figure class="forma"><img src="img/foto-robo.jpg" alt="Telma Soares sorri ao lado de robô humanoide do CEIA" loading="lazy" width="1600" height="1066"><figcaption>Robótica e IA no CEIA</figcaption></figure>
       </div>
     </div>
   </section>
@@ -692,7 +698,7 @@ footer p{margin-bottom:10px}
       </div>
       <div>
         <h4>CEIA UFG</h4>
-        <img class="logo-ceia" src="img/logo-ceia-branco.png" alt="CEIA, Centro de Excelência em Inteligência Artificial" loading="lazy">
+        <img class="logo-ceia" src="img/logo-ceia-branco.png" alt="CEIA, Centro de Excelência em Inteligência Artificial" loading="lazy" width="800" height="450">
         <p><a href="https://ceia.ufg.br/" target="_blank" rel="noopener">ceia.ufg.br</a></p>
         <div class="redes">
           <a href="https://www.linkedin.com/company/centrodeexcelenciaemia" target="_blank" rel="noopener" aria-label="LinkedIn do CEIA" title="LinkedIn do CEIA">
