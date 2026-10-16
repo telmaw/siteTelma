@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Telma Soares | Inteligência artificial aplicada, pesquisa e formação de talentos</title>
 <meta name="description" content="Telma Woerle de Lima Soares, professora do Instituto de Informática da UFG e diretora executiva do CEIA. Projetos de PD&amp;I em inteligência artificial com empresas, formação de pesquisadores e fonte para a imprensa.">
 <meta property="og:title" content="Telma Soares | Inteligência artificial que sai do laboratório">
@@ -16,33 +12,30 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z' fill='%231B3983'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-weight='800' font-size='28' fill='%23fff'%3ETS%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!--
-  PENDÊNCIAS DE CONTEÚDO (não aparecem na página):
-  1. (Resolvido) LinkedIn e Lattes incluídos no rodapé.
-  2. Fotos foto-grupo-1, foto-grupo-2, foto-institucional e foto-discurso: lançamento do convênio
-     CEIA 2.0 com o Governo de Goiás (confirmado pela Telma). Fotos de palco: Rio Innovation Week 2026.
-     Fotos estudio-*.jpg: ensaio de estúdio mais antigo.
-  2b. Confirmar o ano do reconhecimento AI Nations (timeline usa 2024, data da página do INF/UFG).
-  3. Consentimento das pessoas que aparecem nas fotos (estudantes, painelistas, equipe).
-  4. Depoimentos literais de parceiros, se houver prova social em formato de citação.
-  5. Dado concreto sobre prazo de resposta a empresas, para fortalecer a seção "O que costumam pensar".
-  6. Números: validar com a comunicação do CEIA antes de cada atualização.
-  7. og:image e og:url usam https://telmaw.github.io/siteTelma/ (GitHub Pages). Se o site for
-     publicado em domínio próprio, trocar esse endereço.
-  8. Arquivos originais (fotos em alta, logos, manual de marca, briefing) ficam em _originais/,
-     pasta que o GitHub Pages não publica. A página usa apenas img/.
+  VERSÃO 2 (proposta). Mudanças em relação à versão publicada:
+  - Botões "WhatsApp" viraram "Entrar em contato" e levam à seção de contato, que direciona por perfil.
+  - Nova seção "Reconhecimentos" com peso visual maior para prêmios e honrarias.
+  - Novo bloco "Currículo em síntese" dentro de Trajetória (cargos, coordenações, formação).
+  - Seção "IA que sai do laboratório" usa foto no laboratório do CEIA (foto-laboratorio.jpg), não retrato de estúdio.
+  - Links para LinkedIn, Instagram e Lattes no topo, no contato e no rodapé.
+  - Menu no celular (hambúrguer), barra de progresso de leitura, animações de entrada, números animados,
+    faixa de parceiros, filtro na imprensa, linha do tempo com progresso, galeria com lightbox.
+  PENDÊNCIAS:
+  - Instagram pessoal da Telma: trocar o endereço em todos os links com data-pendente="instagram".
+  - Confirmar os períodos de coordenação da pós-graduação (2010–2011, 2015–2019, 2019–2021), vindos do briefing.
 -->
 
 <style>
+/* Layout: editorial em uma coluna com blocos alternando papel claro e azul institucional do CEIA;
+   a forma da marca (canto reto) aparece em fotos, cartões e marcadores. */
 :root{
-  /* Paleta institucional do CEIA (manual de marca) */
   --azul-escuro:#1B3983;
   --azul:#1C4AB8;
   --azul-claro:#2866E5;
   --verde:#0CD4AA;
-  /* Camada pessoal: neutros quentes para diferenciar o site pessoal do institucional */
   --papel:#FBF9F4;
   --areia:#F1EDE3;
   --linha:#E1DCCF;
@@ -50,6 +43,8 @@
   --tinta-suave:#4B5570;
   --branco:#FFFFFF;
   --whats:#128C4A;
+  --display:"Sora","Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  --texto:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
   --max:1160px;
   --raio:28px;
   --sombra:0 18px 50px rgba(27,57,131,.14);
@@ -58,87 +53,124 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  font-family:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
-  color:var(--tinta);background:var(--papel);
-  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased
-}
+body{font-family:var(--texto);color:var(--tinta);background:var(--papel);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
-section{padding:72px 0;scroll-margin-top:72px}
-h1,h2,h3{line-height:1.12;letter-spacing:-0.025em;font-weight:800;color:var(--azul-escuro)}
-h1{font-size:2.3rem}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:72px;scroll-margin-top:72px}
+h1,h2,h3{font-family:var(--display);line-height:1.12;letter-spacing:-0.025em;font-weight:700;color:var(--azul-escuro);text-wrap:balance}
+h1{font-size:2.3rem;font-weight:800}
 h2{font-size:1.8rem;margin-bottom:18px;max-width:22ch}
 h3{font-size:1.12rem;margin-bottom:8px;letter-spacing:-0.01em}
 p{margin-bottom:16px}
-.olho{
-  display:inline-flex;align-items:center;gap:10px;
-  font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;
-  color:var(--azul);margin-bottom:16px
-}
+.olho{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--azul);margin-bottom:16px}
 .olho::before{content:"";width:22px;height:3px;background:var(--verde);border-radius:2px}
 .lead{font-size:1.12rem;color:var(--tinta-suave);max-width:58ch}
 .texto-largo{max-width:66ch}
-.link{color:var(--azul-claro);font-weight:600;text-decoration:none;border-bottom:2px solid rgba(40,102,229,.25)}
-.link:hover{border-bottom-color:var(--azul-claro)}
-
-/* forma da marca: cantos arredondados com um canto reto (grafismo do CEIA) */
+.link{color:var(--azul-claro);font-weight:600;text-decoration:none;background:linear-gradient(var(--azul-claro),var(--azul-claro)) no-repeat 0 100%/0 2px;transition:background-size .25s ease}
+.link:hover{background-size:100% 2px}
 .forma{border-radius:var(--raio) var(--raio) var(--raio) 0;overflow:hidden}
 .forma-alt{border-radius:0 var(--raio) var(--raio) var(--raio);overflow:hidden}
+:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
+
+/* animações de entrada: começam visíveis; a classe .anim só é aplicada quando há JS e movimento permitido */
+.js .anim{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .anim.in{opacity:1;transform:none}
+.js .anim[data-delay="1"]{transition-delay:.1s}.js .anim[data-delay="2"]{transition-delay:.2s}.js .anim[data-delay="3"]{transition-delay:.3s}.js .anim[data-delay="4"]{transition-delay:.4s}.js .anim[data-delay="5"]{transition-delay:.5s}
+
+/* progresso de leitura */
+.progresso{position:fixed;top:0;left:0;height:3px;width:100%;z-index:70;background:transparent;pointer-events:none}
+.progresso i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--azul-claro),var(--verde));transition:width .1s linear}
 
 /* topo */
-.topo{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
-.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.topo{position:sticky;top:0;z-index:50;background:rgba(251,249,244,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--linha);transition:box-shadow .2s ease}
+.topo.rolou{box-shadow:0 8px 30px rgba(27,57,131,.08)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--azul-escuro)}
 .monograma{width:38px;height:38px;flex:none}
-.marca b{display:block;font-weight:800;font-size:1.05rem;letter-spacing:-0.02em;line-height:1.1}
-.marca span{display:block;font-size:.72rem;font-weight:500;color:var(--tinta-suave);letter-spacing:.02em}
-.nav{display:none;gap:26px;font-size:.92rem;font-weight:600}
-.nav a{text-decoration:none;color:var(--tinta-suave);padding:6px 0;border-bottom:2px solid transparent}
-.nav a:hover{color:var(--azul-escuro);border-bottom-color:var(--verde)}
+.marca b{display:block;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:-0.02em;line-height:1.1}
+.marca span{display:block;font-size:.72rem;font-weight:500;color:var(--tinta-suave)}
+@media (max-width:419px){.marca span{display:none}.topo-acoes .btn.pequeno{padding:10px 13px;font-size:.82rem}}
+.nav{display:none;gap:2px;font-size:.86rem;font-weight:600;white-space:nowrap}
+.nav a{text-decoration:none;color:var(--tinta-suave);padding:8px 10px;border-radius:999px;position:relative;transition:color .15s ease,background .15s ease}
+.nav a:hover{color:var(--azul-escuro);background:var(--areia)}
+.nav a.ativo{color:var(--azul-escuro)}
+.nav a.ativo::after{content:"";position:absolute;left:12px;right:12px;bottom:2px;height:2px;background:var(--verde);border-radius:2px}
+.topo-acoes{display:flex;align-items:center;gap:8px}
+.sociais{display:flex;gap:6px}
+.topo .sociais{display:none}
+.sociais a{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50% 50% 50% 0;color:var(--azul-escuro);border:1px solid var(--linha);background:#fff;transition:background .15s ease,transform .15s ease,border-color .15s ease}
+.sociais a:hover{background:var(--azul-escuro);color:#fff;border-color:var(--azul-escuro);transform:translateY(-2px)}
+.sociais svg{width:18px;height:18px;fill:currentColor}
+.sociais a.lattes-link{width:auto;padding:0 14px 0 11px;gap:7px;border-radius:999px;font-family:var(--display);font-size:.8rem;font-weight:700}
+.hamburguer{display:inline-flex;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:10px;border-radius:12px;border:1px solid var(--linha);background:#fff}
+.hamburguer i{display:block;height:2px;background:var(--azul-escuro);border-radius:2px;transition:transform .25s ease,opacity .2s ease}
+.menu-aberto .hamburguer i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-aberto .hamburguer i:nth-child(2){opacity:0}
+.menu-aberto .hamburguer i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.menu-movel{display:none;position:fixed;inset:70px 0 auto 0;z-index:49;background:var(--papel);border-bottom:1px solid var(--linha);padding:18px 20px 26px;box-shadow:0 20px 50px rgba(27,57,131,.12)}
+.menu-aberto .menu-movel{display:block}
+.menu-movel a{display:block;padding:12px 4px;font-weight:600;text-decoration:none;color:var(--azul-escuro);border-bottom:1px solid var(--linha)}
+.menu-movel .sociais{margin-top:16px}
 
 /* botões */
-.btn{
-  display:inline-flex;align-items:center;gap:10px;background:var(--whats);color:#fff;text-decoration:none;
-  font-weight:700;font-size:1rem;padding:15px 24px;border-radius:999px;line-height:1.2;
-  transition:transform .15s ease,background .15s ease,box-shadow .15s ease;box-shadow:0 10px 24px rgba(18,140,74,.25)
-}
-.btn:hover{background:#0f7a40;transform:translateY(-1px)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--azul-escuro);color:#fff;text-decoration:none;font-weight:700;font-size:1rem;padding:15px 24px;border-radius:999px;line-height:1.2;position:relative;overflow:hidden;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;box-shadow:0 10px 24px rgba(27,57,131,.22)}
+.btn::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(27,57,131,.3)}
+.btn:hover::after{transform:translateX(120%)}
 .btn svg{width:20px;height:20px;flex:none;fill:#fff}
-.btn.pequeno{padding:11px 18px;font-size:.9rem;box-shadow:none}
-.btn.azul{background:var(--azul-escuro);box-shadow:0 10px 24px rgba(27,57,131,.22)}
-.btn.azul:hover{background:#142c66}
+.btn.pequeno{padding:11px 16px;font-size:.88rem;box-shadow:none;white-space:nowrap}
+.btn.whats{background:var(--whats);box-shadow:0 10px 24px rgba(18,140,74,.25)}
+.btn.verde{background:var(--verde);color:var(--azul-escuro);box-shadow:0 10px 24px rgba(12,212,170,.3)}
+.btn.verde svg{fill:var(--azul-escuro)}
 .btn.vazado{background:transparent;color:var(--azul-escuro);border:2px solid var(--azul-escuro);box-shadow:none}
 .btn.vazado:hover{background:var(--azul-escuro);color:#fff}
+.btn.vazado.claro{color:#fff;border-color:rgba(255,255,255,.6)}
+.btn.vazado.claro:hover{background:#fff;color:var(--azul-escuro)}
 .apoio{font-size:.92rem;color:var(--tinta-suave);margin-top:14px;max-width:46ch}
 
 /* hero */
 .hero{padding:40px 0 0;background:var(--papel) var(--padrao-claro) repeat;position:relative;overflow:hidden}
-.hero .wrap{display:grid;gap:34px;align-items:center}
+.hero::before{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-200px;border-radius:50%;background:radial-gradient(circle,rgba(12,212,170,.18),transparent 65%);pointer-events:none;animation:flutua 9s ease-in-out infinite alternate}
+@keyframes flutua{from{transform:translate(0,0)}to{transform:translate(-30px,40px)}}
+.hero .wrap{display:grid;gap:34px;align-items:center;position:relative}
 .hero-texto{padding-bottom:40px}
 .hero h1{font-size:2.35rem;margin:10px 0 18px;max-width:14ch}
-.hero h1 em{font-style:normal;color:var(--azul-claro)}
+.hero h1 em{font-style:normal;color:var(--azul-claro);position:relative;white-space:nowrap}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.14em;background:var(--verde);opacity:.55;border-radius:3px;transform:scaleX(0);transform-origin:left;animation:sublinha .8s .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes sublinha{to{transform:scaleX(1)}}
 .hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
 .hero-foto{position:relative;isolation:isolate}
-.hero-foto .forma{aspect-ratio:4/5;background:var(--areia);box-shadow:var(--sombra)}
-.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
-.hero-foto::before{
-  content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;
-  border-radius:var(--raio) var(--raio) var(--raio) 0;background:var(--azul-escuro) var(--padrao-escuro) repeat;z-index:-1
-}
-.selo{
-  position:absolute;left:-10px;bottom:28px;background:#fff;border-radius:18px 18px 18px 0;
-  padding:14px 18px;box-shadow:var(--sombra);max-width:250px;font-size:.86rem;line-height:1.35
-}
-.selo strong{display:block;color:var(--azul-escuro);font-size:1rem;margin-bottom:2px}
+.hero-foto .forma{aspect-ratio:4/5;background:var(--areia);box-shadow:var(--sombra);max-width:100%}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.04);transition:transform 1.4s ease}
+.js .hero-foto.in img{transform:scale(1)}
+.hero-foto::before{content:"";position:absolute;inset:auto -14px -14px auto;width:60%;height:60%;border-radius:var(--raio) var(--raio) var(--raio) 0;background:var(--azul-escuro) var(--padrao-escuro) repeat;z-index:-1}
+.selo{position:absolute;left:-10px;bottom:28px;background:#fff;border-radius:18px 18px 18px 0;padding:14px 18px;box-shadow:var(--sombra);max-width:260px;font-size:.86rem;line-height:1.35;display:flex;gap:12px;align-items:flex-start}
+.selo .ico{width:40px;height:40px;flex:none;border-radius:12px 12px 12px 0;background:var(--azul-escuro);display:grid;place-items:center;color:var(--verde)}
+.selo .ico svg{width:22px;height:22px;fill:currentColor}
+.selo strong{display:block;color:var(--azul-escuro);font-size:1rem;margin-bottom:2px;font-family:var(--display)}
 .selo span{color:var(--tinta-suave)}
 
-/* faixa de cargos */
-.faixa{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff;padding:22px 0}
-.faixa ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px 34px;font-size:.92rem;font-weight:500;color:#cfd9f3}
-.faixa li{display:flex;align-items:center;gap:10px}
-.faixa li::before{content:"";width:8px;height:8px;border-radius:50% 50% 50% 0;background:var(--verde);flex:none}
+/* faixa de credenciais: cinco credenciais em destaque, com peso de título */
+.faixa{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff;padding-block:34px}
+.faixa ul{list-style:none;display:grid;gap:14px}
+.faixa li{position:relative;padding:18px 18px 16px 22px;border-radius:0 18px 18px 0;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-left:4px solid var(--verde);display:grid;gap:4px;transition:background .2s ease,transform .2s ease}
+.faixa li:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+.faixa small{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--verde)}
+.faixa b{font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.25;color:#fff;letter-spacing:-0.01em}
+.faixa span{font-size:.84rem;color:#c9d5f2}
+
+/* faixa de parceiros (marquee) */
+.parceiros{padding:26px 0;border-bottom:1px solid var(--linha);overflow:hidden}
+.parceiros .rotulo{text-align:center;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--tinta-suave);margin-bottom:14px}
+.parceiros{position:relative}
+.marquee{display:flex;gap:0;width:max-content;animation:rola 38s linear infinite}
+.marquee:hover{animation-play-state:paused}
+.marquee ul{list-style:none;display:flex;gap:46px;padding-right:46px;white-space:nowrap}
+.marquee li{font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--azul-escuro);opacity:.55;display:flex;align-items:center;gap:14px}
+.marquee li::after{content:"";width:6px;height:6px;border-radius:50% 50% 50% 0;background:var(--verde)}
+@keyframes rola{to{transform:translateX(-50%)}}
 
 /* destaques recentes */
 .destaques{padding-bottom:40px}
@@ -146,82 +178,105 @@ p{margin-bottom:16px}
 .cabeca-linha h2{margin-bottom:0}
 .grade-destaques{display:grid;gap:22px}
 .destaque-card a{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit;height:100%}
-.destaque-card .img{aspect-ratio:16/10;background:var(--areia);margin-bottom:8px}
-.destaque-card img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
-.destaque-card a:hover img{transform:scale(1.03)}
+.destaque-card .img{aspect-ratio:16/10;background:var(--areia);margin-bottom:8px;max-width:100%}
+.destaque-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.destaque-card a:hover img{transform:scale(1.04)}
 .destaque-card .meta{font-size:.78rem;color:var(--tinta-suave)}
 .destaque-card .meta b{color:var(--azul-claro);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;margin-right:6px}
 .destaque-card h3{font-size:1.15rem;margin:0;color:var(--tinta)}
 .destaque-card a:hover h3{color:var(--azul)}
 .destaque-card p{font-size:.95rem;color:var(--tinta-suave);margin:0;flex:1}
-.destaque-card .ir{font-size:.9rem;font-weight:700;color:var(--azul-escuro);display:inline-flex;gap:8px;margin-top:4px}
-.destaque-card .ir::after{content:"→";transition:transform .15s ease}
-.destaque-card a:hover .ir::after{transform:translateX(4px)}
+.ir{font-size:.9rem;font-weight:700;color:var(--azul-escuro);display:inline-flex;align-items:center;gap:8px;margin-top:4px;min-height:40px}
+.ir::after{content:"→";transition:transform .2s ease}
+a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 
-/* frentes que lidero */
-.frentes{background:var(--areia)}
+/* reconhecimentos */
+.reconhecimentos{background:var(--areia);position:relative;overflow:hidden}
+.grade-premios{display:grid;gap:18px;margin-top:34px}
+.premio{background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:26px 24px 24px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;transition:transform .25s ease,box-shadow .25s ease}
+.premio:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+.premio.grande{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff;border-color:transparent}
+.premio .ano{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
+.premio.grande .ano{color:var(--verde)}
+.premio .ico{width:52px;height:52px;border-radius:16px 16px 16px 0;background:var(--areia);display:grid;place-items:center;color:var(--azul-escuro)}
+.premio.grande .ico{background:rgba(255,255,255,.1);color:var(--verde)}
+.premio .ico svg{width:28px;height:28px;fill:currentColor}
+.premio h3{font-size:1.35rem;margin:4px 0 0;line-height:1.15}
+.premio.grande h3{color:#fff;font-size:1.6rem}
+.premio p{margin:0;font-size:.95rem;color:var(--tinta-suave);flex:1}
+.premio.grande p{color:#d4ddf3}
+.premio .quem{font-size:.82rem;font-weight:600;color:var(--azul-escuro)}
+.premio.grande .quem{color:#fff}
+.premio .fundo{position:absolute;right:-10px;bottom:-26px;font-family:var(--display);font-size:6.5rem;font-weight:800;line-height:1;color:var(--azul-escuro);opacity:.05;letter-spacing:-0.06em;pointer-events:none}
+.premio.grande .fundo{color:#fff;opacity:.06}
+.premio a{color:inherit}
+
+/* frentes */
+.frentes{background:var(--papel)}
 .grade-frentes{display:grid;gap:18px;margin-top:30px}
-.frente{background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 26px 24px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden}
+.frente{background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 26px 24px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.frente:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
 .frente::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--azul-escuro),var(--azul-claro) 70%,var(--verde))}
-.frente-num{position:absolute;top:18px;right:22px;font-size:2.4rem;font-weight:800;color:var(--areia);letter-spacing:-0.04em;line-height:1}
+.frente-num{position:absolute;top:18px;right:22px;font-family:var(--display);font-size:2.4rem;font-weight:800;color:var(--areia);letter-spacing:-0.04em;line-height:1}
 .frente .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
 .frente h3{margin:2px 0 6px;max-width:26ch}
 .frente .metrica{background:var(--papel);border-radius:14px 14px 14px 0;padding:12px 14px;color:var(--tinta-suave);font-size:.92rem;line-height:1.35;margin:0 0 8px}
-.frente .metrica strong{display:block;font-size:1.7rem;font-weight:800;color:var(--azul-escuro);letter-spacing:-0.03em;line-height:1.1}
+.frente .metrica strong{display:block;font-family:var(--display);font-size:1.7rem;font-weight:800;color:var(--azul-escuro);letter-spacing:-0.03em;line-height:1.1}
 .frente p{color:var(--tinta-suave);font-size:.97rem}
 .frente p:not(.metrica){flex:1}
-.frente .link-cta{display:inline-flex;align-items:center;gap:8px;color:var(--azul-escuro);font-weight:700;text-decoration:none;font-size:.95rem}
-.frente .link-cta::after{content:"→";transition:transform .15s ease}
-.frente .link-cta:hover::after{transform:translateX(4px)}
-
-/* perfis */
-.cartoes{display:grid;gap:18px;margin-top:30px}
-.cartao{
-  background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;
-  padding:28px 26px 24px;display:flex;flex-direction:column;gap:6px;position:relative
-}
-.cartao .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
-.cartao h3{margin-top:4px}
-.cartao p{color:var(--tinta-suave);font-size:.98rem;flex:1}
-.cartao .link-cta{display:inline-flex;align-items:center;gap:8px;color:var(--azul-escuro);font-weight:700;text-decoration:none;font-size:.95rem;margin-top:6px}
-.cartao .link-cta::after{content:"→";transition:transform .15s ease}
-.cartao .link-cta:hover::after{transform:translateX(4px)}
-.cartao .fala{
-  font-size:.9rem;color:var(--azul-escuro);background:var(--areia);padding:10px 14px;border-radius:14px 14px 14px 0;
-  font-style:italic;margin:4px 0 10px;flex:none
-}
+.link-cta{display:inline-flex;align-items:center;gap:8px;color:var(--azul-escuro);font-weight:700;text-decoration:none;font-size:.95rem;min-height:44px}
+.link-cta::after{content:"→";transition:transform .2s ease}
+.link-cta:hover::after{transform:translateX(5px)}
 
 /* números */
 .numeros{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff}
 .numeros h2,.numeros .olho{color:#fff}
 .numeros .lead{color:#c9d5f2}
-.grade-num{display:grid;gap:22px;margin-top:30px}
+.grade-num{display:grid;gap:22px 18px;margin-top:30px;grid-template-columns:repeat(2,1fr)}
 .num{border-top:2px solid rgba(12,212,170,.6);padding-top:14px}
-.num strong{display:block;font-size:2rem;font-weight:800;letter-spacing:-0.03em;line-height:1.05;margin-bottom:6px}
-.num span{font-size:.94rem;color:#c9d5f2;line-height:1.4;display:block}
+.num strong{display:block;font-family:var(--display);font-size:clamp(1.6rem,6vw,2.2rem);font-weight:800;letter-spacing:-0.03em;line-height:1.05;margin-bottom:6px;font-variant-numeric:tabular-nums}
+.num > span{font-size:.94rem;color:#c9d5f2;line-height:1.4;display:block}
 .numeros .nota{font-size:.82rem;color:#9fb0dc;margin:28px 0 0}
 
-/* destaque com foto (IA que sai do laboratório) */
+/* IA que sai do laboratório */
 .destaque{background:var(--areia)}
 .destaque .wrap{display:grid;gap:36px;align-items:center}
-.destaque .foto{aspect-ratio:4/5;box-shadow:var(--sombra)}
-.destaque .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.objecoes{display:grid;gap:18px;margin-top:26px}
-.objecao{background:#fff;border-left:4px solid var(--verde);border-radius:0 18px 18px 0;padding:18px 20px}
-.objecao h3{font-size:1rem;color:var(--azul-escuro);margin-bottom:6px}
+.destaque .foto{aspect-ratio:4/5;box-shadow:var(--sombra);position:relative;max-width:100%}
+.destaque .foto img{width:100%;height:100%;object-fit:cover;object-position:35% 50%}
+.destaque .foto figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;font-size:.82rem;color:#fff;background:linear-gradient(180deg,rgba(20,26,46,0),rgba(20,26,46,.8))}
+.objecoes{display:grid;gap:14px;margin-top:26px}
+.objecao{background:#fff;border-radius:0 18px 18px 0;border-left:4px solid var(--verde);padding:18px 20px;display:grid;gap:6px;transition:transform .2s ease,box-shadow .2s ease}
+.objecao:hover{transform:translateX(6px);box-shadow:var(--sombra)}
+.objecao .rotulos{display:flex;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.objecao .rotulos .mito{color:#b4443c}
+.objecao .rotulos .fato{color:var(--whats)}
+.objecao h3{font-size:1rem;color:var(--azul-escuro);margin:0}
 .objecao p{margin:0;font-size:.96rem;color:var(--tinta-suave)}
 
-/* sobre */
+/* trajetória */
 .sobre .wrap{display:grid;gap:36px;align-items:start}
-.sobre .foto{aspect-ratio:3/4;box-shadow:var(--sombra)}
+.sobre .coluna-foto{display:grid;gap:18px;align-content:start}
+.sobre .foto{aspect-ratio:3/4;box-shadow:var(--sombra);max-width:100%}
 .sobre .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
-.linha-tempo{list-style:none;margin-top:10px;border-left:2px solid var(--linha);padding-left:22px}
-.linha-tempo li{position:relative;padding:0 0 20px}
-.linha-tempo li::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50% 50% 50% 0;background:var(--verde);border:2px solid var(--papel)}
-.linha-tempo b{display:block;color:var(--azul-escuro);font-weight:700}
-.linha-tempo span{color:var(--tinta-suave);font-size:.95rem}
-.temas{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 24px}
+.sobre .ficha{background:#fff;border:1px solid var(--linha);border-radius:0 var(--raio) var(--raio) var(--raio);padding:22px 22px 18px}
+.sobre .ficha h3{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--azul-claro);margin-bottom:12px}
+.sobre .ficha dl{display:grid;gap:12px;font-size:.92rem}
+.sobre .ficha dt{font-weight:700;color:var(--azul-escuro);font-size:.82rem}
+.sobre .ficha dd{color:var(--tinta-suave);line-height:1.45}
+.sobre .ficha .cv-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;font-weight:600;color:var(--azul-escuro);background:var(--areia);border:1px solid var(--linha);padding:10px 16px;min-height:42px;border-radius:999px;text-decoration:none;transition:background .15s ease,color .15s ease}
+.chip:hover{background:var(--azul-escuro);color:#fff;border-color:var(--azul-escuro)}
+.chip svg{width:16px;height:16px;fill:currentColor}
+.temas{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 28px}
 .temas li{list-style:none;font-size:.82rem;font-weight:600;color:var(--azul-escuro);background:#fff;border:1px solid var(--linha);padding:7px 12px;border-radius:999px}
+.linha-tempo{list-style:none;margin-top:10px;position:relative;padding-left:26px}
+.linha-tempo::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--linha)}
+.linha-tempo::after{content:"";position:absolute;left:0;top:6px;width:2px;height:var(--prog,0%);background:linear-gradient(var(--azul-claro),var(--verde));transition:height .3s ease}
+.linha-tempo li{position:relative;padding:0 0 22px}
+.linha-tempo li::before{content:"";position:absolute;left:-32px;top:7px;width:12px;height:12px;border-radius:50% 50% 50% 0;background:var(--linha);border:2px solid var(--papel);transition:background .3s ease,transform .3s ease}
+.linha-tempo li.ativo::before{background:var(--verde);transform:scale(1.25)}
+.linha-tempo b{display:block;font-family:var(--display);color:var(--azul-escuro);font-weight:700}
+.linha-tempo span{color:var(--tinta-suave);font-size:.95rem}
 
 /* formação */
 .formacao{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:#fff}
@@ -229,14 +284,15 @@ p{margin-bottom:16px}
 .formacao .lead,.formacao p{color:#d4ddf3}
 .formacao .wrap{display:grid;gap:34px;align-items:center}
 .mosaico-form{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:12px}
-.mosaico-form figure{margin:0;background:#122a66}
+.mosaico-form figure{margin:0;background:#122a66;max-width:100%}
 .mosaico-form figure:first-child{grid-row:1/3}
-.mosaico-form img{width:100%;height:100%;object-fit:cover}
+.mosaico-form img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.mosaico-form figure:hover img{transform:scale(1.04)}
 .mosaico-form figure:first-child img{aspect-ratio:3/4}
 .mosaico-form figure:not(:first-child) img{aspect-ratio:4/3}
 .pontos{list-style:none;margin-top:8px;display:grid;gap:14px}
 .pontos li{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start}
-.pontos li strong{color:var(--verde);font-weight:800;font-size:1.3rem;line-height:1.1;min-width:3.4ch}
+.pontos li strong{font-family:var(--display);color:var(--verde);font-weight:800;font-size:1.3rem;line-height:1.1;min-width:3.4ch}
 .pontos li span{color:#d4ddf3;font-size:.98rem}
 .link-claro{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--verde)}
 .link-claro:hover{color:var(--verde)}
@@ -245,91 +301,159 @@ p{margin-bottom:16px}
 .imprensa .cabeca{display:grid;gap:28px;align-items:end;margin-bottom:36px}
 .imprensa .foto-imprensa{aspect-ratio:5/4;box-shadow:var(--sombra);max-width:520px;justify-self:end;width:100%}
 .imprensa .foto-imprensa img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
-.citacao-grande{
-  background:var(--areia);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 28px 22px;position:relative;margin-top:8px
-}
-.citacao-grande::before{content:"“";position:absolute;top:-6px;left:22px;font-size:5rem;line-height:1;color:var(--verde);font-weight:800}
-.citacao-grande blockquote{font-size:1.2rem;font-weight:600;color:var(--azul-escuro);line-height:1.4;letter-spacing:-0.01em;margin:16px 0 12px}
+.citacao-grande{background:var(--areia);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px 28px 22px;position:relative;margin-top:8px}
+.citacao-grande::before{content:"“";position:absolute;top:-6px;left:22px;font-family:var(--display);font-size:5rem;line-height:1;color:var(--verde);font-weight:800}
+.citacao-grande blockquote{font-family:var(--display);font-size:1.2rem;font-weight:600;color:var(--azul-escuro);line-height:1.4;letter-spacing:-0.01em;margin:16px 0 12px}
 .citacao-grande cite{font-style:normal;font-size:.86rem;color:var(--tinta-suave)}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}
+.filtros button{font-size:.84rem;font-weight:600;padding:10px 16px;min-height:42px;border-radius:999px;border:1px solid var(--linha);background:#fff;color:var(--tinta-suave);transition:background .15s ease,color .15s ease}
+.filtros button:hover{color:var(--azul-escuro)}
+.filtros button[aria-pressed="true"]{background:var(--azul-escuro);color:#fff;border-color:var(--azul-escuro)}
 .lista-imprensa{list-style:none;border-top:1px solid var(--linha)}
-.lista-imprensa li{border-bottom:1px solid var(--linha)}
-.lista-imprensa a{display:grid;gap:6px;padding:20px 0;text-decoration:none;color:inherit;transition:background .15s ease}
-.lista-imprensa a:hover{background:rgba(255,255,255,.7)}
+.lista-imprensa li{border-bottom:1px solid var(--linha);transition:opacity .25s ease}
+.lista-imprensa li.oculto{display:none}
+.lista-imprensa a{display:grid;gap:6px;padding:20px 8px;margin:0 -8px;border-radius:14px;text-decoration:none;color:inherit;transition:background .15s ease}
+.lista-imprensa a:hover{background:var(--areia)}
 .lista-imprensa .meta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:.8rem;color:var(--tinta-suave)}
 .lista-imprensa .veiculo{font-weight:700;color:var(--azul-claro);letter-spacing:.06em;text-transform:uppercase;font-size:.74rem}
 .lista-imprensa .tipo{background:var(--areia);padding:2px 9px;border-radius:999px;font-weight:600;font-size:.72rem}
-.lista-imprensa h3{font-size:1.08rem;margin:0;color:var(--tinta)}
+.lista-imprensa h3{font-size:1.08rem;margin:0;color:var(--tinta);transition:color .15s ease}
+.lista-imprensa a:hover h3{color:var(--azul)}
 .lista-imprensa p{margin:0;font-size:.94rem;color:var(--tinta-suave)}
 .lista-imprensa q{font-style:italic;color:var(--azul-escuro)}
 .imprensa .rodape-imprensa{margin-top:26px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
 .imprensa .rodape-imprensa p{margin:0;font-size:.92rem;color:var(--tinta-suave);max-width:60ch}
+.temas-imprensa{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 
 /* galeria */
 .galeria{background:var(--areia)}
 .mosaico{display:grid;grid-template-columns:1fr;gap:14px;margin-top:30px}
-.mosaico figure{margin:0;position:relative;background:#fff}
-.mosaico img{width:100%;height:auto;object-fit:cover;aspect-ratio:3/2}
-.mosaico figcaption{
-  position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;font-size:.8rem;color:#fff;font-weight:500;
-  background:linear-gradient(180deg,rgba(20,26,46,0) 0%,rgba(20,26,46,.78) 100%)
-}
+.mosaico figure{margin:0;position:relative;background:#fff;cursor:zoom-in;max-width:100%}
+.mosaico img{width:100%;height:auto;object-fit:cover;aspect-ratio:3/2;transition:transform .6s ease}
+.mosaico figure:hover img{transform:scale(1.04)}
+.mosaico figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;font-size:.8rem;color:#fff;font-weight:500;background:linear-gradient(180deg,rgba(20,26,46,0) 0%,rgba(20,26,46,.78) 100%)}
+.lightbox{position:fixed;inset:0;z-index:90;background:rgba(15,34,88,.97);display:none;align-items:center;justify-content:center;padding:20px}
+.lightbox.aberto{display:flex}
+.lightbox img{max-width:min(1100px,100%);max-height:80vh;width:auto;height:auto;border-radius:18px 18px 18px 0;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lightbox figcaption{color:#fff;text-align:center;margin-top:14px;font-size:.92rem}
+.lightbox .fechar{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:1.4rem;display:grid;place-items:center}
+.lightbox .seta{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:1.5rem;display:grid;place-items:center}
+.lightbox .seta.ant{left:14px}.lightbox .seta.prox{right:14px}
+@media (max-width:719px){.lightbox{padding:16px 12px 90px}.lightbox img{max-height:70vh}.lightbox .seta{top:auto;bottom:max(20px,env(safe-area-inset-bottom,0px));transform:none}.lightbox .seta.ant{left:calc(50% - 60px)}.lightbox .seta.prox{right:calc(50% - 60px)}}
 
-/* cta */
+/* contato */
 .cta{background:linear-gradient(120deg,var(--azul-escuro) 0%,var(--azul) 55%,var(--azul-claro) 100%);color:#fff;position:relative;overflow:hidden}
 .cta::after{content:"";position:absolute;inset:0;background:var(--padrao-escuro) repeat;pointer-events:none}
-.cta .wrap{position:relative;z-index:1;display:grid;gap:28px;align-items:center}
+.cta .wrap{position:relative;z-index:1}
 .cta h2,.cta .olho{color:#fff}
-.cta p{color:#d7e1fb;max-width:52ch}
-.cta .caminhos{list-style:none;display:grid;gap:10px;font-size:.95rem;color:#e6ecfb}
-.cta .caminhos li{display:flex;gap:10px;align-items:baseline}
-.cta .caminhos li::before{content:"";width:8px;height:8px;flex:none;border-radius:50% 50% 50% 0;background:var(--verde);transform:translateY(-1px)}
-.cta .caminhos b{color:#fff}
-.cta .acao{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:28px}
-.cta .acao p{font-size:.95rem;margin-bottom:18px}
+.cta .lead{color:#d7e1fb}
+.caminhos{display:grid;gap:16px;margin-top:30px}
+.caminho{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:26px 24px;display:flex;flex-direction:column;gap:8px;transition:background .2s ease,transform .2s ease}
+.caminho:hover{background:rgba(255,255,255,.13);transform:translateY(-4px)}
+.caminho .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--verde)}
+.caminho h3{color:#fff;font-size:1.25rem;margin:0}
+.caminho p{color:#d7e1fb;font-size:.95rem;margin:0;flex:1}
+.caminho .btn{align-self:flex-start;margin-top:10px}
+.cta .sociais-cta{margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;color:#d7e1fb;font-size:.92rem}
+.cta .sociais-cta .sociais a{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff}
+.cta .sociais-cta .sociais a:hover{background:#fff;color:var(--azul-escuro)}
 
 /* rodapé */
-footer{background:#0F2258;color:#a9b7df;padding:48px 0 36px;font-size:.9rem}
+footer{background:#0F2258;color:#a9b7df;padding:48px 0 calc(36px + 64px);font-size:.9rem}
 footer a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.rodape-grid p > a{display:inline-block;padding:6px 0}
 footer a:hover{border-bottom-color:var(--verde)}
 footer p{margin-bottom:10px}
 .rodape-grid{display:grid;gap:30px}
 .rodape-grid h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--verde);margin-bottom:12px}
 .rodape-marca{display:flex;align-items:center;gap:12px;color:#fff;margin-bottom:14px}
-.rodape-marca b{font-size:1.1rem;font-weight:800;letter-spacing:-0.02em}
+.rodape-marca b{font-family:var(--display);font-size:1.1rem;font-weight:700;letter-spacing:-0.02em}
 .logo-ceia{width:160px;margin-bottom:14px;opacity:.95}
 .redes{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
-.redes a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.3);border-radius:50% 50% 50% 0;background:rgba(255,255,255,.06);transition:background .15s ease,border-color .15s ease}
-.redes a:hover{border-color:var(--verde);background:rgba(12,212,170,.18)}
+.redes a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.3);border-radius:50% 50% 50% 0;background:rgba(255,255,255,.06);transition:background .15s ease,border-color .15s ease,transform .15s ease}
+.redes a:hover{border-color:var(--verde);background:rgba(12,212,170,.18);transform:translateY(-2px)}
 .redes svg{width:20px;height:20px;fill:#fff}
-.creditos{border-top:1px solid rgba(255,255,255,.14);margin-top:30px;padding-top:20px;font-size:.82rem;color:#8d9cc9}
-.creditos p:last-child{margin-bottom:0}
+.redes .lattes{font-family:var(--display);font-size:.62rem;font-weight:800;color:#fff}
+.creditos{border-top:1px solid rgba(255,255,255,.14);margin-top:30px;padding-top:20px;font-size:.82rem;color:#8d9cc9;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.creditos p{margin-bottom:0}
+.voltar{display:inline-flex;align-items:center;gap:8px;color:#fff;border:0;font-weight:600}
+.voltar:hover{color:var(--verde)}
 
-/* botão flutuante no celular */
-.flutuante{position:fixed;right:16px;bottom:16px;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--whats);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(18,140,74,.35)}
-.flutuante svg{width:28px;height:28px;fill:#fff}
+/* pattern vivo: camada canvas que redesenha o grafismo do CEIA e reage ao mouse */
+.vivo{position:relative}
+.vivo canvas.padrao-vivo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.vivo > .wrap{position:relative;z-index:1}
+.vivo.ligado:not(.cta){background-image:none}
+.vivo.ligado.cta::after{display:none}
+
+/* redes sociais e LinkedIn */
+.redes-sec{background:var(--papel)}
+.grade-redes{display:grid;gap:18px;margin-top:30px}
+.rede{display:flex;align-items:center;gap:16px;padding:22px 22px;background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;text-decoration:none;color:inherit;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.rede:hover{transform:translateY(-4px);box-shadow:var(--sombra);border-color:transparent}
+.rede .ico{width:54px;height:54px;flex:none;border-radius:16px 16px 16px 0;display:grid;place-items:center;color:#fff;background:var(--azul-escuro)}
+.rede.ig .ico{background:linear-gradient(135deg,#1B3983,#2866E5 60%,#0CD4AA)}
+.rede.lt .ico{background:var(--azul-claro)}
+.rede .ico svg{width:26px;height:26px;fill:currentColor}
+.rede b{display:block;font-family:var(--display);color:var(--azul-escuro);font-size:1.05rem}
+.rede span{display:block;font-size:.88rem;color:var(--tinta-suave)}
+.rede .ir{margin-left:auto;margin-top:0;flex:none}
+.feed-cabeca{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin:54px 0 22px}
+.feed-cabeca h3{font-size:1.4rem;margin:0}
+.feed-cabeca p{margin:0;font-size:.9rem;color:var(--tinta-suave)}
+.feed{display:grid;gap:18px}
+.post{background:#fff;border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:22px 22px 18px;display:flex;flex-direction:column;gap:12px;text-decoration:none;color:inherit;transition:transform .25s ease,box-shadow .25s ease}
+.post:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+.post .autor{display:flex;align-items:center;gap:12px}
+.post .autor img{width:44px;height:44px;border-radius:50% 50% 50% 0;object-fit:cover;object-position:50% 15%}
+.post .autor b{display:block;font-size:.92rem;color:var(--azul-escuro)}
+.post .autor span{display:block;font-size:.78rem;color:var(--tinta-suave)}
+.post .autor svg{margin-left:auto;width:20px;height:20px;fill:#0A66C2;flex:none}
+.post p{margin:0;font-size:.95rem;color:var(--tinta);flex:1;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.post .rodape{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;color:var(--tinta-suave);border-top:1px solid var(--linha);padding-top:12px}
+.post .rodape .ir{margin:0}
+.post.embed{padding:0;overflow:hidden}
+.post.embed iframe{width:100%;height:560px;border:0;display:block}
+.feed .vazio{grid-column:1/-1;background:var(--areia);border-radius:18px;padding:22px;font-size:.92rem;color:var(--tinta-suave)}
+
+/* flutuante no celular */
+.flutuante{opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .3s ease,transform .3s ease}
+.flutuante.mostra{opacity:1;transform:none;pointer-events:auto}
+body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
+.flutuante{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:60;display:inline-flex;align-items:center;gap:10px;background:var(--azul-escuro);color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:14px 18px;border-radius:999px;box-shadow:0 10px 26px rgba(27,57,131,.35)}
+.flutuante svg{width:20px;height:20px;fill:#fff}
 
 @media (min-width:720px){
-  .cartoes{grid-template-columns:repeat(3,1fr)}
   .grade-destaques{grid-template-columns:repeat(3,1fr)}
   .grade-frentes{grid-template-columns:repeat(3,1fr);gap:22px}
+  .grade-premios{grid-template-columns:repeat(2,1fr)}
+  .grade-redes{grid-template-columns:repeat(3,1fr)}
+  .faixa ul{grid-template-columns:repeat(2,1fr)}
+  .feed{grid-template-columns:repeat(3,1fr)}
   .grade-num{grid-template-columns:repeat(2,1fr)}
   .mosaico{grid-template-columns:repeat(3,1fr)}
+  .caminhos{grid-template-columns:repeat(3,1fr)}
+  .objecoes{grid-template-columns:1fr}
   .lista-imprensa a{grid-template-columns:150px 1fr;gap:6px 26px;align-items:start}
   .lista-imprensa .meta{flex-direction:column;align-items:flex-start;gap:6px;grid-row:1/3}
   .lista-imprensa h3,.lista-imprensa p{grid-column:2}
-  .cta .wrap{grid-template-columns:1.1fr .9fr;gap:44px}
 }
 @media (min-width:960px){
   body{font-size:18px}
-  section{padding:100px 0}
+  section{padding-block:100px}
   h1{font-size:3.3rem}
   h2{font-size:2.3rem}
   .nav{display:flex}
+  .hamburguer{display:none}
+  .topo .sociais{display:flex}
   .hero{padding-top:56px}
   .hero .wrap{grid-template-columns:1.05fr .95fr;gap:56px}
   .hero h1{font-size:3.4rem}
   .hero-texto{padding-bottom:64px}
   .hero-foto{margin:0 10px 30px 0}
+  .grade-premios{grid-template-columns:repeat(3,1fr);gap:22px}
+  .faixa ul{grid-template-columns:repeat(5,1fr)}
+  .premio.grande{grid-column:span 2}
   .grade-num{grid-template-columns:repeat(4,1fr);gap:30px 28px}
   .destaque .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}
   .sobre .wrap{grid-template-columns:.8fr 1.2fr;gap:64px}
@@ -337,60 +461,80 @@ footer p{margin-bottom:10px}
   .imprensa .cabeca{grid-template-columns:1fr 1fr;gap:56px}
   .rodape-grid{grid-template-columns:1.4fr 1fr 1fr;gap:48px}
   .flutuante{display:none}
+  footer{padding-bottom:36px}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.cartao .link-cta::after{transition:none}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .anim{opacity:1;transform:none}
+}
 </style>
-</head>
-<body>
 
-<header class="topo">
+
+
+<div class="progresso" aria-hidden="true"><i id="barra"></i></div>
+
+<header class="topo" id="cabecalho">
   <div class="wrap">
     <a class="marca" href="#topo" aria-label="Telma Soares, início da página">
       <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true">
         <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B3983"/><stop offset="1" stop-color="#2866E5"/></linearGradient></defs>
         <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="url(#g1)"/>
-        <text x="32" y="42" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
+        <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
         <circle cx="52" cy="12" r="5" fill="#0CD4AA"/>
       </svg>
       <div><b>Telma Soares</b><span>Inteligência artificial aplicada</span></div>
     </a>
     <nav class="nav" aria-label="Seções">
       <a href="#frentes">Frentes</a>
+      <a href="#reconhecimentos">Reconhecimentos</a>
       <a href="#sobre">Trajetória</a>
       <a href="#formacao">Formação</a>
       <a href="#imprensa">Na imprensa</a>
+      <a href="#redes">Redes</a>
     </nav>
-    <a class="btn pequeno" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
-      WhatsApp
-    </a>
+    <div class="topo-acoes">
+      <div class="sociais" aria-label="Perfis">
+        <a href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+        <a href="https://www.instagram.com/" data-pendente="instagram" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></a>
+        <a class="lattes-link" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener" aria-label="Currículo Lattes" title="Currículo Lattes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 9.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.1l-7 3.8-7-3.8Z"/></svg><span>Lattes</span></a>
+      </div>
+      <a class="btn pequeno" href="#contato">Entrar em contato</a>
+      <button class="hamburguer" id="abre-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-movel"><i></i><i></i><i></i></button>
+    </div>
   </div>
 </header>
+<div class="menu-movel" id="menu-movel">
+  <a href="#frentes">Frentes</a>
+  <a href="#reconhecimentos">Reconhecimentos</a>
+  <a href="#sobre">Trajetória</a>
+  <a href="#formacao">Formação</a>
+  <a href="#imprensa">Na imprensa</a>
+  <a href="#redes">Redes</a>
+  <a href="#contato">Contato</a>
+</div>
 
 <main id="topo">
 
-  <section class="hero">
+  <section class="hero vivo">
     <div class="wrap">
       <div class="hero-texto">
-        <span class="olho">Telma Woerle de Lima Soares</span>
-        <h1>Inteligência artificial que sai do laboratório e chega ao <em>Brasil real</em></h1>
-        <p class="lead">Professora do Instituto de Informática da UFG, cofundadora e diretora executiva do CEIA, o Centro de Excelência em Inteligência Artificial. Sob minha gestão, o centro já executou mais de 150 projetos de PD&amp;I com empresas e captou mais de R$ 500 milhões em cinco anos.</p>
-        <div class="acoes">
-          <a class="btn" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
-            Falar comigo no WhatsApp
-          </a>
-          <a class="btn vazado" href="#imprensa">Ver participações na imprensa</a>
+        <span class="olho anim">Telma Woerle de Lima Soares</span>
+        <h1 class="anim" data-delay="1">Inteligência artificial que sai do laboratório e chega ao <em>Brasil real</em></h1>
+        <p class="lead anim" data-delay="2">Professora do Instituto de Informática da UFG, cofundadora e diretora executiva do CEIA, o Centro de Excelência em Inteligência Artificial. Sob minha gestão, o centro já executou mais de 150 projetos de PD&amp;I com empresas e captou mais de R$ 500 milhões em cinco anos.</p>
+        <div class="acoes anim" data-delay="3">
+          <a class="btn" href="#contato">Entrar em contato</a>
+          <a class="btn vazado" href="#reconhecimentos">Ver reconhecimentos</a>
         </div>
-        <p class="apoio">Empresa, pesquisa ou imprensa: me conte em poucas palavras o que você procura e eu direciono para o time certo.</p>
+        <p class="apoio anim" data-delay="4">Empresa, pesquisa ou imprensa: me conte em poucas palavras o que você procura e eu direciono para o time certo.</p>
       </div>
-      <div class="hero-foto">
+      <div class="hero-foto anim" data-delay="2">
         <div class="forma">
           <img src="img/foto-original-3.jpg" alt="Telma Soares em pé no corredor do Instituto de Informática da UFG" width="1600" height="1067" fetchpriority="high">
         </div>
         <div class="selo">
-          <strong>1º lugar no Prêmio Embrapii</strong>
-          <span>Em 2022, entre 85 unidades, pela avaliação das empresas que contrataram projetos com o CEIA.</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 9.5 7.2 4 8l4 3.9-.9 5.6L12 14.8l4.9 2.7-.9-5.6 4-3.9-5.5-.8L12 2Zm-4 16v4l4-1.5 4 1.5v-4l-4 1.4-4-1.4Z"/></svg></span>
+          <div><strong>1º lugar no Prêmio Embrapii</strong><span>Em 2022, entre 85 unidades, pela avaliação das empresas que contrataram projetos com o CEIA.</span></div>
         </div>
       </div>
     </div>
@@ -399,18 +543,26 @@ footer p{margin-bottom:10px}
   <div class="faixa" aria-label="Cargos e vínculos">
     <div class="wrap">
       <ul>
-        <li>Diretora executiva do CEIA desde 2022</li>
-        <li>Professora do INF/UFG há mais de 13 anos</li>
-        <li>Doutora em Ciências de Computação e Matemática Computacional pela USP</li>
-        <li>Ordem do Mérito Anhanguera, 2026</li>
-        <li>IT Forum Mulheres, 2026</li>
+        <li class="anim"><small>Cargo</small><b>Diretora executiva do CEIA</b><span>desde 2022; cofundadora em 2019</span></li>
+        <li class="anim" data-delay="1"><small>Docência</small><b>Professora do INF/UFG</b><span>há mais de 13 anos</span></li>
+        <li class="anim" data-delay="2"><small>Formação</small><b>Doutora pela USP</b><span>Ciências de Computação e Matemática Computacional</span></li>
+        <li class="anim" data-delay="3"><small>Honraria</small><b>Ordem do Mérito Anhanguera</b><span>Governo de Goiás, 2026</span></li>
+        <li class="anim" data-delay="4"><small>Reconhecimento</small><b>IT Forum Mulheres 2026</b><span>35 profissionais de tecnologia no país</span></li>
       </ul>
+    </div>
+  </div>
+
+  <div class="parceiros" aria-label="Instituições e empresas parceiras">
+    <p class="rotulo">Projetos, programas e parcerias</p>
+    <div class="marquee">
+      <ul><li>Embrapii</li><li>NVIDIA AI Nations</li><li>Google · GAIA</li><li>AI for Good · ONU</li><li>iFood</li><li>Copel Distribuição</li><li>Bancorbrás</li><li>Acordo Certo</li><li>Governo de Goiás</li><li>UFG</li></ul>
+      <ul aria-hidden="true"><li>Embrapii</li><li>NVIDIA AI Nations</li><li>Google · GAIA</li><li>AI for Good · ONU</li><li>iFood</li><li>Copel Distribuição</li><li>Bancorbrás</li><li>Acordo Certo</li><li>Governo de Goiás</li><li>UFG</li></ul>
     </div>
   </div>
 
   <section class="destaques" id="destaques" aria-labelledby="destaques-titulo">
     <div class="wrap">
-      <div class="cabeca-linha">
+      <div class="cabeca-linha anim">
         <div>
           <span class="olho">Destaques recentes</span>
           <h2 id="destaques-titulo">O que está acontecendo agora</h2>
@@ -418,7 +570,7 @@ footer p{margin-bottom:10px}
         <a class="link" href="#imprensa">Ver todas as participações</a>
       </div>
       <div class="grade-destaques">
-        <article class="destaque-card">
+        <article class="destaque-card anim" data-delay="1">
           <a href="https://itforum.com.br/it-forum-mulheres-2026-conheca-as-profissionais-reconhecidas-nesta-edicao/" target="_blank" rel="noopener">
             <div class="img forma"><img src="img/estudio-1921.jpg" alt="Telma Soares sorri, com a mão apoiada no queixo, em retrato de estúdio" loading="lazy" style="object-position:50% 25%" width="1067" height="1600"></div>
             <span class="meta"><b>Reconhecimento</b> IT Forum, outubro de 2026</span>
@@ -427,7 +579,7 @@ footer p{margin-bottom:10px}
             <span class="ir">Ver a lista no IT Forum</span>
           </a>
         </article>
-        <article class="destaque-card">
+        <article class="destaque-card anim" data-delay="2">
           <a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
             <div class="img forma"><img src="img/foto-evento-5.jpg" alt="Telma Soares fala ao microfone no palco, em pé, com telão do CEIA ao fundo" loading="lazy" style="object-position:30% 40%" width="1600" height="1067"></div>
             <span class="meta"><b>Entrevista</b> Exame, setembro de 2026</span>
@@ -436,9 +588,9 @@ footer p{margin-bottom:10px}
             <span class="ir">Ler na Exame</span>
           </a>
         </article>
-        <article class="destaque-card">
+        <article class="destaque-card anim" data-delay="3">
           <a href="https://www.jornalopcao.com.br/ultimas-noticias/diretores-do-ceia-da-ufg-recebem-ordem-do-merito-anhanguera-apos-transformar-goias-em-polo-nacional-de-inteligencia-artificial-849704/" target="_blank" rel="noopener">
-            <div class="img forma"><img src="img/estudio-1912.jpg" alt="Telma Soares sorri, sentada, em retrato de estúdio" loading="lazy" style="object-position:50% 20%" width="1067" height="1600"></div>
+            <div class="img forma"><img src="img/foto-discurso.jpg" alt="Telma Soares discursa ao microfone, com as bandeiras do Brasil e de Goiás ao fundo" loading="lazy" style="object-position:50% 20%" width="938" height="1280"></div>
             <span class="meta"><b>Reconhecimento</b> Governo de Goiás, julho de 2026</span>
             <h3>Ordem do Mérito Anhanguera, ao lado de Anderson Soares</h3>
             <p>A maior honraria do Estado de Goiás. Um reconhecimento que pertence a cada pesquisador, estudante, parceiro e gestor público que apostou no CEIA.</p>
@@ -449,21 +601,81 @@ footer p{margin-bottom:10px}
     </div>
   </section>
 
+  <section class="reconhecimentos" id="reconhecimentos">
+    <div class="wrap">
+      <span class="olho anim">Reconhecimentos</span>
+      <h2 class="anim" data-delay="1">Prêmios e honrarias que validam o caminho</h2>
+      <p class="lead anim" data-delay="2">Avaliações feitas por quem contratou, por quem governa e por quem acompanha o setor de tecnologia no país.</p>
+      <div class="grade-premios">
+        <article class="premio grande anim">
+          <span class="fundo">1º</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 9.5 7.2 4 8l4 3.9-.9 5.6L12 14.8l4.9 2.7-.9-5.6 4-3.9-5.5-.8L12 2Zm-4 16v4l4-1.5 4 1.5v-4l-4 1.4-4-1.4Z"/></svg></span>
+          <span class="ano">Embrapii · 2022</span>
+          <h3>1º lugar no Prêmio Embrapii entre 85 unidades</h3>
+          <p>Ranking definido pela avaliação das próprias empresas que contrataram projetos de PD&amp;I. É a nota de quem pagou, usou e mediu o resultado.</p>
+          <span class="quem">CEIA, sob a direção executiva de Telma Soares</span>
+        </article>
+        <article class="premio anim" data-delay="1">
+          <span class="fundo">3×</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 21h6v-2H9v2Zm3-19a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2Zm1 10.9V15h-2v-2.1A4.98 4.98 0 0 1 7 9a5 5 0 0 1 10 0 4.98 4.98 0 0 1-3 3.9Z"/></svg></span>
+          <span class="ano">Embrapii · 2022, 2023 e 2024</span>
+          <h3>Projeto mais inovador, três anos seguidos</h3>
+          <p>Os projetos de 2022 e 2023 foram coordenados por Telma com Anderson Soares.</p>
+        </article>
+        <article class="premio anim" data-delay="2">
+          <span class="fundo">GO</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.4 9.6 8 10.8 4.6-1.2 8-5.8 8-10.8V6l-8-4Zm-1 14-3.5-3.5 1.4-1.4L11 13.2l5.1-5.1 1.4 1.4L11 16Z"/></svg></span>
+          <span class="ano">Governo de Goiás · 2026</span>
+          <h3>Ordem do Mérito Anhanguera</h3>
+          <p>A maior honraria do Estado, concedida ao lado de Anderson Soares pela transformação de Goiás em polo nacional de IA. <a class="link" href="https://www.jornalopcao.com.br/ultimas-noticias/diretores-do-ceia-da-ufg-recebem-ordem-do-merito-anhanguera-apos-transformar-goias-em-polo-nacional-de-inteligencia-artificial-849704/" target="_blank" rel="noopener">Ler a notícia</a></p>
+        </article>
+        <article class="premio anim" data-delay="3">
+          <span class="fundo">35</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-3.3 0-8 1.7-8 5v1h16v-1c0-3.3-4.7-5-8-5Z"/></svg></span>
+          <span class="ano">IT Forum · 2026</span>
+          <h3>IT Forum Mulheres 2026</h3>
+          <p>Entre as 35 profissionais reconhecidas em tecnologia no Brasil por impacto, inovação, liderança e contribuição para diversidade. <a class="link" href="https://itforum.com.br/it-forum-mulheres-2026-conheca-as-profissionais-reconhecidas-nesta-edicao/" target="_blank" rel="noopener">Ver a lista</a></p>
+        </article>
+        <article class="premio anim" data-delay="4">
+          <span class="fundo">1ª</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-3a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h3a15.7 15.7 0 0 0 1.4 3.6A8 8 0 0 1 5.1 16Zm3-8h-3a8 8 0 0 1 4.4-3.6A15.7 15.7 0 0 0 8.1 8ZM12 20c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.2 5.6a15.7 15.7 0 0 0 1.4-3.6h3a8 8 0 0 1-4.4 3.6Zm1.8-5.6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4Z"/></svg></span>
+          <span class="ano">ONU · 2026</span>
+          <h3>Primeira instituição latino-americana no AI for Good</h3>
+          <p>Os materiais de formação do CEIA entraram na plataforma global da ONU. <a class="link" href="https://www.jornalopcao.com.br/educacao/ufg-leva-cursos-de-inteligencia-artificial-para-plataforma-global-da-onu-834755/" target="_blank" rel="noopener">Ler sobre o programa</a></p>
+        </article>
+        <article class="premio anim" data-delay="5">
+          <span class="fundo">AI</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4V4Zm2 2v8h12V6H6Zm-2 12h16v2H4v-2Z"/></svg></span>
+          <span class="ano">NVIDIA · 2024</span>
+          <h3>Programa NVIDIA AI Nations</h3>
+          <p>O AKCIT, centro de competência associado ao CEIA, foi o primeiro grupo de pesquisa da América Latina reconhecido pelo programa.</p>
+        </article>
+        <article class="premio anim" data-delay="5">
+          <span class="fundo">2020</span>
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 9.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.1l-7 3.8-7-3.8Z"/></svg></span>
+          <span class="ano">UFG · 2020</span>
+          <h3>Primeiro Bacharelado em IA do Brasil</h3>
+          <p>Curso pioneiro, nascido de projetos de PD&amp;I com empresas, que hoje recebe alunos de todo o país.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="frentes" id="frentes">
     <div class="wrap">
-      <span class="olho">Frentes que lidero</span>
-      <h2>Três frentes, um mesmo objetivo: IA feita no Brasil que chega às empresas</h2>
-      <p class="lead">Cada frente tem um resultado que dá para medir. Nenhuma delas é trabalho de uma pessoa só.</p>
+      <span class="olho anim">Frentes que lidero</span>
+      <h2 class="anim" data-delay="1">Três frentes, um mesmo objetivo: IA feita no Brasil que chega às empresas</h2>
+      <p class="lead anim" data-delay="2">Cada frente tem um resultado que dá para medir. Nenhuma delas é trabalho de uma pessoa só.</p>
       <div class="grade-frentes">
-        <article class="frente">
+        <article class="frente anim" data-delay="1">
           <span class="frente-num">01</span>
           <span class="tag">Centro de PD&amp;I</span>
           <h3>CEIA, Centro de Excelência em Inteligência Artificial</h3>
           <p class="metrica"><strong>+150</strong> projetos de PD&amp;I executados com empresas</p>
           <p>Cofundei o CEIA em 2019 e sou diretora executiva desde 2022. Como Unidade Embrapii, o centro divide com a empresa o investimento em pesquisa. Em 2022, ficamos em 1º lugar no Prêmio Embrapii entre 85 unidades, pela avaliação das próprias empresas contratantes.</p>
-          <a class="link-cta" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Falo%20em%20nome%20de%20uma%20empresa%20e%20quero%20avaliar%20um%20projeto%20de%20PD%26I%20em%20intelig%C3%AAncia%20artificial%20com%20o%20CEIA." target="_blank" rel="noopener">Apresentar uma demanda</a>
+          <a class="link-cta" href="#contato">Apresentar uma demanda</a>
         </article>
-        <article class="frente">
+        <article class="frente anim" data-delay="2">
           <span class="frente-num">02</span>
           <span class="tag">Parcerias globais</span>
           <h3>Ecossistema com big techs e organismos internacionais</h3>
@@ -471,7 +683,7 @@ footer p{margin-bottom:10px}
           <p>O CEIA faz parte do programa NVIDIA AI Nations. Pesquisadores do centro lançaram com o Google o GAIA, modelo aberto em português do Brasil. Em 2026, os materiais de formação do CEIA entraram na plataforma AI for Good.</p>
           <a class="link-cta" href="https://www.jornalopcao.com.br/educacao/ufg-leva-cursos-de-inteligencia-artificial-para-plataforma-global-da-onu-834755/" target="_blank" rel="noopener">Ler sobre o AI for Good</a>
         </article>
-        <article class="frente">
+        <article class="frente anim" data-delay="3">
           <span class="frente-num">03</span>
           <span class="tag">Talentos</span>
           <h3>Bacharelado em IA e Olimpíada de IA Aplicada</h3>
@@ -483,20 +695,20 @@ footer p{margin-bottom:10px}
     </div>
   </section>
 
-  <section class="numeros" id="numeros">
+  <section class="numeros vivo" id="numeros">
     <div class="wrap">
-      <span class="olho">Em números</span>
-      <h2>O que já foi construído</h2>
-      <p class="lead">Resultado de muitas mãos: pesquisadores, estudantes, empresas parceiras e gestores públicos que apostaram em inteligência artificial feita em Goiás.</p>
+      <span class="olho anim">Em números</span>
+      <h2 class="anim" data-delay="1">O que já foi construído</h2>
+      <p class="lead anim" data-delay="2">Resultado de muitas mãos: pesquisadores, estudantes, empresas parceiras e gestores públicos que apostaram em inteligência artificial feita em Goiás.</p>
       <div class="grade-num">
-        <div class="num"><strong>+150</strong><span>projetos de PD&amp;I executados pelo CEIA</span></div>
-        <div class="num"><strong>+R$ 500 mi</strong><span>captados nos últimos 5 anos em parcerias de pesquisa, desenvolvimento e inovação</span></div>
-        <div class="num"><strong>+1.000</strong><span>pesquisadores envolvidos nas iniciativas do CEIA</span></div>
-        <div class="num"><strong>+150 mi</strong><span>de brasileiros atendidos por meio dos parceiros do CEIA</span></div>
-        <div class="num"><strong>+15</strong><span>projetos de PD&amp;I coordenados diretamente por mim, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood</span></div>
-        <div class="num"><strong>+20 anos</strong><span>de trabalho com inovação, tecnologia e inteligência artificial</span></div>
-        <div class="num"><strong>2020</strong><span>primeira turma do Bacharelado em Inteligência Artificial do Brasil, na UFG</span></div>
-        <div class="num"><strong>3 anos seguidos</strong><span>com o Prêmio Embrapii de projeto mais inovador, de 2022 a 2024</span></div>
+        <div class="num anim"><strong><span data-conta="150" data-prefixo="+">+150</span></strong><span>projetos de PD&amp;I executados pelo CEIA</span></div>
+        <div class="num anim" data-delay="1"><strong><span data-conta="500" data-prefixo="+R$ " data-sufixo=" mi">+R$ 500 mi</span></strong><span>captados nos últimos 5 anos em parcerias de pesquisa, desenvolvimento e inovação</span></div>
+        <div class="num anim" data-delay="2"><strong><span data-conta="1000" data-prefixo="+">+1.000</span></strong><span>pesquisadores envolvidos nas iniciativas do CEIA</span></div>
+        <div class="num anim" data-delay="3"><strong><span data-conta="150" data-prefixo="+" data-sufixo=" mi">+150 mi</span></strong><span>de brasileiros atendidos por meio dos parceiros do CEIA</span></div>
+        <div class="num anim"><strong><span data-conta="15" data-prefixo="+">+15</span></strong><span>projetos de PD&amp;I coordenados diretamente por mim, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood</span></div>
+        <div class="num anim" data-delay="1"><strong><span data-conta="20" data-prefixo="+" data-sufixo=" anos">+20 anos</span></strong><span>de trabalho com inovação, tecnologia e inteligência artificial</span></div>
+        <div class="num anim" data-delay="2"><strong>2020</strong><span>primeira turma do Bacharelado em Inteligência Artificial do Brasil, na UFG</span></div>
+        <div class="num anim" data-delay="3"><strong>3 anos seguidos</strong><span>com o Prêmio Embrapii de projeto mais inovador, de 2022 a 2024</span></div>
       </div>
       <p class="nota">Números atualizados em outubro de 2026 com base nas informações institucionais do CEIA.</p>
     </div>
@@ -504,27 +716,32 @@ footer p{margin-bottom:10px}
 
   <section class="destaque" id="aplicada">
     <div class="wrap">
-      <div class="foto forma-alt">
-        <img src="img/estudio-1936.jpg" alt="Telma Soares de blazer preto, sorrindo, em retrato de estúdio" loading="lazy" width="1067" height="1600" style="object-position:50% 25%">
-      </div>
+      <figure class="foto forma-alt anim">
+        <img src="img/foto-laboratorio.jpg" alt="Telma Soares acompanha o trabalho de estudantes no laboratório do CEIA" loading="lazy" width="1600" height="1066">
+        <figcaption>Laboratório do CEIA, no Instituto de Informática da UFG</figcaption>
+      </figure>
       <div>
-        <span class="olho">IA que sai do laboratório</span>
-        <h2>Quatro ideias sobre o CEIA que vale corrigir</h2>
-        <p class="lead">Quem chega até nós costuma trazer uma destas impressões. Os fatos ajudam a ajustar a conversa logo no início.</p>
+        <span class="olho anim">IA que sai do laboratório</span>
+        <h2 class="anim" data-delay="1">Quatro ideias sobre o CEIA que vale corrigir</h2>
+        <p class="lead anim" data-delay="2">Quem chega até nós costuma trazer uma destas impressões. Os fatos ajudam a ajustar a conversa logo no início.</p>
         <div class="objecoes">
-          <div class="objecao">
+          <div class="objecao anim" data-delay="1">
+            <span class="rotulos"><span class="mito">O que dizem</span></span>
             <h3>"O CEIA é só academia."</h3>
             <p>São mais de 150 projetos de PD&amp;I executados com empresas e mais de R$ 500 milhões captados em cinco anos, boa parte com a iniciativa privada. Aplicação prática é o dia a dia do centro.</p>
           </div>
-          <div class="objecao">
+          <div class="objecao anim" data-delay="2">
+            <span class="rotulos"><span class="mito">O que dizem</span></span>
             <h3>"O CEIA só presta serviço, não faz pesquisa."</h3>
             <p>Os projetos aplicados se sustentam em pesquisa de fato: meta-learning, aprendizado por reforço e otimização multiobjetivo com meta-heurísticas. Foi essa base que deu origem ao Bacharelado em IA.</p>
           </div>
-          <div class="objecao">
+          <div class="objecao anim" data-delay="3">
+            <span class="rotulos"><span class="mito">O que dizem</span></span>
             <h3>"A empresa paga a conta inteira."</h3>
             <p>Não. O CEIA entra como coinvestidor nos projetos de PD&amp;I que desenvolve, por meio do modelo Embrapii. Risco e investimento são compartilhados com a empresa parceira.</p>
           </div>
-          <div class="objecao">
+          <div class="objecao anim" data-delay="4">
+            <span class="rotulos"><span class="mito">O que dizem</span></span>
             <h3>"Universidade pública é lenta."</h3>
             <p>O primeiro contato chega direto a mim, e o encaminhamento para a equipe de PD&amp;I acontece a partir dessa conversa, sem intermediários.</p>
           </div>
@@ -535,28 +752,44 @@ footer p{margin-bottom:10px}
 
   <section class="sobre" id="sobre">
     <div class="wrap">
-      <div class="foto forma">
-        <img src="img/foto-perfil.jpg" alt="Retrato de Telma Soares em estúdio" loading="lazy" width="1067" height="1600">
+      <div class="coluna-foto">
+        <div class="foto forma anim">
+          <img src="img/foto-perfil.jpg" alt="Retrato de Telma Soares em estúdio" loading="lazy" width="1067" height="1600">
+        </div>
+        <aside class="ficha anim" data-delay="1" aria-label="Currículo em síntese">
+          <h3>Currículo em síntese</h3>
+          <dl>
+            <div><dt>Formação</dt><dd>Doutora em Ciências de Computação e Matemática Computacional pela USP.</dd></div>
+            <div><dt>Cargos atuais</dt><dd>Diretora executiva do CEIA (desde 2022). Professora do Instituto de Informática da UFG (há mais de 13 anos).</dd></div>
+            <div><dt>Gestão acadêmica</dt><dd>Coordenadora dos Programas de Pós-Graduação Stricto Sensu do INF/UFG em três períodos (2010–2011, 2015–2019 e 2019–2021). No segundo, liderou a criação do Doutorado próprio do instituto.</dd></div>
+            <div><dt>Programas que lidera</dt><dd>Olimpíada de Inteligência Artificial Aplicada. Idealizadora do IA nas Escolas. Coordenou a Olimpíada Brasileira de Robótica em Goiás (2016–2022).</dd></div>
+            <div><dt>Projetos com empresas</dt><dd>Mais de 15 projetos de PD&amp;I coordenados diretamente, com Acordo Certo, Bancorbrás, Copel Distribuição e iFood, entre outras.</dd></div>
+            <div><dt>Linhas de pesquisa</dt><dd>Meta-learning, aprendizado por reforço, otimização multiobjetivo e meta-heurísticas.</dd></div>
+          </dl>
+          <div class="cv-links">
+            <a class="chip" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">Currículo Lattes completo</a>
+            <a class="chip" href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </aside>
       </div>
       <div>
-        <span class="olho">Trajetória</span>
-        <h2>De projetos com empresas a um centro de referência em IA</h2>
-        <p class="texto-largo">Há mais de 20 anos trabalho com inovação, tecnologia e inteligência artificial. Sou doutora em Ciências de Computação e Matemática Computacional pela USP e, há mais de 13 anos, professora do Instituto de Informática da UFG. Hoje dirijo o <a class="link" href="https://ceia.ufg.br/" target="_blank" rel="noopener">CEIA</a>, que fundei com Anderson Soares em 2019 no campus Samambaia, em Goiânia.</p>
-        <p class="texto-largo">O CEIA começou com projetos de PD&amp;I com a iniciativa privada, nos quais fui pesquisadora principal. Já coordenei diretamente mais de 15 projetos, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood. Hoje o centro reúne mais de 1.000 pesquisadores e atende, por meio dos parceiros, mais de 150 milhões de brasileiros.</p>
-        <ul class="temas" aria-label="Temas de pesquisa">
+        <span class="olho anim">Trajetória</span>
+        <h2 class="anim" data-delay="1">De projetos com empresas a um centro de referência em IA</h2>
+        <p class="texto-largo anim" data-delay="2">Há mais de 20 anos trabalho com inovação, tecnologia e inteligência artificial. Sou doutora em Ciências de Computação e Matemática Computacional pela USP e, há mais de 13 anos, professora do Instituto de Informática da UFG. Hoje dirijo o <a class="link" href="https://ceia.ufg.br/" target="_blank" rel="noopener">CEIA</a>, que fundei com Anderson Soares em 2019 no campus Samambaia, em Goiânia.</p>
+        <p class="texto-largo anim" data-delay="3">O CEIA começou com projetos de PD&amp;I com a iniciativa privada, nos quais fui pesquisadora principal. Já coordenei diretamente mais de 15 projetos, com empresas como Acordo Certo, Bancorbrás, Copel Distribuição e iFood. Hoje o centro reúne mais de 1.000 pesquisadores e atende, por meio dos parceiros, mais de 150 milhões de brasileiros.</p>
+        <ul class="temas anim" data-delay="3" aria-label="Temas de pesquisa">
           <li>Meta-learning</li><li>Aprendizado por reforço</li><li>Otimização multiobjetivo</li><li>Meta-heurísticas</li>
         </ul>
-        <ul class="linha-tempo">
-          <li><b>2019</b><span>Projetos de PD&amp;I com a iniciativa privada viram um centro. Fundamos o CEIA no Instituto de Informática da UFG.</span></li>
-          <li><b>2020</b><span>O CEIA se torna Unidade Embrapii: empresas passam a dividir com o centro o investimento em pesquisa. No mesmo ano, começa o Bacharelado em IA, que forma a equipe dos projetos.</span></li>
-          <li><b>2022</b><span>Assumo a direção executiva. No mesmo ano, o CEIA fica em 1º lugar no Prêmio Embrapii, entre 85 unidades, pela avaliação das próprias empresas contratantes.</span></li>
-          <li><b>2022 a 2024</b><span>Três anos seguidos com o Prêmio Embrapii de projeto mais inovador. Os de 2022 e 2023 coordenei com Anderson Soares.</span></li>
-          <li><b>2024</b><span>Parceria com a NVIDIA no programa AI Nations. O AKCIT, centro de competência associado ao CEIA, é o primeiro grupo de pesquisa da América Latina reconhecido pelo programa.</span></li>
-          <li><b>2025</b><span>Pesquisadores do CEIA lançam com o Google o GAIA, modelo aberto em português do Brasil.</span></li>
-          <li><b>2026</b><span>Lançamos a pedra fundamental da sede própria do CEIA. No mesmo ano, o centro se torna a primeira instituição latino-americana no programa AI for Good da ONU.</span></li>
-          <li><b>2026</b><span>Ordem do Mérito Anhanguera, concedida pelo Governo de Goiás, ao lado de Anderson Soares. Em outubro, entro na lista IT Forum Mulheres, com 35 profissionais reconhecidas em tecnologia no país.</span></li>
+        <ul class="linha-tempo" id="linha-tempo">
+          <li class="anim"><b>2019</b><span>Projetos de PD&amp;I com a iniciativa privada viram um centro. Fundamos o CEIA no Instituto de Informática da UFG.</span></li>
+          <li class="anim"><b>2020</b><span>O CEIA se torna Unidade Embrapii: empresas passam a dividir com o centro o investimento em pesquisa. No mesmo ano, começa o Bacharelado em IA, que forma a equipe dos projetos.</span></li>
+          <li class="anim"><b>2022</b><span>Assumo a direção executiva. No mesmo ano, o CEIA fica em 1º lugar no Prêmio Embrapii, entre 85 unidades, pela avaliação das próprias empresas contratantes.</span></li>
+          <li class="anim"><b>2022 a 2024</b><span>Três anos seguidos com o Prêmio Embrapii de projeto mais inovador. Os de 2022 e 2023 coordenei com Anderson Soares.</span></li>
+          <li class="anim"><b>2024</b><span>Parceria com a NVIDIA no programa AI Nations. O AKCIT, centro de competência associado ao CEIA, é o primeiro grupo de pesquisa da América Latina reconhecido pelo programa.</span></li>
+          <li class="anim"><b>2025</b><span>Pesquisadores do CEIA lançam com o Google o GAIA, modelo aberto em português do Brasil.</span></li>
+          <li class="anim"><b>2026 · Sede e ONU</b><span>Lançamos a pedra fundamental da sede própria do CEIA. No mesmo ano, o centro se torna a primeira instituição latino-americana no programa AI for Good da ONU.</span></li>
+          <li class="anim"><b>2026 · Honrarias</b><span>Ordem do Mérito Anhanguera, concedida pelo Governo de Goiás, ao lado de Anderson Soares. Em outubro, entro na lista IT Forum Mulheres, com 35 profissionais reconhecidas em tecnologia no país.</span></li>
         </ul>
-        <p style="margin-top:8px">Produção acadêmica completa no <a class="link" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">Currículo Lattes</a>. Atualizações sobre o CEIA e inteligência artificial no meu <a class="link" href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">LinkedIn</a>.</p>
       </div>
     </div>
   </section>
@@ -564,16 +797,16 @@ footer p{margin-bottom:10px}
   <section class="formacao" id="formacao">
     <div class="wrap">
       <div>
-        <span class="olho">Talento é o produto</span>
-        <h2>Formar quem vai construir a IA do país</h2>
-        <p class="lead">Investir em bolsas é investir em pessoas. Por isso o CEIA paga bolsa a estudantes desde a graduação, dentro de projetos reais com empresas, e já trouxe de volta mais de 15 pesquisadores que trabalhavam fora do Brasil.</p>
+        <span class="olho anim">Talento é o produto</span>
+        <h2 class="anim" data-delay="1">Formar quem vai construir a IA do país</h2>
+        <p class="lead anim" data-delay="2">Investir em bolsas é investir em pessoas. Por isso o CEIA paga bolsa a estudantes desde a graduação, dentro de projetos reais com empresas, e já trouxe de volta mais de 15 pesquisadores que trabalhavam fora do Brasil.</p>
         <ul class="pontos">
-          <li><strong>1º</strong><span>Bacharelado em Inteligência Artificial do Brasil, criado na UFG em 2020. Hoje, o curso tem alunos de estados como Bahia, Rio Grande do Sul, Roraima e Acre.</span></li>
-          <li><strong>3</strong><span>séries de e-books gratuitos do <a class="link-claro" href="https://ianasescolas.com.br/" target="_blank" rel="noopener">IA nas Escolas</a>, programa que idealizei e que o CEIA lançou em 2025: material de IA alinhado à BNCC para professores e estudantes do fundamental I e II e do ensino médio, com formação gratuita para professores.</span></li>
-          <li><strong>9º</strong><span>ano em diante: sou responsável pela Olimpíada de Inteligência Artificial Aplicada e coordenei a Olimpíada Brasileira de Robótica em Goiás de 2016 a 2022.</span></li>
+          <li class="anim" data-delay="1"><strong>1º</strong><span>Bacharelado em Inteligência Artificial do Brasil, criado na UFG em 2020. Hoje, o curso tem alunos de estados como Bahia, Rio Grande do Sul, Roraima e Acre.</span></li>
+          <li class="anim" data-delay="2"><strong>3</strong><span>séries de e-books gratuitos do <a class="link-claro" href="https://ianasescolas.com.br/" target="_blank" rel="noopener">IA nas Escolas</a>, programa que idealizei e que o CEIA lançou em 2025: material de IA alinhado à BNCC para professores e estudantes do fundamental I e II e do ensino médio, com formação gratuita para professores.</span></li>
+          <li class="anim" data-delay="3"><strong>9º</strong><span>ano em diante: sou responsável pela Olimpíada de Inteligência Artificial Aplicada e coordenei a Olimpíada Brasileira de Robótica em Goiás de 2016 a 2022.</span></li>
         </ul>
       </div>
-      <div class="mosaico-form">
+      <div class="mosaico-form anim" data-delay="2">
         <figure class="forma"><img src="img/foto-original-239.jpg" alt="Telma Soares orienta um estudante em laboratório de computadores do INF/UFG" loading="lazy" width="1067" height="1600"></figure>
         <figure class="forma-alt"><img src="img/foto-original-225.jpg" alt="Telma Soares em aula para turma de estudantes, com apresentação do CEIA ao fundo" loading="lazy" width="1600" height="1067"></figure>
         <figure class="forma"><img src="img/foto-original-221.jpg" alt="Telma Soares trabalha no notebook vestindo a camisa do CEIA e do INF" loading="lazy" style="object-position:60% 35%" width="1067" height="1600"></figure>
@@ -585,90 +818,159 @@ footer p{margin-bottom:10px}
     <div class="wrap">
       <div class="cabeca">
         <div>
-          <span class="olho">Na imprensa</span>
-          <h2>O que tenho dito sobre IA no Brasil</h2>
-          <p class="lead">Entrevistas e reportagens em que falei sobre infraestrutura, dado em português, formação de talentos e projetos aplicados. Os links levam ao conteúdo original de cada veículo.</p>
-          <div class="citacao-grande">
+          <span class="olho anim">Na imprensa</span>
+          <h2 class="anim" data-delay="1">O que tenho dito sobre IA no Brasil</h2>
+          <p class="lead anim" data-delay="2">Entrevistas e reportagens em que falei sobre infraestrutura, dado em português, formação de talentos e projetos aplicados. Os links levam ao conteúdo original de cada veículo.</p>
+          <div class="citacao-grande anim" data-delay="3">
             <blockquote>Você faz a sua inteligência própria, você resolve um problema regional, um problema do país.</blockquote>
             <cite>Exame, outubro de 2026</cite>
           </div>
         </div>
-        <div class="foto-imprensa forma">
-          <img src="img/estudio-1951.jpg" alt="Telma Soares de blazer preto e braços cruzados, em retrato de estúdio" loading="lazy" width="1067" height="1600" style="object-position:50% 30%">
+        <div class="foto-imprensa forma anim" data-delay="2">
+          <img src="img/foto-palestra.jpg" alt="Telma Soares fala ao microfone em painel no palco da Rio Innovation Week" loading="lazy" width="1600" height="1066">
         </div>
       </div>
 
-      <ul class="lista-imprensa">
-        <li><a href="https://exame.com/inteligencia-artificial/por-que-a-ia-no-brasil-pode-dar-certo-mesmo-sem-um-concorrente-do-chatgpt/" target="_blank" rel="noopener">
+      <div class="filtros anim" role="group" aria-label="Filtrar por tipo">
+        <button type="button" data-filtro="todos" aria-pressed="true">Todas</button>
+        <button type="button" data-filtro="entrevista" aria-pressed="false">Entrevistas</button>
+        <button type="button" data-filtro="reportagem" aria-pressed="false">Reportagens</button>
+        <button type="button" data-filtro="perfil" aria-pressed="false">Perfil</button>
+      </div>
+
+      <ul class="lista-imprensa" id="lista-imprensa">
+        <li data-tipo="reportagem"><a href="https://exame.com/inteligencia-artificial/por-que-a-ia-no-brasil-pode-dar-certo-mesmo-sem-um-concorrente-do-chatgpt/" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">Exame</span><span>1 de outubro de 2026</span><span class="tipo">Reportagem</span></span>
           <h3>Por que a IA no Brasil pode dar certo mesmo sem um concorrente do ChatGPT</h3>
           <p><q>Existem outros tipos de IAs brasileiras que a gente poderia desenvolver.</q></p>
         </a></li>
-        <li><a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
+        <li data-tipo="entrevista"><a href="https://exame.com/inteligencia-artificial/frear-ritmo-da-ia-pode-consolidar-quem-ja-esta-na-frente-diz-diretora-do-ceia/" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">Exame</span><span>14 de setembro de 2026</span><span class="tipo">Entrevista</span></span>
           <h3>Frear ritmo da IA pode consolidar quem já está na frente, diz diretora do CEIA</h3>
           <p><q>Eu teria muito cuidado em transformar superinteligência em uma categoria técnica ou jurídica neste momento.</q></p>
         </a></li>
-        <li><a href="https://www.correiobraziliense.com.br/brasil/2026/08/7490336-ufg-amplia-aposta-em-inteligencia-artificial.html" target="_blank" rel="noopener">
+        <li data-tipo="reportagem"><a href="https://www.correiobraziliense.com.br/brasil/2026/08/7490336-ufg-amplia-aposta-em-inteligencia-artificial.html" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">Correio Braziliense</span><span>31 de agosto de 2026</span><span class="tipo">Reportagem</span></span>
           <h3>UFG amplia aposta em inteligência artificial</h3>
           <p>Sobre o convênio do CEIA com o Governo de Goiás e o lugar do Brasil na cadeia da IA. <q>Se analisarmos historicamente, o Brasil cresceu muito como fornecedor de commodities.</q></p>
         </a></li>
-        <li><a href="https://exame.com/inteligencia-artificial/brasil-esta-atras-na-corrida-por-uma-ia-propria-diz-diretora-do-ceia/" target="_blank" rel="noopener">
+        <li data-tipo="entrevista"><a href="https://exame.com/inteligencia-artificial/brasil-esta-atras-na-corrida-por-uma-ia-propria-diz-diretora-do-ceia/" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">Exame</span><span>14 de julho de 2026</span><span class="tipo">Entrevista</span></span>
           <h3>Brasil está atrás na corrida por uma IA própria, diz diretora do CEIA</h3>
           <p>Faltam infraestrutura e dado público em português, mas há espaço para IA soberana em nichos como saúde e biodiversidade, onde o dado é brasileiro.</p>
         </a></li>
-        <li><a href="https://exame.com/inteligencia-artificial/por-que-um-centro-de-ia-em-goias-compra-tantos-chips-da-nvidia/" target="_blank" rel="noopener">
+        <li data-tipo="entrevista"><a href="https://exame.com/inteligencia-artificial/por-que-um-centro-de-ia-em-goias-compra-tantos-chips-da-nvidia/" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">Exame</span><span>14 de julho de 2026</span><span class="tipo">Entrevista</span></span>
           <h3>Por que um centro de IA em Goiás compra tantos chips da Nvidia</h3>
           <p><q>Toda vez que chega um novo equipamento, existe uma curva de aprendizado para adaptar as IAs a essas novas arquiteturas.</q></p>
         </a></li>
-        <li><a href="https://opopular.com.br/economia/o-cerebro-que-comanda-o-centro-de-ia-da-ufg-1.3116875" target="_blank" rel="noopener">
+        <li data-tipo="perfil"><a href="https://opopular.com.br/economia/o-cerebro-que-comanda-o-centro-de-ia-da-ufg-1.3116875" target="_blank" rel="noopener">
           <span class="meta"><span class="veiculo">O Popular</span><span class="tipo">Perfil</span></span>
           <h3>O cérebro que comanda o centro de IA da UFG</h3>
           <p>Perfil sobre a criação do primeiro Bacharelado em IA do Brasil e a liderança de uma mulher em uma área com predominância masculina.</p>
         </a></li>
       </ul>
 
-      <div class="rodape-imprensa">
-        <p>Jornalistas: temas em que posso contribuir incluem infraestrutura de IA no Brasil, dado em português, soberania com foco em nichos, formação de talentos e projetos de PD&amp;I com empresas.</p>
-        <a class="btn azul" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Sou%20jornalista%20e%20gostaria%20de%20agendar%20uma%20entrevista%20sobre%20intelig%C3%AAncia%20artificial." target="_blank" rel="noopener">Propor uma pauta</a>
+      <div class="rodape-imprensa anim">
+        <div>
+          <p>Jornalistas: temas em que posso contribuir.</p>
+          <ul class="temas-imprensa temas" aria-label="Temas para a imprensa">
+            <li>Infraestrutura de IA no Brasil</li><li>Dado em português</li><li>Soberania com foco em nichos</li><li>Formação de talentos</li><li>PD&amp;I com empresas</li>
+          </ul>
+        </div>
+        <a class="btn" href="#contato">Propor uma pauta</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="redes-sec" id="redes">
+    <div class="wrap">
+      <span class="olho anim">Redes</span>
+      <h2 class="anim" data-delay="1">Acompanhe o que sai do laboratório, em tempo real</h2>
+      <p class="lead anim" data-delay="2">Atualizações sobre o CEIA, bastidores de projetos e opiniões sobre IA no Brasil. O LinkedIn é o canal principal.</p>
+      <div class="grade-redes">
+        <a class="rede anim" data-delay="1" href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg></span>
+          <span><b>LinkedIn</b><span>Análises e novidades do CEIA</span></span>
+          <span class="ir">Seguir</span>
+        </a>
+        <a class="rede ig anim" data-delay="2" href="https://www.instagram.com/" data-pendente="instagram" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></span>
+          <span><b>Instagram</b><span>Bastidores, eventos e laboratório</span></span>
+          <span class="ir">Seguir</span>
+        </a>
+        <a class="rede lt anim" data-delay="3" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">
+          <span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 9.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.1l-7 3.8-7-3.8Z"/></svg></span>
+          <span><b>Currículo Lattes</b><span>Produção acadêmica completa</span></span>
+          <span class="ir">Abrir</span>
+        </a>
+      </div>
+
+      <div class="feed-cabeca anim">
+        <div>
+          <h3>Últimas publicações no LinkedIn</h3>
+          <p>Atualizadas a partir do arquivo <code>posts.json</code> do site.</p>
+        </div>
+        <a class="link" href="https://www.linkedin.com/in/telma-soares/recent-activity/all/" target="_blank" rel="noopener">Ver todas no LinkedIn</a>
+      </div>
+      <div class="feed" id="feed-linkedin" aria-live="polite">
+        <p class="vazio">Carregando publicações…</p>
       </div>
     </div>
   </section>
 
   <section class="galeria" id="bastidores">
     <div class="wrap">
-      <span class="olho">Bastidores</span>
-      <h2>Do laboratório ao palco</h2>
-      <p class="lead">Palco, gestão pública e laboratório. O trabalho acontece nesses lugares, quase sempre com outras pessoas no enquadramento.</p>
-      <div class="mosaico">
-        <figure class="forma"><img src="img/foto-evento-4.jpg" alt="Telma Soares com os demais participantes do painel sobre IA para infraestrutura crítica, no palco da Rio Innovation Week" loading="lazy" width="1600" height="1067"><figcaption>Painel sobre IA para infraestrutura crítica, Rio Innovation Week 2026</figcaption></figure>
-        <figure class="forma"><img src="img/foto-grupo-2.jpg" alt="Telma Soares com gestores públicos no lançamento do convênio CEIA 2.0 com o Governo de Goiás" loading="lazy" width="1280" height="854"><figcaption>Lançamento do convênio CEIA 2.0 com o Governo de Goiás</figcaption></figure>
-        <figure class="forma"><img src="img/foto-robo.jpg" alt="Telma Soares sorri ao lado de robô humanoide do CEIA" loading="lazy" width="1600" height="1066"><figcaption>Robótica e IA no CEIA</figcaption></figure>
+      <span class="olho anim">Bastidores</span>
+      <h2 class="anim" data-delay="1">Do laboratório ao palco</h2>
+      <p class="lead anim" data-delay="2">Palco, gestão pública e laboratório. O trabalho acontece nesses lugares, quase sempre com outras pessoas no enquadramento.</p>
+      <div class="mosaico" id="mosaico">
+        <figure class="forma anim" data-delay="1"><img src="img/foto-evento-4.jpg" alt="Telma Soares com os demais participantes do painel sobre IA para infraestrutura crítica, no palco da Rio Innovation Week" loading="lazy" width="1600" height="1067"><figcaption>Painel sobre IA para infraestrutura crítica, Rio Innovation Week 2026</figcaption></figure>
+        <figure class="forma anim" data-delay="2"><img src="img/foto-grupo-2.jpg" alt="Telma Soares com gestores públicos no lançamento do convênio CEIA 2.0 com o Governo de Goiás" loading="lazy" width="1280" height="854"><figcaption>Lançamento do convênio CEIA 2.0 com o Governo de Goiás</figcaption></figure>
+        <figure class="forma anim" data-delay="3"><img src="img/foto-robo.jpg" alt="Telma Soares sorri ao lado de robô humanoide do CEIA" loading="lazy" width="1600" height="1066"><figcaption>Robótica e IA no CEIA</figcaption></figure>
+        <figure class="forma anim" data-delay="1"><img src="img/foto-evento-2.jpg" alt="Telma Soares fala ao microfone, sentada, em painel da Rio Innovation Week" loading="lazy" width="1067" height="1600" style="object-position:50% 30%"><figcaption>Painel na Rio Innovation Week 2026</figcaption></figure>
+        <figure class="forma anim" data-delay="2"><img src="img/foto-institucional.jpg" alt="Telma Soares discursa no lançamento do convênio CEIA 2.0, com as bandeiras do Brasil e de Goiás" loading="lazy" width="1067" height="1600" style="object-position:50% 25%"><figcaption>Discurso no lançamento do convênio CEIA 2.0</figcaption></figure>
+        <figure class="forma anim" data-delay="3"><img src="img/foto-evento-1.jpg" alt="Palco do painel sobre IA na Rio Innovation Week, com Telma Soares entre os participantes" loading="lazy" width="1600" height="1067"><figcaption>Rio Innovation Week 2026</figcaption></figure>
       </div>
     </div>
   </section>
 
-  <section class="cta" id="contato">
+  <section class="cta vivo" id="contato">
     <div class="wrap">
-      <div>
-        <span class="olho">Contato</span>
-        <h2>Me conte o que você procura</h2>
-        <p>A conversa começa no mesmo lugar para todo mundo. A partir da primeira mensagem, eu direciono para o time certo.</p>
-        <ul class="caminhos">
-          <li><span><b>Empresas:</b> equipe de PD&amp;I ou reunião direta comigo, conforme a demanda.</span></li>
-          <li><span><b>Pesquisadores:</b> banco de talentos do Portal CEIA e gestão de RH.</span></li>
-          <li><span><b>Imprensa:</b> assessoria de comunicação do CEIA para agenda e materiais.</span></li>
-        </ul>
+      <span class="olho anim">Contato</span>
+      <h2 class="anim" data-delay="1">Me conte o que você procura</h2>
+      <p class="lead anim" data-delay="2">A conversa começa com uma mensagem curta: quem é você, de onde fala e o que precisa. A partir dela, eu direciono para o time certo.</p>
+      <div class="caminhos">
+        <article class="caminho anim" data-delay="1">
+          <span class="tag">Empresas</span>
+          <h3>Projeto de PD&amp;I com o CEIA</h3>
+          <p>Equipe de PD&amp;I ou reunião direta comigo, conforme o porte e a demanda. O CEIA entra como coinvestidor pelo modelo Embrapii.</p>
+          <a class="btn whats" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Falo%20em%20nome%20de%20uma%20empresa%20e%20quero%20avaliar%20um%20projeto%20de%20PD%26I%20em%20intelig%C3%AAncia%20artificial%20com%20o%20CEIA." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
+            Apresentar uma demanda
+          </a>
+        </article>
+        <article class="caminho anim" data-delay="2">
+          <span class="tag">Pesquisadores</span>
+          <h3>Trabalhar no CEIA</h3>
+          <p>Bolsas desde a graduação, dentro de projetos reais com empresas. O caminho é o banco de talentos do Portal CEIA e a gestão de RH.</p>
+          <a class="btn verde" href="https://portal.ceia.inf.ufg.br/banco-de-talentos" target="_blank" rel="noopener">Entrar no banco de talentos</a>
+        </article>
+        <article class="caminho anim" data-delay="3">
+          <span class="tag">Imprensa</span>
+          <h3>Entrevista ou pauta sobre IA</h3>
+          <p>Infraestrutura de IA, dado em português, soberania em nichos, formação de talentos e PD&amp;I com empresas. Agenda e materiais com a assessoria do CEIA.</p>
+          <a class="btn vazado claro" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Sou%20jornalista%20e%20gostaria%20de%20agendar%20uma%20entrevista%20sobre%20intelig%C3%AAncia%20artificial." target="_blank" rel="noopener">Propor uma pauta</a>
+        </article>
       </div>
-      <div class="acao">
-        <p>WhatsApp (62) 98100-8111. Em poucas palavras: quem é você, de onde fala e o que precisa.</p>
-        <a class="btn" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
-          Falar comigo no WhatsApp
-        </a>
+      <div class="sociais-cta anim">
+        <span>Também estou no</span>
+        <div class="sociais">
+          <a href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+          <a href="https://www.instagram.com/" data-pendente="instagram" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></a>
+          <a class="lattes-link" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener" aria-label="Currículo Lattes" title="Currículo Lattes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 9.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.1l-7 3.8-7-3.8Z"/></svg><span>Lattes</span></a>
+        </div>
+        <span>WhatsApp (62) 98100-8111</span>
       </div>
     </div>
   </section>
@@ -682,17 +984,18 @@ footer p{margin-bottom:10px}
         <div class="rodape-marca">
           <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true" width="34" height="34">
             <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="#2866E5"/>
-            <text x="32" y="42" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
+            <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" fill="#fff" letter-spacing="-1">TS</text>
             <circle cx="52" cy="12" r="5" fill="#0CD4AA"/>
           </svg>
           <b>Telma Soares</b>
         </div>
         <p>Telma Woerle de Lima Soares. Professora do Instituto de Informática da Universidade Federal de Goiás e diretora executiva do CEIA, Centro de Excelência em Inteligência Artificial.</p>
-        <p><a href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp (62) 98100-8111</a></p>
+        <p><a href="#contato">Entrar em contato</a></p>
       </div>
       <div>
         <h4>Perfis</h4>
         <p><a href="https://www.linkedin.com/in/telma-soares/" target="_blank" rel="noopener">LinkedIn</a></p>
+        <p><a href="https://www.instagram.com/" data-pendente="instagram" target="_blank" rel="noopener">Instagram</a></p>
         <p><a href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener">Currículo Lattes</a></p>
         <p><a href="https://portal.ceia.inf.ufg.br/banco-de-talentos" target="_blank" rel="noopener">Banco de talentos do CEIA</a></p>
       </div>
@@ -701,27 +1004,197 @@ footer p{margin-bottom:10px}
         <img class="logo-ceia" src="img/logo-ceia-branco.png" alt="CEIA, Centro de Excelência em Inteligência Artificial" loading="lazy" width="800" height="450">
         <p><a href="https://ceia.ufg.br/" target="_blank" rel="noopener">ceia.ufg.br</a></p>
         <div class="redes">
-          <a href="https://www.linkedin.com/company/centrodeexcelenciaemia" target="_blank" rel="noopener" aria-label="LinkedIn do CEIA" title="LinkedIn do CEIA">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/ceiaufg/" target="_blank" rel="noopener" aria-label="Instagram do CEIA" title="Instagram do CEIA">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg>
-          </a>
-          <a href="https://www.facebook.com/centrodeia/" target="_blank" rel="noopener" aria-label="Facebook do CEIA" title="Facebook do CEIA">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07Z"/></svg>
-          </a>
+          <a href="https://www.linkedin.com/company/centrodeexcelenciaemia" target="_blank" rel="noopener" aria-label="LinkedIn do CEIA" title="LinkedIn do CEIA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg></a>
+          <a href="https://www.instagram.com/ceiaufg/" target="_blank" rel="noopener" aria-label="Instagram do CEIA" title="Instagram do CEIA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></a>
+          <a href="https://www.facebook.com/centrodeia/" target="_blank" rel="noopener" aria-label="Facebook do CEIA" title="Facebook do CEIA"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.09 24 18.1 24 12.07Z"/></svg></a>
         </div>
       </div>
     </div>
     <div class="creditos">
       <p>Site pessoal de Telma Woerle de Lima Soares. Identidade visual derivada do manual de marca do CEIA, Centro de Excelência em Inteligência Artificial da Universidade Federal de Goiás. Fotos: acervo pessoal e CEIA.</p>
+      <a class="voltar" href="#topo">Voltar ao topo ↑</a>
     </div>
   </div>
 </footer>
 
-<a class="flutuante" href="https://wa.me/5562981008111?text=Ol%C3%A1%2C%20Telma.%20Cheguei%20pelo%20seu%20site%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.02h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.2-8.25 8.2Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.41-.56-.42h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.14-1.19-.06-.11-.22-.17-.47-.29Z"/></svg>
+<a class="flutuante" href="#contato">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.5l8 5 8-5V6H4Zm0 2.8V18h16V8.8l-8 5-8-5Z"/></svg>
+  Entrar em contato
 </a>
 
-</body>
-</html>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="fechar" id="lb-fechar" aria-label="Fechar">×</button>
+  <button class="seta ant" id="lb-ant" aria-label="Foto anterior">‹</button>
+  <figure><img id="lb-img" src="" alt=""><figcaption id="lb-legenda"></figcaption></figure>
+  <button class="seta prox" id="lb-prox" aria-label="Próxima foto">›</button>
+</div>
+
+<script>
+(function(){
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduz) document.documentElement.classList.add('js');
+
+  /* barra de progresso + sombra do topo */
+  var barra = document.getElementById('barra'), topo = document.getElementById('cabecalho'), flut = document.querySelector('.flutuante');
+  function progresso(){
+    var h = document.documentElement, alt = h.scrollHeight - h.clientHeight;
+    barra.style.width = (alt > 0 ? (h.scrollTop / alt) * 100 : 0) + '%';
+    topo.classList.toggle('rolou', h.scrollTop > 10);
+    flut.classList.toggle('mostra', h.scrollTop > window.innerHeight * .9);
+  }
+  window.addEventListener('scroll', progresso, {passive:true}); progresso();
+
+  /* menu no celular */
+  var btnMenu = document.getElementById('abre-menu');
+  btnMenu.addEventListener('click', function(){
+    var aberto = document.body.classList.toggle('menu-aberto');
+    btnMenu.setAttribute('aria-expanded', aberto);
+    btnMenu.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
+  });
+  document.querySelectorAll('.menu-movel a').forEach(function(a){ a.addEventListener('click', function(){ document.body.classList.remove('menu-aberto'); btnMenu.setAttribute('aria-expanded','false'); }); });
+
+  /* animações de entrada */
+  var itens = document.querySelectorAll('.anim');
+  if('IntersectionObserver' in window && !reduz){
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+    itens.forEach(function(el){ io.observe(el); });
+  } else { itens.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* números animados */
+  function fmt(n){ return n.toLocaleString('pt-BR'); }
+  var contadores = document.querySelectorAll('[data-conta]');
+  if('IntersectionObserver' in window && !reduz){
+    var ioN = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; ioN.unobserve(e.target); anima(e.target); }); }, {threshold:.5});
+    contadores.forEach(function(c){ ioN.observe(c); });
+  }
+  function anima(el){
+    var alvo = +el.dataset.conta, pre = el.dataset.prefixo || '', suf = el.dataset.sufixo || '', t0 = null, dur = 1400;
+    function passo(t){ if(!t0) t0 = t; var p = Math.min((t - t0)/dur, 1); p = 1 - Math.pow(1 - p, 3); el.textContent = pre + fmt(Math.round(alvo * p)) + suf; if(p < 1) requestAnimationFrame(passo); }
+    requestAnimationFrame(passo);
+  }
+
+  /* seção ativa no menu */
+  var links = document.querySelectorAll('.nav a');
+  var secoes = Array.prototype.map.call(links, function(a){ return document.querySelector(a.getAttribute('href')); });
+  if('IntersectionObserver' in window){
+    var ioS = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){ a.classList.toggle('ativo', a.getAttribute('href') === '#' + e.target.id); }); } }); }, {rootMargin:'-40% 0px -55% 0px'});
+    secoes.forEach(function(s){ if(s) ioS.observe(s); });
+  }
+
+  /* linha do tempo com progresso */
+  var lt = document.getElementById('linha-tempo');
+  if(lt){
+    var passos = lt.querySelectorAll('li');
+    function tempo(){
+      var r = lt.getBoundingClientRect(), vh = window.innerHeight;
+      var p = Math.min(Math.max((vh * .7 - r.top) / r.height, 0), 1);
+      lt.style.setProperty('--prog', (p * 100) + '%');
+      passos.forEach(function(li){ var lr = li.getBoundingClientRect(); li.classList.toggle('ativo', lr.top < vh * .7); });
+    }
+    window.addEventListener('scroll', tempo, {passive:true}); tempo();
+  }
+
+  /* filtro da imprensa */
+  var filtros = document.querySelectorAll('.filtros button'), itensImp = document.querySelectorAll('#lista-imprensa li');
+  filtros.forEach(function(b){ b.addEventListener('click', function(){
+    filtros.forEach(function(x){ x.setAttribute('aria-pressed', x === b); });
+    var f = b.dataset.filtro;
+    itensImp.forEach(function(li){ li.classList.toggle('oculto', f !== 'todos' && li.dataset.tipo !== f); });
+  }); });
+
+  /* lightbox da galeria */
+  var figs = Array.prototype.slice.call(document.querySelectorAll('#mosaico figure')), lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbLeg = document.getElementById('lb-legenda'), atual = 0;
+  function abre(i){ atual = (i + figs.length) % figs.length; var img = figs[atual].querySelector('img'); lbImg.src = img.src; lbImg.alt = img.alt; lbLeg.textContent = figs[atual].querySelector('figcaption').textContent; lb.classList.add('aberto'); document.body.classList.add('lb-aberto'); document.body.style.overflow = 'hidden'; }
+  function fecha(){ lb.classList.remove('aberto'); document.body.classList.remove('lb-aberto'); document.body.style.overflow = ''; }
+  figs.forEach(function(f, i){ f.setAttribute('tabindex','0'); f.setAttribute('role','button'); f.addEventListener('click', function(){ abre(i); }); f.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); abre(i); } }); });
+  var x0 = null; lb.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, {passive:true}); lb.addEventListener('touchend', function(e){ if(x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if(Math.abs(dx) > 50) abre(atual + (dx < 0 ? 1 : -1)); x0 = null; });
+  document.getElementById('lb-fechar').addEventListener('click', fecha);
+  document.getElementById('lb-ant').addEventListener('click', function(){ abre(atual - 1); });
+  document.getElementById('lb-prox').addEventListener('click', function(){ abre(atual + 1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb) fecha(); });
+  document.addEventListener('keydown', function(e){ if(!lb.classList.contains('aberto')) return; if(e.key === 'Escape') fecha(); if(e.key === 'ArrowLeft') abre(atual - 1); if(e.key === 'ArrowRight') abre(atual + 1); });
+
+  /* feed do LinkedIn (lê posts.json; se houver campo embed, usa a incorporação oficial) */
+  var feed = document.getElementById('feed-linkedin');
+  var inSvg = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05a3.75 3.75 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"/></svg>';
+  function esc(t){ return String(t).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function renderFeed(posts){
+    feed.innerHTML = '';
+    posts.slice(0,3).forEach(function(p, i){
+      var el;
+      if(p.embed && /^https:\/\/www\.linkedin\.com\/embed\//.test(p.embed)){
+        el = document.createElement('div'); el.className = 'post embed anim';
+        var fr = document.createElement('iframe'); fr.src = p.embed; fr.title = 'Publicação no LinkedIn'; fr.loading = 'lazy'; el.appendChild(fr);
+      } else {
+        el = document.createElement('a'); el.className = 'post anim'; el.href = p.url || 'https://www.linkedin.com/in/telma-soares/'; el.target = '_blank'; el.rel = 'noopener';
+        el.innerHTML = '<span class="autor"><img src="img/foto-perfil.jpg" alt="" width="44" height="44"><span><b>Telma Soares</b><span>Diretora executiva do CEIA · ' + esc(p.data || '') + '</span></span>' + inSvg + '</span>' +
+          '<p>' + esc(p.texto || '') + '</p><span class="rodape"><span>linkedin.com</span><span class="ir">Ler no LinkedIn</span></span>';
+      }
+      el.dataset.delay = String(i + 1);
+      feed.appendChild(el);
+      if(document.documentElement.classList.contains('js')) requestAnimationFrame(function(){ el.classList.add('in'); }); else el.classList.add('in');
+    });
+  }
+  if(feed){
+    fetch('posts.json', {cache:'no-store'}).then(function(r){ return r.json(); }).then(function(j){ if(j && j.posts && j.posts.length) renderFeed(j.posts); else throw 0; })
+      .catch(function(){ feed.innerHTML = '<p class="vazio">As publicações mais recentes estão no <a class="link" href="https://www.linkedin.com/in/telma-soares/recent-activity/all/" target="_blank" rel="noopener">LinkedIn de Telma Soares</a>.</p>'; });
+  }
+
+  /* pattern vivo (hero e contato): o grafismo do CEIA se orienta suavemente na direção do cursor,
+     com atraso elástico e uma respiração lenta de fundo. Em touch ou com movimento reduzido, fica o pattern estático. */
+  if(!reduz && window.matchMedia('(hover: hover)').matches){
+    document.querySelectorAll('.vivo').forEach(function(sec){
+      var escuro = sec.classList.contains('cta') || sec.classList.contains('numeros');
+      var cor = escuro ? [255,255,255] : [27,57,131], tinta = escuro ? [12,212,170] : [40,102,229];
+      var base = escuro ? .05 : .036, ganho = escuro ? .2 : .14;
+      var cv = document.createElement('canvas'); cv.className = 'padrao-vivo'; sec.insertBefore(cv, sec.firstChild); sec.classList.add('ligado');
+      var ctx = cv.getContext('2d'), W, H, dpr, cels = [], tx = -9999, ty = -9999, px = -9999, py = -9999, dentro = false, rodando = false;
+      var T = 96, S = 44, R = 22, RAIO = 300;
+      function forma(x, y, rot){
+        ctx.save(); ctx.translate(x + S/2, y + S/2); ctx.rotate(rot); ctx.translate(-S/2, -S/2);
+        ctx.beginPath(); ctx.moveTo(0, R); ctx.arc(R, R, R, Math.PI, 1.5*Math.PI); ctx.lineTo(S, 0); ctx.lineTo(S, R);
+        ctx.arc(R, R, R, 0, .5*Math.PI); ctx.arc(R, R, R, .5*Math.PI, Math.PI); ctx.closePath(); ctx.fill(); ctx.restore();
+      }
+      function medir(){
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        W = sec.clientWidth; H = sec.clientHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        cels = []; var rots = [0, Math.PI/2, Math.PI, 1.5*Math.PI];
+        for(var y = -T; y < H + T; y += T) for(var x = -T; x < W + T; x += T) for(var k = 0; k < 4; k++){
+          var ox = (k % 2) * 48 + 2, oy = Math.floor(k / 2) * 48 + 2;
+          cels.push({x: x + ox, y: y + oy, r0: rots[(k + 1) % 4], r: 0, e: 0});
+        }
+        desenhar(performance.now());
+      }
+      function suave(t){ t = Math.min(1, t * 1.35); return t * t * (3 - 2 * t); }
+      function desenhar(agora){
+        px += (tx - px) * .07; py += (ty - py) * .07;
+        ctx.clearRect(0, 0, W, H);
+        for(var i = 0; i < cels.length; i++){
+          var c = cels[i], cx = c.x + S/2, cy = c.y + S/2;
+          var d = Math.hypot(cx - px, cy - py), inf = dentro ? suave(Math.max(0, 1 - d / RAIO)) : 0;
+          /* a ponta reta da forma (canto superior direito do desenho) aponta para o cursor; as mais próximas giram por inteiro */
+          var ang = Math.atan2(py - cy, px - cx), ponta = c.r0 - Math.PI / 4;
+          var dif = Math.atan2(Math.sin(ang - ponta), Math.cos(ang - ponta));
+          c.r += (dif * inf - c.r) * .1;
+          c.e += (inf - c.e) * .08;
+          var resp = .006 * Math.sin(agora / 2600 + (c.x + c.y) / 420);
+          var a = base + resp + ganho * c.e, m = c.e * .7;
+          ctx.fillStyle = 'rgba(' + Math.round(cor[0] + (tinta[0]-cor[0]) * m) + ',' + Math.round(cor[1] + (tinta[1]-cor[1]) * m) + ',' + Math.round(cor[2] + (tinta[2]-cor[2]) * m) + ',' + a + ')';
+          forma(c.x, c.y, c.r0 + c.r);
+        }
+      }
+      var vis = true;
+      function laco(agora){ if(!vis){ rodando = false; return; } desenhar(agora); requestAnimationFrame(laco); }
+      function liga(){ if(!rodando){ rodando = true; requestAnimationFrame(laco); } }
+      sec.addEventListener('mousemove', function(ev){ var r = sec.getBoundingClientRect(); tx = ev.clientX - r.left; ty = ev.clientY - r.top; if(!dentro){ px = tx; py = ty; } dentro = true; });
+      sec.addEventListener('mouseleave', function(){ dentro = false; });
+      if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ vis = es[0].isIntersecting; if(vis) liga(); }).observe(sec); } else liga();
+      var ro = 'ResizeObserver' in window ? new ResizeObserver(medir) : null;
+      if(ro) ro.observe(sec); else window.addEventListener('resize', medir);
+      medir();
+    });
+  }
+})();
+</script>
+
+</body></html>
