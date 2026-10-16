@@ -2,9 +2,10 @@
   "_instrucoes": "Mantenha as 3 publicações mais recentes no topo. Campos: url (link do post), data (texto livre), texto (resumo ou primeiras linhas do post). Opcional: embed (URL de incorporação oficial do LinkedIn, formato https://www.linkedin.com/embed/feed/update/urn:li:share:ID) — se preenchido, o post oficial é exibido no lugar do cartão. Os itens abaixo são EXEMPLOS e devem ser substituídos.",
   "posts": [
     {
-      "url": "https://www.linkedin.com/in/telma-soares/recent-activity/all/",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7514032269473255424/",
       "data": "Outubro de 2026",
-      "texto": "[EXEMPLO] Entrar na lista IT Forum Mulheres 2026 é um reconhecimento que divido com toda a equipe do CEIA. São mais de mil pesquisadores que, todos os dias, provam que dá para fazer IA de ponta a partir de Goiás."
+      "texto": "Entrar na lista IT Forum Mulheres 2026, entre as 35 profissionais reconhecidas em tecnologia no país.",
+      "embed": "https://www.linkedin.com/embed/feed/update/urn:li:activity:7514032269473255424"
     },
     {
       "url": "https://www.linkedin.com/in/telma-soares/recent-activity/all/",
