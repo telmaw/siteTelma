@@ -87,7 +87,7 @@ h3{font-weight:600}
 .hero .lead{color:var(--tinta-suave)}
 .hero-foto::before{display:none}
 .hero-foto .forma{border-radius:var(--raio);aspect-ratio:4/5}
-.hero-foto img{object-position:62% 20%}
+.hero-foto img{object-position:40% 20%}
 .selo{border-radius:var(--raio);border-top:2px solid var(--acento)}
 .selo .ico{border-radius:3px;background:var(--azul-escuro);color:var(--telma-marfim)}
 .selo strong{font-family:var(--editorial);font-weight:400;font-size:1.1rem}
