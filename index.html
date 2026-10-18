@@ -1280,16 +1280,15 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
       caminhoForma.arc(0, 0, R, 0, Math.PI);
       caminhoForma.closePath();
     }
-    /* forma do grafismo definida na paleta: 'ceia' (gota do CEIA, padrão) ou 'monograma' (quadrado do TS com ponto, em xadrez) */
+    /* forma do grafismo definida na paleta: 'ceia' (gota do CEIA, padrão) ou 'monograma' (formato externo do TS, em xadrez) */
     var forma = getComputedStyle(document.documentElement).getPropertyValue('--grafismo-forma').trim();
-    var monograma = forma === 'monograma' && usaPath2D, caminhoMono = null, caminhoPonto = null;
+    var monograma = forma === 'monograma' && usaPath2D, caminhoMono = null;
     if(monograma){
       var h = 20, rr = 12;
       caminhoMono = new Path2D();
       caminhoMono.moveTo(-h, h); caminhoMono.lineTo(-h, -h + rr); caminhoMono.arc(-h + rr, -h + rr, rr, Math.PI, 1.5 * Math.PI);
       caminhoMono.lineTo(h - rr, -h); caminhoMono.arc(h - rr, -h + rr, rr, 1.5 * Math.PI, 0);
       caminhoMono.lineTo(h, h - rr); caminhoMono.arc(h - rr, h - rr, rr, 0, .5 * Math.PI); caminhoMono.closePath();
-      caminhoPonto = new Path2D(); caminhoPonto.arc(12, -12, 4, 0, 2 * Math.PI);
     }
     var mouseX = -9999, mouseY = -9999, temMouse = false;
 
@@ -1298,7 +1297,6 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
       var escuro = !sec.classList.contains('hero');
       var cor = escuro ? corDe('--branco') : corDe('--azul-escuro'), tinta = escuro ? corDe('--verde') : corDe('--azul-claro');
       var base = alfaDe(escuro ? '--grafismo-escuro-alfa' : '--grafismo-claro-alfa', escuro ? .05 : .042), ganho = escuro ? .20 : .18;
-      var corPonto = escuro ? corDe('--marca-ponto') : corDe('--acento'), alfaPonto = alfaDe(escuro ? '--grafismo-ponto-escuro-alfa' : '--grafismo-ponto-claro-alfa', escuro ? .28 : .18);
       var cv = document.createElement('canvas'); cv.className = 'padrao-vivo'; sec.insertBefore(cv, sec.firstChild); sec.classList.add('ligado');
       var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = 1, cels = [];
       var tx = 0, ty = 0, px = 0, py = 0, pres = 0, dentro = false, jaEntrou = false, rodando = false, tAnt = 0;
@@ -1372,8 +1370,6 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
           ctx.setTransform(cos, sin, -sin, cos, (c.cx + c.ox) * dpr, (c.cy + c.oy) * dpr);
           if(monograma){
             ctx.fill(caminhoMono);
-            ctx.fillStyle = 'rgba(' + corPonto[0] + ',' + corPonto[1] + ',' + corPonto[2] + ',' + Math.min(1, alfaPonto + ganho * c.e).toFixed(4) + ')';
-            ctx.fill(caminhoPonto);
           } else if(usaPath2D){
             ctx.fill(caminhoForma);
           } else {

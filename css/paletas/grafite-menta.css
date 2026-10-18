@@ -56,7 +56,7 @@
   /* Sombras */
   --sombra:0 18px 50px color-mix(in srgb,var(--azul-escuro) 14%,transparent);
 
-  --grafismo-forma:ceia;             /* 'ceia' (gota do CEIA) ou 'monograma' (quadrado do TS com ponto) */
+  --grafismo-forma:ceia;             /* 'ceia' (gota do CEIA) ou 'monograma' (formato externo do TS) */
   --grafismo-escuro-alfa:.05;  /* opacidade do grafismo em fundos escuros (mesma do --padrao-escuro) */
   --grafismo-claro-alfa:.042;  /* opacidade do grafismo animado em fundos claros */
   /* Grafismo do CEIA em SVG. As cores ficam dentro do desenho (%23 = #):
