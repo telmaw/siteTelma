@@ -1,0 +1,54 @@
+/* =====================================================================
+   PALETA DE TESTE: Petróleo e cobre
+   Azul petróleo no lugar do azul royal do CEIA, cobre como cor de destaque e o verde do CEIA mantido nos detalhes.
+   Ver no site: https://telmaw.github.io/siteTelma/?paleta=petroleo-cobre
+   Ver no cartão: https://telmaw.github.io/siteTelma/card/?paleta=petroleo-cobre
+   ===================================================================== */
+:root{
+  /* Cores principais (os nomes "azul-*" foram mantidos para não mexer no CSS do site) */
+  --azul-escuro:#173B45;
+  --azul:#1F5662;
+  --azul-claro:#B4532A;
+  --verde:#0CD4AA;
+
+  /* Neutros quentes (camada pessoal, diferencia do site institucional) */
+  --papel:#FAF7F2;
+  --areia:#F1EADF;
+  --linha:#E3D9CA;
+  --tinta:#182226;
+  --tinta-suave:#4D5A5E;
+  --branco:#FFFFFF;
+
+  /* Fundos escuros */
+  --azul-noite:#0E262D;      /* rodapé e rodapé do cartão */
+  --azul-profundo:#12343D;   /* fundo das fotos na seção Formação */
+
+  /* Textos sobre fundos escuros */
+  --sobre-escuro:#D3E3E3;
+  --sobre-escuro-2:#C5D8D9;
+  --sobre-escuro-3:#DAE9E8;
+  --sobre-escuro-suave:#9DBABB;
+  --rodape-texto:#A7C1C2;
+  --rodape-suave:#86A4A6;
+
+  /* Cores funcionais */
+  --whats:#128C4A;
+  --whats-escuro:#0f7a40;
+  --sobre-whats:#d6f3e3;
+  --linkedin:#0A66C2;
+  --alerta:#b4443c;          /* rótulo "O que dizem" */
+
+  /* Cartão de contato (/card) */
+  --chip-fundo:#F6ECE5;
+  --hover-fundo:#F3F6F5;
+  --hover-borda:#C4D8D6;
+  --sombra-profunda:rgba(5,20,24,.45);
+
+  /* Sombras */
+  --sombra:0 18px 50px color-mix(in srgb,var(--azul-escuro) 14%,transparent);
+
+  /* Grafismo do CEIA em SVG. As cores ficam dentro do desenho (%23 = #):
+     escuro usa branco (%23FFFFFF) e claro usa o azul-escuro (%231B3983). */
+  --padrao-escuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23173B45' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+}
