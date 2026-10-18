@@ -1265,6 +1265,8 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
   /* cor da paleta (css/paleta.css) em [r,g,b] */
   function corDe(nome){ var t = document.createElement('i'); t.style.color = 'var(' + nome + ')'; t.style.display = 'none'; document.body.appendChild(t);
     var m = getComputedStyle(t).color.match(/\d+(\.\d+)?/g) || [0,0,0]; t.remove(); return [+m[0], +m[1], +m[2]]; }
+  /* opacidade do grafismo definida na paleta (css/paleta.css) */
+  function alfaDe(nome, padrao){ var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(nome)); return isNaN(v) ? padrao : v; }
   if(!reduz && window.matchMedia('(hover: hover)').matches){
     var S = 44, R = 22, T = 96, RAIO = 240, RAIO2 = RAIO * RAIO;
     var usaPath2D = typeof Path2D === 'function', caminhoForma = null;
@@ -1283,7 +1285,7 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
     document.querySelectorAll('.vivo').forEach(function(sec){
       var escuro = !sec.classList.contains('hero');
       var cor = escuro ? corDe('--branco') : corDe('--azul-escuro'), tinta = escuro ? corDe('--verde') : corDe('--azul-claro');
-      var base = escuro ? .05 : .042, ganho = escuro ? .20 : .18;
+      var base = alfaDe(escuro ? '--grafismo-escuro-alfa' : '--grafismo-claro-alfa', escuro ? .05 : .042), ganho = escuro ? .20 : .18;
       var cv = document.createElement('canvas'); cv.className = 'padrao-vivo'; sec.insertBefore(cv, sec.firstChild); sec.classList.add('ligado');
       var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = 1, cels = [];
       var tx = 0, ty = 0, px = 0, py = 0, pres = 0, dentro = false, jaEntrou = false, rodando = false, tAnt = 0;
