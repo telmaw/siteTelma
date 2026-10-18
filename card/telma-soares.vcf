@@ -15,6 +15,9 @@ item3.URL:http://lattes.cnpq.br/6296363436468330
 item3.X-ABLabel:Lattes
 item4.URL:https://ceia.ufg.br/
 item4.X-ABLabel:CEIA
+item5.URL:https://www.instagram.com/telmawoerle/
+item5.X-ABLabel:Instagram
+X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/telmawoerle/
 ADR;TYPE=WORK:;;Instituto de Informática\, UFG\, Campus Samambaia;Goiânia
  ;GO;;Brasil
 PHOTO;ENCODING=b;TYPE=JPEG:/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYH
