@@ -32,8 +32,8 @@
 -->
 
 <link id="paleta" rel="stylesheet" href="css/paleta.css">
-<script>/* teste de paletas: ?paleta=nome carrega css/paletas/nome.css */
-(function(){var n=new URLSearchParams(location.search).get("paleta"),l=document.getElementById("paleta");if(n&&/^[a-z0-9-]+$/.test(n))l.href=l.href.replace(/paleta\.css$/,"paletas/"+n+".css");})();</script>
+<script>/* teste de paletas: ?paleta=nome carrega css/paletas/nome.css (sempre a versão mais recente, sem cache) */
+(function(){var n=new URLSearchParams(location.search).get("paleta"),l=document.getElementById("paleta");if(n&&/^[a-z0-9-]+$/.test(n))l.href=l.href.replace(/paleta\.css$/,"paletas/"+n+".css?v="+Date.now());})();</script>
 <style>
 /* Layout: editorial em uma coluna com blocos alternando papel claro e azul institucional do CEIA;
    a forma da marca (canto reto) aparece em fotos, cartões e marcadores. */

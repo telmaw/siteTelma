@@ -19,8 +19,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link id="paleta" rel="stylesheet" href="../css/paleta.css">
-<script>/* teste de paletas: ?paleta=nome carrega css/paletas/nome.css */
-(function(){var n=new URLSearchParams(location.search).get("paleta"),l=document.getElementById("paleta");if(n&&/^[a-z0-9-]+$/.test(n))l.href=l.href.replace(/paleta\.css$/,"paletas/"+n+".css");})();</script>
+<script>/* teste de paletas: ?paleta=nome carrega css/paletas/nome.css (sempre a versão mais recente, sem cache) */
+(function(){var n=new URLSearchParams(location.search).get("paleta"),l=document.getElementById("paleta");if(n&&/^[a-z0-9-]+$/.test(n))l.href=l.href.replace(/paleta\.css$/,"paletas/"+n+".css?v="+Date.now());})();</script>
 <style>
 :root{
   --display:"Sora","Inter","Segoe UI",Helvetica,Arial,sans-serif;
