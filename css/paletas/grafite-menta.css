@@ -17,6 +17,8 @@
   --marca-fim:var(--azul-claro);     /* monograma TS: fim do degradê e versão do rodapé */
   --marca-ponto:var(--verde);        /* monograma TS: ponto */
   --fundo-destaque:var(--azul-escuro); /* fundo das seções Em números e Formação */
+  --contato-meio:var(--azul);         /* degradê do fundo da seção Contato: meio */
+  --contato-fim:var(--azul-claro);    /* degradê do fundo da seção Contato: fim */
 
   /* Neutros quentes (camada pessoal, diferencia do site institucional) */
   --papel:#F8F7F4;

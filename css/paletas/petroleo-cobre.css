@@ -1,5 +1,5 @@
 /* =====================================================================
-   PALETA DE TESTE: Petróleo e cobre (revisão 2)
+   PALETA DE TESTE: Petróleo e cobre (revisão 3)
    Azul petróleo como cor principal no lugar do azul royal do CEIA, cobre só
    como cor de destaque (links, "Brasil real", rótulos) e o verde-menta do CEIA,
    um pouco mais claro, nos detalhes e no ponto do monograma.
@@ -16,9 +16,11 @@
   /* Papéis (apontam para as cores acima; uma paleta pode trocá-los à parte) */
   --acento:#B4532A;        /* links, "Brasil real", rótulos e setas */
   --marca-inicio:#1D5F6E; /* monograma TS: início do degradê */
-  --marca-fim:#348696;     /* monograma TS: fim do degradê e versão do rodapé */
+  --marca-fim:#B4532A;     /* monograma TS: fim do degradê e versão do rodapé */
   --marca-ponto:#3FE6C0;        /* monograma TS: ponto */
   --fundo-destaque:var(--azul-escuro); /* fundo das seções Em números e Formação */
+  --contato-meio:#1F5662;             /* degradê do fundo da seção Contato: meio */
+  --contato-fim:#B4532A;              /* degradê do fundo da seção Contato: fim */
 
   /* Neutros quentes (camada pessoal, diferencia do site institucional) */
   --papel:#FAF7F2;
