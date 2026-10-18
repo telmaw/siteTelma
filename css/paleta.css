@@ -22,6 +22,7 @@
   --marca-inicio:var(--azul-escuro); /* monograma TS: início do degradê */
   --marca-fim:var(--azul-claro);     /* monograma TS: fim do degradê e versão do rodapé */
   --marca-ponto:var(--verde);        /* monograma TS: ponto */
+  --fundo-destaque:var(--azul-escuro); /* fundo das seções Em números e Formação */
 
   /* Neutros quentes (camada pessoal, diferencia do site institucional) */
   --papel:#FBF9F4;
