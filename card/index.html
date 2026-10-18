@@ -8,60 +8,67 @@
 <meta property="og:title" content="Telma Soares | Cartão de contato">
 <meta property="og:description" content="Diretora executiva do CEIA-UFG. Salve o contato ou fale pelo WhatsApp.">
 <meta property="og:type" content="profile">
-<meta property="og:image" content="https://telmaw.github.io/siteTelma/card/telma-soares.jpg">
-<meta property="og:image:width" content="480">
-<meta property="og:image:height" content="480">
+<meta property="og:image" content="https://telmaw.github.io/siteTelma/assets/social/capa-compartilhamento-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Telma Soares">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://telmaw.github.io/siteTelma/assets/social/capa-compartilhamento-1200x630.png">
 <meta property="og:url" content="https://telmaw.github.io/siteTelma/card/">
-<meta name="theme-color" content="#1B3983">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z' fill='%231B3983'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-weight='800' font-size='28' fill='%23fff'%3ETS%3C/text%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="telma-soares.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#143F49">
+<link rel="icon" href="../assets/icones/favicon.ico" sizes="48x48">
+<link rel="icon" href="../assets/icones/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/icones/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="../assets/icones/apple-touch-icon.png">
+<link rel="stylesheet" href="../css/telma-brand.css">
 <link id="paleta" rel="stylesheet" href="../css/paleta.css">
 <script>/* teste de paletas: ?paleta=nome carrega css/paletas/nome.css (sempre a versão mais recente, sem cache) */
 (function(){var n=new URLSearchParams(location.search).get("paleta"),l=document.getElementById("paleta");if(n&&/^[a-z0-9-]+$/.test(n))l.href=l.href.replace(/paleta\.css$/,"paletas/"+n+".css?v="+Date.now());})();</script>
 <style>
 :root{
-  --display:"Sora","Inter","Segoe UI",Helvetica,Arial,sans-serif;
-  --texto:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
-  --raio:28px;
+  --display:var(--telma-font-ui);
+  --texto:var(--telma-font-ui);
+  --editorial:var(--telma-font-editorial);
+  --raio:4px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
 body{
   min-height:100vh;min-height:100dvh;font-family:var(--texto);color:var(--tinta);line-height:1.5;-webkit-font-smoothing:antialiased;
-  background:var(--padrao-escuro) repeat,linear-gradient(160deg,var(--azul-noite) 0%,var(--azul-escuro) 45%,var(--azul) 100%);background-color:var(--azul-escuro);
+  background:var(--azul-escuro) url("../assets/fundos/trama-escura.svg") repeat top left/720px auto;
   display:flex;justify-content:center;align-items:flex-start;
   padding:max(28px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(28px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left));
 }
 a{color:inherit;text-decoration:none}
 button{font:inherit;border:0;background:none;cursor:pointer;color:inherit}
-:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
+:focus-visible{outline:3px solid var(--acento);outline-offset:3px}
+.rodape :focus-visible{outline-color:var(--telma-marfim)}
 
-.cartao{width:100%;max-width:420px;background:var(--branco);border-radius:var(--raio) var(--raio) var(--raio) 0;box-shadow:0 30px 70px var(--sombra-profunda);overflow:hidden}
-.topo{position:relative;height:96px;background:var(--azul-escuro) var(--padrao-escuro) repeat}
-.topo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,var(--azul-claro),var(--verde))}
-.foto{position:relative;width:132px;height:132px;margin:-66px auto 0;border-radius:36px 36px 36px 0;overflow:hidden;border:5px solid var(--branco);box-shadow:0 12px 30px color-mix(in srgb,var(--azul-escuro) 25%,transparent);background:#2a2a2a}
+.cartao{width:100%;max-width:420px;background:var(--papel);border-radius:var(--raio);box-shadow:0 30px 70px var(--sombra-profunda);overflow:hidden}
+.topo{position:relative;height:96px;background:var(--azul-escuro) url("../assets/fundos/s-amplo-escuro.svg") no-repeat center right/cover}
+.topo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--acento)}
+.foto{position:relative;width:132px;height:132px;margin:-66px auto 0;border-radius:var(--raio);overflow:hidden;border:5px solid var(--papel);box-shadow:0 12px 30px color-mix(in srgb,var(--azul-escuro) 25%,transparent);background:#2a2a2a}
 .foto img{width:100%;height:100%;object-fit:cover;display:block}
 .corpo{padding:16px 22px 22px;text-align:center}
-h1{font-family:var(--display);font-size:1.7rem;font-weight:700;letter-spacing:-0.02em;color:var(--azul-escuro);line-height:1.15}
+h1{margin:4px 0 0;line-height:1}
+h1 img{display:block;width:220px;max-width:100%;height:auto;margin:0 auto}
 .cargo{margin-top:6px;font-weight:600;color:var(--tinta)}
 .org{font-size:.9rem;color:var(--tinta-suave);margin-top:2px}
 .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:14px 0 4px;list-style:none}
-.chips li{font-size:.74rem;font-weight:600;color:var(--azul-escuro);background:var(--chip-fundo);padding:5px 10px;border-radius:999px}
+.chips li{font-size:.74rem;font-weight:600;color:var(--azul-escuro);background:var(--chip-fundo);padding:5px 10px;border-radius:3px}
 
 .salvar{
   margin-top:18px;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:56px;padding:14px 18px;
-  border-radius:18px 18px 18px 0;background:var(--verde);color:var(--azul-escuro);font-weight:700;font-size:1.05rem;
-  box-shadow:0 10px 24px color-mix(in srgb,var(--verde) 35%,transparent);transition:transform .15s ease
+  border-radius:3px;background:var(--azul-escuro);color:var(--telma-marfim);font-weight:600;font-size:1.05rem;
+  transition:background .15s ease
 }
-.salvar:active{transform:scale(.98)}
+.salvar:hover{background:var(--azul)}
+.salvar:active{background:var(--azul)}
 .salvar svg{width:22px;height:22px;fill:currentColor;flex:none}
 .dica{font-size:.78rem;color:var(--tinta-suave);margin-top:8px}
 
 .acoes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
-.acao{display:flex;align-items:center;gap:10px;min-height:54px;padding:10px 14px;border:1px solid var(--linha);border-radius:16px 16px 16px 0;background:var(--branco);font-weight:600;font-size:.95rem;color:var(--azul-escuro);text-align:left;transition:background .15s ease,border-color .15s ease}
+.acao{display:flex;align-items:center;gap:10px;min-height:54px;padding:10px 14px;border:1px solid var(--linha);border-radius:3px;background:var(--branco);font-weight:600;font-size:.95rem;color:var(--azul-escuro);text-align:left;transition:background .15s ease,border-color .15s ease}
 .acao:active,.acao:hover{background:var(--hover-fundo);border-color:var(--hover-borda)}
 .acao svg{width:22px;height:22px;flex:none;fill:currentColor}
 .acao.whats{grid-column:1/-1;justify-content:center;background:var(--whats);border-color:var(--whats);color:var(--branco)}
@@ -90,7 +97,7 @@ h1{font-family:var(--display);font-size:1.7rem;font-weight:700;letter-spacing:-0
   <div class="topo" aria-hidden="true"></div>
   <div class="foto"><img src="telma-soares.jpg" alt="Telma Soares" width="480" height="480"></div>
   <div class="corpo">
-    <h1>Telma Soares</h1>
+    <h1><img src="../assets/marca/assinatura-petroleo.svg" alt="Telma Soares" width="220" height="29"></h1>
     <p class="cargo">Diretora executiva do CEIA-UFG</p>
     <p class="org">Professora do Instituto de Informática da UFG</p>
     <ul class="chips" aria-label="Temas">

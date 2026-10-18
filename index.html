@@ -8,15 +8,20 @@
 <meta property="og:title" content="Telma Soares | Inteligência artificial que sai do laboratório">
 <meta property="og:description" content="Professora da UFG e diretora executiva do CEIA. Mais de 150 projetos de PD&amp;I executados pelo centro, Bacharelado em IA pioneiro no Brasil e participação frequente na imprensa sobre IA no país.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://telmaw.github.io/siteTelma/img/foto-original-3.jpg">
-<meta property="og:image:width" content="1600">
-<meta property="og:image:height" content="1067">
+<meta property="og:image" content="https://telmaw.github.io/siteTelma/assets/social/capa-compartilhamento-1200x630.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Telma Soares">
 <meta property="og:url" content="https://telmaw.github.io/siteTelma/">
-<meta name="theme-color" content="#1B3983">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z' fill='%231B3983'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Inter,Arial,sans-serif' font-weight='800' font-size='28' fill='%23fff'%3ETS%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://telmaw.github.io/siteTelma/assets/social/capa-compartilhamento-1200x630.png">
+<meta name="theme-color" content="#143F49">
+<link rel="icon" href="assets/icones/favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/icones/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icones/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/icones/android-chrome-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icones/apple-touch-icon.png">
+<link rel="preload" href="assets/fontes/DMSerifDisplay-Regular.woff" as="font" type="font/woff" crossorigin>
 
 <!--
   VERSÃO 2 (proposta). Mudanças em relação à versão publicada:
@@ -38,7 +43,7 @@
 /* Layout: editorial em uma coluna com blocos alternando papel claro e azul institucional do CEIA;
    a forma da marca (canto reto) aparece em fotos, cartões e marcadores. */
 :root{
-  --display:"Sora","Inter","Segoe UI",Helvetica,Arial,sans-serif;
+  --display:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
   --texto:"Inter","Segoe UI",Helvetica,Arial,sans-serif;
   --max:1160px;
   --raio:28px;
@@ -80,7 +85,6 @@ p{margin-bottom:16px}
 .topo.rolou{box-shadow:0 8px 30px color-mix(in srgb,var(--azul-escuro) 8%,transparent)}
 .topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--azul-escuro)}
-.monograma{width:38px;height:38px;flex:none}
 .marca b{display:block;font-family:var(--display);font-weight:700;font-size:1.05rem;letter-spacing:-0.02em;line-height:1.1}
 .marca span{display:block;font-size:.72rem;font-weight:500;color:var(--tinta-suave)}
 @media (max-width:419px){.marca span{display:none}.topo-acoes .btn.pequeno{padding:10px 13px;font-size:.82rem}}
@@ -393,12 +397,6 @@ footer p{margin-bottom:10px}
 .voltar{display:inline-flex;align-items:center;gap:8px;color:var(--branco);border:0;font-weight:600}
 .voltar:hover{color:var(--verde)}
 
-/* pattern vivo: camada canvas que redesenha o grafismo do CEIA e reage ao mouse */
-.vivo{position:relative}
-.vivo canvas.padrao-vivo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
-.vivo > .wrap{position:relative;z-index:1}
-.vivo.ligado:not(.cta){background-image:none}
-.vivo.ligado.cta::after{display:none}
 
 /* redes sociais e LinkedIn */
 .redes-sec{background:var(--papel)}
@@ -482,6 +480,10 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
   .js .anim{opacity:1;transform:none}
 }
 </style>
+<!-- Proposta 02: marca, movimento e aplicação ao site (depois do CSS de layout existente) -->
+<link rel="stylesheet" href="css/telma-brand.css">
+<link rel="stylesheet" href="css/telma-motion.css">
+<link rel="stylesheet" href="css/identidade.css">
 </head>
 <body>
 
@@ -492,13 +494,8 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
 <header class="topo" id="cabecalho">
   <div class="wrap">
     <a class="marca" href="#topo" aria-label="Telma Soares, início da página">
-      <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true">
-        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--marca-inicio)"/><stop offset="1" style="stop-color:var(--marca-fim)"/></linearGradient></defs>
-        <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="url(#g1)"/>
-        <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" style="fill:var(--branco)" letter-spacing="-1">TS</text>
-        <circle cx="52" cy="12" r="5" style="fill:var(--marca-ponto)"/>
-      </svg>
-      <div><b>Telma Soares</b><span>Inteligência artificial aplicada</span></div>
+      <img class="assinatura" src="assets/marca/assinatura-petroleo.svg" alt="" width="168" height="22">
+      <span class="marca-desc">Inteligência artificial aplicada</span>
     </a>
     <nav class="nav" aria-label="Seções">
       <a href="#frentes">Frentes</a>
@@ -514,6 +511,11 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
         <a href="https://www.instagram.com/telmawoerle/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38A5.87 5.87 0 0 0 .63 4.14c-.3.76-.5 1.64-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.72 1.46 1.39 2.13a5.87 5.87 0 0 0 2.12 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.87 5.87 0 0 0 2.12-1.38 5.87 5.87 0 0 0 1.39-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.87 5.87 0 0 0-1.39-2.13A5.87 5.87 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm7.85-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0Z"/></svg></a>
         <a class="lattes-link" href="http://lattes.cnpq.br/6296363436468330" target="_blank" rel="noopener" aria-label="Currículo Lattes" title="Currículo Lattes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3Zm-7 9.9V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.1l-7 3.8-7-3.8Z"/></svg><span>Lattes</span></a>
       </div>
+      <button class="movimento" type="button" data-telma-motion-toggle data-label-running="Pausar o movimento dos fundos" data-label-paused="Ativar o movimento dos fundos" data-label-unavailable="Fundos estáticos" aria-pressed="false" hidden>
+        <svg class="ic-pausa" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+        <svg class="ic-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <span class="sr" data-telma-motion-label>Pausar o movimento dos fundos</span>
+      </button>
       <a class="btn pequeno" href="#contato">Entrar em contato</a>
       <button class="hamburguer" id="abre-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-movel"><i></i><i></i><i></i></button>
     </div>
@@ -527,11 +529,12 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
   <a href="#imprensa">Na imprensa</a>
   <a href="#redes">Redes</a>
   <a href="#contato">Contato</a>
+  <button class="movimento-movel" type="button" data-telma-motion-toggle data-label-running="Pausar o movimento dos fundos" data-label-paused="Ativar o movimento dos fundos" data-label-unavailable="Fundos estáticos" aria-pressed="false" hidden><span data-telma-motion-label>Pausar o movimento dos fundos</span></button>
 </div>
 
 <main id="topo">
 
-  <section class="hero vivo">
+  <section class="hero" data-telma-motion="signature" data-telma-surface="light" data-telma-intensity="normal">
     <div class="wrap">
       <div class="hero-texto">
         <span class="olho anim">Telma Woerle de Lima Soares</span>
@@ -710,7 +713,7 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
     </div>
   </section>
 
-  <section class="numeros vivo" id="numeros">
+  <section class="numeros" id="numeros" data-telma-motion="field" data-telma-surface="dark" data-telma-intensity="quiet">
     <div class="wrap">
       <span class="olho anim">Em números</span>
       <h2 class="anim" data-delay="1">O que já foi construído</h2>
@@ -802,7 +805,7 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
     </div>
   </section>
 
-  <section class="formacao vivo" id="formacao">
+  <section class="formacao" id="formacao" data-telma-motion="field" data-telma-surface="dark" data-telma-intensity="quiet">
     <div class="wrap">
       <div>
         <span class="olho anim">Talento é o produto</span>
@@ -989,7 +992,7 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
     </div>
   </section>
 
-  <section class="cta vivo" id="contato">
+  <section class="cta" id="contato" data-telma-motion="field" data-telma-surface="dark" data-telma-intensity="normal">
     <div class="wrap">
       <span class="olho anim">Contato</span>
       <h2 class="anim" data-delay="1">Me conte o que você procura</h2>
@@ -1035,14 +1038,7 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
   <div class="wrap">
     <div class="rodape-grid">
       <div>
-        <div class="rodape-marca">
-          <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true" width="34" height="34">
-            <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" style="fill:var(--marca-fim)"/>
-            <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" style="fill:var(--branco)" letter-spacing="-1">TS</text>
-            <circle cx="52" cy="12" r="5" style="fill:var(--marca-ponto)"/>
-          </svg>
-          <b>Telma Soares</b>
-        </div>
+        <div class="rodape-marca"><img class="assinatura" src="assets/marca/assinatura-marfim.svg" alt="Telma Soares" width="198" height="26" loading="lazy"></div>
         <p>Telma Woerle de Lima Soares. Professora do Instituto de Informática da Universidade Federal de Goiás e diretora executiva do CEIA, Centro de Excelência em Inteligência Artificial.</p>
         <p><a href="#contato">Entrar em contato</a></p>
       </div>
@@ -1260,151 +1256,18 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
       .catch(function(){ feed.innerHTML = '<p class="vazio">As publicações mais recentes estão no <a class="link" href="https://www.linkedin.com/in/telma-soares/recent-activity/all/" target="_blank" rel="noopener">LinkedIn de Telma Soares</a>.</p>'; });
   }
 
-  /* pattern vivo (lente difeomórfica sem sobreposição): o espaço ao redor do cursor se expande em +66%
-     enquanto as peças centrais crescem +46% e o anel externo acompanha a derivada radial, garantindo folga ampla sem colisão e reação rápida. */
-  /* cor da paleta (css/paleta.css) em [r,g,b] */
-  function corDe(nome){ var t = document.createElement('i'); t.style.color = 'var(' + nome + ')'; t.style.display = 'none'; document.body.appendChild(t);
-    var m = getComputedStyle(t).color.match(/\d+(\.\d+)?/g) || [0,0,0]; t.remove(); return [+m[0], +m[1], +m[2]]; }
-  /* opacidade do grafismo definida na paleta (css/paleta.css) */
-  function alfaDe(nome, padrao){ var v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(nome)); return isNaN(v) ? padrao : v; }
-  /* o grafismo animado lê a paleta; espera a página carregar (inclusive uma paleta de teste via ?paleta=) */
-  function iniciarVivo(){
-    var S = 44, R = 22, T = 96, RAIO = 240, RAIO2 = RAIO * RAIO;
-    var usaPath2D = typeof Path2D === 'function', caminhoForma = null;
-    if(usaPath2D){
-      caminhoForma = new Path2D();
-      caminhoForma.moveTo(-R, 0);
-      caminhoForma.arc(0, 0, R, Math.PI, 1.5 * Math.PI);
-      caminhoForma.lineTo(R, -R);
-      caminhoForma.lineTo(R, 0);
-      caminhoForma.arc(0, 0, R, 0, Math.PI);
-      caminhoForma.closePath();
-    }
-    /* forma do grafismo definida na paleta: 'ceia' (gota do CEIA, padrão) ou 'monograma' (formato externo do TS, em xadrez) */
-    var forma = getComputedStyle(document.documentElement).getPropertyValue('--grafismo-forma').trim();
-    var monograma = forma === 'monograma' && usaPath2D, caminhoMono = null;
-    if(monograma){
-      var h = 20, rr = 12;
-      caminhoMono = new Path2D();
-      caminhoMono.moveTo(-h, h); caminhoMono.lineTo(-h, -h + rr); caminhoMono.arc(-h + rr, -h + rr, rr, Math.PI, 1.5 * Math.PI);
-      caminhoMono.lineTo(h - rr, -h); caminhoMono.arc(h - rr, -h + rr, rr, 1.5 * Math.PI, 0);
-      caminhoMono.lineTo(h, h - rr); caminhoMono.arc(h - rr, h - rr, rr, 0, .5 * Math.PI); caminhoMono.closePath();
-    }
-    var mouseX = -9999, mouseY = -9999, temMouse = false;
+})();
+</script>
 
-    var instancias = [];
-    document.querySelectorAll('.vivo').forEach(function(sec){
-      var escuro = !sec.classList.contains('hero');
-      var cor = escuro ? corDe('--branco') : corDe('--azul-escuro'), tinta = escuro ? corDe('--verde') : corDe('--azul-claro');
-      var base = alfaDe(escuro ? '--grafismo-escuro-alfa' : '--grafismo-claro-alfa', escuro ? .05 : .042), ganho = escuro ? .20 : .18;
-      var cv = document.createElement('canvas'); cv.className = 'padrao-vivo'; sec.insertBefore(cv, sec.firstChild); sec.classList.add('ligado');
-      var ctx = cv.getContext('2d'), W = 0, H = 0, dpr = 1, cels = [];
-      var tx = 0, ty = 0, px = 0, py = 0, pres = 0, dentro = false, jaEntrou = false, rodando = false, tAnt = 0;
-
-      function sincronizarCursor(){
-        if(!temMouse) return;
-        var r = sec.getBoundingClientRect();
-        var agoraDentro = mouseX >= r.left && mouseX <= r.right && mouseY >= r.top && mouseY <= r.bottom;
-        if(agoraDentro){
-          tx = mouseX - r.left; ty = mouseY - r.top;
-          if(!jaEntrou || pres < .02){ px = tx; py = ty; jaEntrou = true; }
-        }
-        dentro = agoraDentro;
-      }
-
-      function medir(){
-        dpr = Math.min(window.devicePixelRatio || 1, 2);
-        W = sec.clientWidth; H = sec.clientHeight; cv.width = W * dpr; cv.height = H * dpr;
-        cels = []; var rots = [0, Math.PI/2, Math.PI, 1.5*Math.PI];
-        for(var y = 0; y < H + T; y += T) for(var x = 0; x < W + T; x += T) for(var k = 0; k < 4; k++){
-          var cx = x + (k % 2) * 48 + 2 + R, cy = y + Math.floor(k / 2) * 48 + 2 + R;
-          if(cx < -R || cy < -R || cx > W + R || cy > H + R) continue;
-          if(monograma && (k === 1 || k === 2)) continue;
-          var r0 = monograma ? 0 : rots[(k + 1) % 4];
-          cels.push({cx: cx, cy: cy, ox: 0, oy: 0, s: 0, e: 0, cos: Math.cos(r0), sin: Math.sin(r0), fase: (cx + cy) / 420});
-        }
-        tAnt = performance.now();
-        desenhar(tAnt);
-      }
-
-      function desenhar(agora){
-        var dt = Math.min(Math.max((agora - tAnt) / 1000, .001), .05);
-        tAnt = agora;
-        var kPres = 1 - Math.exp(-dt * (dentro ? 12 : 6));
-        pres += ((dentro ? 1 : 0) - pres) * kPres;
-        var kCur = 1 - Math.exp(-dt * 16);
-        px += (tx - px) * kCur; py += (ty - py) * kCur;
-        var kDin = 1 - Math.exp(-dt * 14);
-        var tResp = agora / 3400;
-
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        ctx.clearRect(0, 0, W, H);
-        var dr0 = tinta[0] - cor[0], dg0 = tinta[1] - cor[1], db0 = tinta[2] - cor[2];
-
-        for(var i = 0; i < cels.length; i++){
-          var c = cels[i], rx = c.cx - px, ry = c.cy - py, d2 = rx * rx + ry * ry;
-          var alvoOx = 0, alvoOy = 0, alvoS = 0, alvoE = 0;
-          if(pres > .001 && d2 < RAIO2){
-            var d = Math.sqrt(d2), u = d / RAIO, um = 1 - u, dR = um * (1 - 3 * u);
-            var emp = pres * .66 * um * um;
-            alvoOx = rx * emp;
-            alvoOy = ry * emp;
-            alvoS = pres * (dR >= 0 ? .46 * dR : .70 * dR);
-            alvoE = pres * (dR > 0 ? dR : 0);
-          }
-          c.ox += (alvoOx - c.ox) * kDin;
-          c.oy += (alvoOy - c.oy) * kDin;
-          c.s += (alvoS - c.s) * kDin;
-          c.e += (alvoE - c.e) * kDin;
-
-          var onda = Math.sin(tResp + c.fase);
-          var a = Math.max(.015, base + .006 * onda + ganho * c.e);
-          if(c.e > .002){
-            var m = Math.min(1, c.e * .9);
-            ctx.fillStyle = 'rgba(' + ((cor[0] + dr0 * m + .5) | 0) + ',' + ((cor[1] + dg0 * m + .5) | 0) + ',' + ((cor[2] + db0 * m + .5) | 0) + ',' + a.toFixed(4) + ')';
-          } else {
-            ctx.fillStyle = 'rgba(' + cor[0] + ',' + cor[1] + ',' + cor[2] + ',' + a.toFixed(4) + ')';
-          }
-          var esc = Math.max(.2, 1 + c.s + .01 * onda) * dpr;
-          var cos = c.cos * esc, sin = c.sin * esc;
-          ctx.setTransform(cos, sin, -sin, cos, (c.cx + c.ox) * dpr, (c.cy + c.oy) * dpr);
-          if(monograma){
-            ctx.fill(caminhoMono);
-          } else if(usaPath2D){
-            ctx.fill(caminhoForma);
-          } else {
-            ctx.beginPath(); ctx.moveTo(-R, 0); ctx.arc(0, 0, R, Math.PI, 1.5 * Math.PI);
-            ctx.lineTo(R, -R); ctx.lineTo(R, 0); ctx.arc(0, 0, R, 0, Math.PI); ctx.closePath(); ctx.fill();
-          }
-        }
-      }
-
-      var vis = true;
-      function laco(agora){ if(!vis){ rodando = false; return; } desenhar(agora); requestAnimationFrame(laco); }
-      function liga(){ if(!rodando){ rodando = true; tAnt = performance.now(); requestAnimationFrame(laco); } }
-      if('IntersectionObserver' in window){ new IntersectionObserver(function(es){ vis = es[0].isIntersecting; if(vis){ sincronizarCursor(); liga(); } }).observe(sec); } else liga();
-      var ro = 'ResizeObserver' in window ? new ResizeObserver(medir) : null;
-      if(ro) ro.observe(sec); else window.addEventListener('resize', medir);
-      medir();
-      instancias.push(sincronizarCursor);
-    });
-
-    window.addEventListener('mousemove', function(ev){
-      mouseX = ev.clientX; mouseY = ev.clientY; temMouse = true;
-      for(var i = 0; i < instancias.length; i++) instancias[i]();
-    }, {passive:true});
-    window.addEventListener('scroll', function(){
-      if(!temMouse) return;
-      for(var i = 0; i < instancias.length; i++) instancias[i]();
-    }, {passive:true});
-    document.addEventListener('mouseleave', function(){
-      temMouse = false; mouseX = -9999; mouseY = -9999;
-      for(var i = 0; i < instancias.length; i++) instancias[i]();
-    }, {passive:true});
-  }
-  if(!reduz && window.matchMedia('(hover: hover)').matches){
-    if(document.readyState === 'complete') iniciarVivo(); else window.addEventListener('load', iniciarVivo);
-  }
+<!-- Proposta 02: fundos em movimento. Geometria antes do motor; montagem única. -->
+<script src="js/telma-brand-geometry.js"></script>
+<script src="js/telma-motion.js"></script>
+<script>
+(function(){
+  if(!window.TelmaMotion || window.telmaMotionController) return;
+  window.telmaMotionController = window.TelmaMotion.mountAll({ root: document, selector: '[data-telma-motion]' });
+  /* o motor desabilita os botões quando o movimento não está disponível; sem JS eles ficam ocultos */
+  document.querySelectorAll('[data-telma-motion-toggle]').forEach(function(b){ b.hidden = false; });
 })();
 </script>
 

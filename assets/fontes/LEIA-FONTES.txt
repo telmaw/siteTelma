@@ -1,0 +1,12 @@
+FONTES DA PROPOSTA 02
+
+DM Serif Display Regular: assinatura nominal, TS, S, títulos editoriais selecionados. Os SVGs já têm contornos e não dependem da fonte instalada.
+Inter Variable: corpo, navegação, botões, filtros, legendas e números funcionais.
+
+WOFF: arquivos locais para @font-face. TTF: instalação em aplicativos de design. Preserve os arquivos OFL nas distribuições. DM Serif Display não é uma fonte exclusiva da marca.
+
+No site, use css/telma-brand.css como referência de papéis tipográficos. Não substitua a variável global --display sem mapear os componentes existentes.
+
+Fontes oficiais:
+https://github.com/google/fonts/tree/main/ofl/dmserifdisplay
+https://github.com/rsms/inter
