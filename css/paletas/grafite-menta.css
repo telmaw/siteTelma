@@ -11,6 +11,12 @@
   --azul-claro:#08785F;
   --verde:#0CD4AA;
 
+  /* Papéis (apontam para as cores acima; uma paleta pode trocá-los à parte) */
+  --acento:var(--azul-claro);        /* links, "Brasil real", rótulos e setas */
+  --marca-inicio:var(--azul-escuro); /* monograma TS: início do degradê */
+  --marca-fim:var(--azul-claro);     /* monograma TS: fim do degradê e versão do rodapé */
+  --marca-ponto:var(--verde);        /* monograma TS: ponto */
+
   /* Neutros quentes (camada pessoal, diferencia do site institucional) */
   --papel:#F8F7F4;
   --areia:#EEECE6;

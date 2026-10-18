@@ -60,7 +60,7 @@ p{margin-bottom:16px}
 .olho::before{content:"";width:22px;height:3px;background:var(--verde);border-radius:2px}
 .lead{font-size:1.12rem;color:var(--tinta-suave);max-width:58ch}
 .texto-largo{max-width:66ch}
-.link{color:var(--azul-claro);font-weight:600;text-decoration:none;background:linear-gradient(var(--azul-claro),var(--azul-claro)) no-repeat 0 100%/0 2px;transition:background-size .25s ease}
+.link{color:var(--acento);font-weight:600;text-decoration:none;background:linear-gradient(var(--acento),var(--acento)) no-repeat 0 100%/0 2px;transition:background-size .25s ease}
 .link:hover{background-size:100% 2px}
 .forma{border-radius:var(--raio) var(--raio) var(--raio) 0;overflow:hidden}
 .forma-alt{border-radius:0 var(--raio) var(--raio) var(--raio);overflow:hidden}
@@ -129,7 +129,7 @@ p{margin-bottom:16px}
 .hero .wrap{display:grid;gap:34px;align-items:center;position:relative}
 .hero-texto{padding-bottom:40px}
 .hero h1{font-size:2.35rem;margin:10px 0 18px;max-width:14ch}
-.hero h1 em{font-style:normal;color:var(--azul-claro);position:relative;white-space:nowrap}
+.hero h1 em{font-style:normal;color:var(--acento);position:relative;white-space:nowrap}
 .hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.14em;background:var(--verde);opacity:.55;border-radius:3px;transform:scaleX(0);transform-origin:left;animation:sublinha .8s .9s cubic-bezier(.2,.7,.2,1) forwards}
 @keyframes sublinha{to{transform:scaleX(1)}}
 .hero .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
@@ -174,7 +174,7 @@ p{margin-bottom:16px}
 .destaque-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
 .destaque-card a:hover img{transform:scale(1.04)}
 .destaque-card .meta{font-size:.78rem;color:var(--tinta-suave)}
-.destaque-card .meta b{color:var(--azul-claro);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;margin-right:6px}
+.destaque-card .meta b{color:var(--acento);text-transform:uppercase;letter-spacing:.12em;font-size:.7rem;margin-right:6px}
 .destaque-card h3{font-size:1.15rem;margin:0;color:var(--tinta)}
 .destaque-card a:hover h3{color:var(--azul)}
 .destaque-card p{font-size:.95rem;color:var(--tinta-suave);margin:0;flex:1}
@@ -188,7 +188,7 @@ a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 .premio{background:var(--branco);border:1px solid var(--linha);border-radius:var(--raio) var(--raio) var(--raio) 0;padding:26px 24px 24px;position:relative;overflow:hidden;display:flex;flex-direction:column;gap:10px;transition:transform .25s ease,box-shadow .25s ease}
 .premio:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
 .premio.grande{background:var(--azul-escuro) var(--padrao-escuro) repeat;color:var(--branco);border-color:transparent}
-.premio .ano{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
+.premio .ano{font-family:var(--display);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acento)}
 .premio.grande .ano{color:var(--verde)}
 .premio .ico{width:52px;height:52px;border-radius:16px 16px 16px 0;background:var(--areia);display:grid;place-items:center;color:var(--azul-escuro)}
 .premio.grande .ico{background:color-mix(in srgb,var(--branco) 10%,transparent);color:var(--verde)}
@@ -210,7 +210,7 @@ a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 .frente:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
 .frente::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--azul-escuro),var(--azul-claro) 70%,var(--verde))}
 .frente-num{position:absolute;top:18px;right:22px;font-family:var(--display);font-size:2.4rem;font-weight:800;color:var(--areia);letter-spacing:-0.04em;line-height:1}
-.frente .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--azul-claro)}
+.frente .tag{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acento)}
 .frente h3{margin:2px 0 6px;max-width:26ch}
 .frente .metrica{background:var(--papel);border-radius:14px 14px 14px 0;padding:12px 14px;color:var(--tinta-suave);font-size:.92rem;line-height:1.35;margin:0 0 8px}
 .frente .metrica strong{display:block;font-family:var(--display);font-size:1.7rem;font-weight:800;color:var(--azul-escuro);letter-spacing:-0.03em;line-height:1.1}
@@ -251,7 +251,7 @@ a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 .sobre .foto{aspect-ratio:3/4;box-shadow:var(--sombra);max-width:100%}
 .sobre .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 15%}
 .sobre .ficha{background:var(--branco);border:1px solid var(--linha);border-radius:0 var(--raio) var(--raio) var(--raio);padding:22px 22px 18px}
-.sobre .ficha h3{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--azul-claro);margin-bottom:12px}
+.sobre .ficha h3{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--acento);margin-bottom:12px}
 .sobre .ficha dl{display:grid;gap:12px;font-size:.92rem}
 .sobre .ficha dt{font-weight:700;color:var(--azul-escuro);font-size:.82rem}
 .sobre .ficha dd{color:var(--tinta-suave);line-height:1.45}
@@ -321,7 +321,7 @@ a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 .lista-imprensa a:hover .thumb img{transform:scale(1.05)}
 .lista-imprensa .corpo-imp{display:flex;flex-direction:column;gap:8px;min-width:0;flex:1}
 .lista-imprensa .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.78rem;color:var(--tinta-suave)}
-.lista-imprensa .veiculo{font-weight:800;color:var(--azul-claro);letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
+.lista-imprensa .veiculo{font-weight:800;color:var(--acento);letter-spacing:.08em;text-transform:uppercase;font-size:.72rem}
 .lista-imprensa .tipo{background:var(--areia);color:var(--azul-escuro);padding:2px 9px;border-radius:999px;font-weight:600;font-size:.7rem;margin-left:auto}
 .lista-imprensa h3{font-size:1.05rem;line-height:1.28;margin:0;color:var(--tinta);transition:color .15s ease}
 .lista-imprensa a:hover h3{color:var(--azul)}
@@ -330,7 +330,7 @@ a:hover .ir::after,.ir:hover::after{transform:translateX(5px)}
 .lista-imprensa .ir{font-size:.84rem;min-height:auto;margin-top:4px;color:var(--azul)}
 .imprensa-vazio{display:none;background:var(--areia);border-radius:18px 18px 18px 0;padding:24px;text-align:center;color:var(--tinta-suave);font-size:.94rem}
 .imprensa-vazio.visivel{display:block}
-.imprensa-vazio button{margin-top:10px;font-weight:700;color:var(--azul-claro);text-decoration:underline}
+.imprensa-vazio button{margin-top:10px;font-weight:700;color:var(--acento);text-decoration:underline}
 .imprensa .rodape-imprensa{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center;justify-content:space-between}
 .imprensa .rodape-imprensa p{margin:0;flex:1 0 100%;font-size:.92rem;color:var(--tinta-suave)}
 .temas-imprensa{display:flex;flex-wrap:wrap;gap:8px;margin:0;align-items:center}
@@ -493,10 +493,10 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
   <div class="wrap">
     <a class="marca" href="#topo" aria-label="Telma Soares, início da página">
       <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true">
-        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--azul-escuro)"/><stop offset="1" style="stop-color:var(--azul-claro)"/></linearGradient></defs>
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--marca-inicio)"/><stop offset="1" style="stop-color:var(--marca-fim)"/></linearGradient></defs>
         <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" fill="url(#g1)"/>
         <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" style="fill:var(--branco)" letter-spacing="-1">TS</text>
-        <circle cx="52" cy="12" r="5" style="fill:var(--verde)"/>
+        <circle cx="52" cy="12" r="5" style="fill:var(--marca-ponto)"/>
       </svg>
       <div><b>Telma Soares</b><span>Inteligência artificial aplicada</span></div>
     </a>
@@ -1037,9 +1037,9 @@ body.lb-aberto .flutuante,body.menu-aberto .flutuante{display:none}
       <div>
         <div class="rodape-marca">
           <svg class="monograma" viewBox="0 0 64 64" aria-hidden="true" width="34" height="34">
-            <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" style="fill:var(--azul-claro)"/>
+            <path d="M0 20C0 9 9 0 20 0h24c11 0 20 9 20 20v24c0 11-9 20-20 20H0z" style="fill:var(--marca-fim)"/>
             <text x="32" y="42" text-anchor="middle" font-family="Sora,Inter,Arial,sans-serif" font-weight="800" font-size="27" style="fill:var(--branco)" letter-spacing="-1">TS</text>
-            <circle cx="52" cy="12" r="5" style="fill:var(--verde)"/>
+            <circle cx="52" cy="12" r="5" style="fill:var(--marca-ponto)"/>
           </svg>
           <b>Telma Soares</b>
         </div>

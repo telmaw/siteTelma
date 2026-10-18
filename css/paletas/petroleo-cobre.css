@@ -1,15 +1,23 @@
 /* =====================================================================
-   PALETA DE TESTE: Petróleo e cobre
-   Azul petróleo no lugar do azul royal do CEIA, cobre como cor de destaque e o verde do CEIA mantido nos detalhes.
-   Ver no site: https://telmaw.github.io/siteTelma/?paleta=petroleo-cobre
+   PALETA DE TESTE: Petróleo e cobre (revisão 2)
+   Azul petróleo como cor principal no lugar do azul royal do CEIA, cobre só
+   como cor de destaque (links, "Brasil real", rótulos) e o verde-menta do CEIA,
+   um pouco mais claro, nos detalhes e no ponto do monograma.
+   Ver no site:   https://telmaw.github.io/siteTelma/?paleta=petroleo-cobre
    Ver no cartão: https://telmaw.github.io/siteTelma/card/?paleta=petroleo-cobre
    ===================================================================== */
 :root{
   /* Cores principais (os nomes "azul-*" foram mantidos para não mexer no CSS do site) */
-  --azul-escuro:#173B45;
-  --azul:#1F5662;
-  --azul-claro:#B4532A;
-  --verde:#0CD4AA;
+  --azul-escuro:#1D5F6E;
+  --azul:#26707F;
+  --azul-claro:#2C7C8C;
+  --verde:#3FE6C0;
+
+  /* Papéis (apontam para as cores acima; uma paleta pode trocá-los à parte) */
+  --acento:#B4532A;        /* links, "Brasil real", rótulos e setas */
+  --marca-inicio:#1D5F6E; /* monograma TS: início do degradê */
+  --marca-fim:#348696;     /* monograma TS: fim do degradê e versão do rodapé */
+  --marca-ponto:#3FE6C0;        /* monograma TS: ponto */
 
   /* Neutros quentes (camada pessoal, diferencia do site institucional) */
   --papel:#FAF7F2;
@@ -20,16 +28,16 @@
   --branco:#FFFFFF;
 
   /* Fundos escuros */
-  --azul-noite:#0E262D;      /* rodapé e rodapé do cartão */
-  --azul-profundo:#12343D;   /* fundo das fotos na seção Formação */
+  --azul-noite:#143F49;      /* rodapé e rodapé do cartão */
+  --azul-profundo:#174E5A;   /* fundo das fotos na seção Formação */
 
   /* Textos sobre fundos escuros */
-  --sobre-escuro:#D3E3E3;
-  --sobre-escuro-2:#C5D8D9;
-  --sobre-escuro-3:#DAE9E8;
-  --sobre-escuro-suave:#9DBABB;
-  --rodape-texto:#A7C1C2;
-  --rodape-suave:#86A4A6;
+  --sobre-escuro:#D6E9EC;
+  --sobre-escuro-2:#CDE3E7;
+  --sobre-escuro-3:#DDEEF0;
+  --sobre-escuro-suave:#B3D2D7;
+  --rodape-texto:#A9C8CD;
+  --rodape-suave:#8FB3B9;
 
   /* Cores funcionais */
   --whats:#128C4A;
@@ -39,10 +47,10 @@
   --alerta:#b4443c;          /* rótulo "O que dizem" */
 
   /* Cartão de contato (/card) */
-  --chip-fundo:#F6ECE5;
-  --hover-fundo:#F3F6F5;
-  --hover-borda:#C4D8D6;
-  --sombra-profunda:rgba(5,20,24,.45);
+  --chip-fundo:#E4F0F2;
+  --hover-fundo:#F1F6F7;
+  --hover-borda:#BFD8DC;
+  --sombra-profunda:rgba(6,26,31,.45);
 
   /* Sombras */
   --sombra:0 18px 50px color-mix(in srgb,var(--azul-escuro) 14%,transparent);
@@ -50,5 +58,5 @@
   /* Grafismo do CEIA em SVG. As cores ficam dentro do desenho (%23 = #):
      escuro usa branco (%23FFFFFF) e claro usa o azul-escuro (%231B3983). */
   --padrao-escuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
-  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23173B45' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%231D5F6E' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
 }
