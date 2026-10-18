@@ -1,0 +1,73 @@
+/* =====================================================================
+   PALETA petroleo-cobre: Telma Soares · Proposta 02
+   Mantida para que links antigos com ?paleta=petroleo-cobre mostrem a mesma
+   identidade do endereço normal. Mesmos valores de css/paleta.css.
+   Todas as cores do site (index.html) e do cartão (card/index.html) vêm daqui.
+   Os nomes "azul-*" e "verde" são históricos: foram mantidos para não mexer no
+   CSS do site, mas agora guardam as cores da identidade.
+
+   Para experimentar outra paleta sem mexer nesta:
+   1. copie este arquivo para css/paletas/NOME.css (letras minúsculas, números e hífen);
+   2. altere os valores;
+   3. abra o site com ?paleta=NOME no endereço.
+   Sem o ?paleta, o site usa este arquivo.
+
+   Grafismos e fundos não ficam mais aqui: vêm dos SVGs de assets/fundos,
+   aplicados por css/telma-motion.css e css/identidade.css.
+   ===================================================================== */
+:root{
+  /* Cores principais */
+  --azul-escuro:#143F49;     /* petróleo: marca, títulos, botões e superfícies escuras */
+  --azul:#1D5F6E;            /* petróleo de apoio */
+  --azul-claro:#1D5F6E;      /* petróleo de apoio (degradês, ícones e bordas de foco) */
+  --verde:#B4532A;           /* cobre decorativo: filetes, marcadores e traços */
+
+  /* Papéis */
+  --acento:#B4532A;          /* cobre: "Brasil real", links e rótulos sobre fundo claro */
+  --marca-inicio:#143F49;
+  --marca-fim:#1D5F6E;
+  --marca-ponto:#B4532A;
+  --fundo-destaque:#143F49;  /* fundo das seções Em números e Formação */
+  --contato-meio:#143F49;
+  --contato-fim:#143F49;
+
+  /* Neutros */
+  --papel:#FAF7F2;           /* marfim */
+  --areia:#F1EADF;
+  --linha:#E3D9CA;
+  --tinta:#143F49;
+  --tinta-suave:#52646A;
+  --branco:#FFFFFF;
+
+  /* Fundos escuros */
+  --azul-noite:#0E2F37;      /* rodapé */
+  --azul-profundo:#10363F;   /* fundo das fotos na seção Formação */
+
+  /* Textos sobre petróleo (marfim em diferentes intensidades) */
+  --sobre-escuro:#DCE6E4;
+  --sobre-escuro-2:#CCDCDA;
+  --sobre-escuro-3:#E4ECEA;
+  --sobre-escuro-suave:#A9C3C3;
+  --rodape-texto:#B5CACA;
+  --rodape-suave:#94B2B4;
+
+  /* Cores funcionais (mantidas pela função) */
+  --whats:#128C4A;
+  --whats-escuro:#0f7a40;
+  --sobre-whats:#d6f3e3;
+  --linkedin:#0A66C2;
+  --alerta:#b4443c;          /* rótulo "O que dizem" */
+
+  /* Cartão de contato (/card) */
+  --chip-fundo:#EFE9DF;
+  --hover-fundo:#F4F0E8;
+  --hover-borda:#C9BFAF;
+  --sombra-profunda:rgba(8,26,31,.45);
+
+  /* Sombras */
+  --sombra:0 18px 50px color-mix(in srgb,var(--azul-escuro) 12%,transparent);
+
+  /* Padrões antigos desativados: os fundos da Proposta 02 vêm de assets/fundos */
+  --padrao-escuro:none;
+  --padrao-claro:none;
+}

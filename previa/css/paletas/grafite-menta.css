@@ -1,0 +1,66 @@
+/* =====================================================================
+   PALETA DE TESTE: Grafite e menta
+   Grafite quase neutro como cor principal e o verde-menta do CEIA como única cor de destaque.
+   Ver no site: https://telmaw.github.io/siteTelma/?paleta=grafite-menta
+   Ver no cartão: https://telmaw.github.io/siteTelma/card/?paleta=grafite-menta
+   ===================================================================== */
+:root{
+  /* Cores principais (os nomes "azul-*" foram mantidos para não mexer no CSS do site) */
+  --azul-escuro:#23272F;
+  --azul:#3A414D;
+  --azul-claro:#08785F;
+  --verde:#0CD4AA;
+
+  /* Papéis (apontam para as cores acima; uma paleta pode trocá-los à parte) */
+  --acento:var(--azul-claro);        /* links, "Brasil real", rótulos e setas */
+  --marca-inicio:var(--azul-escuro); /* monograma TS: início do degradê */
+  --marca-fim:var(--azul-claro);     /* monograma TS: fim do degradê e versão do rodapé */
+  --marca-ponto:var(--verde);        /* monograma TS: ponto */
+  --fundo-destaque:var(--azul-escuro); /* fundo das seções Em números e Formação */
+  --contato-meio:var(--azul);         /* degradê do fundo da seção Contato: meio */
+  --contato-fim:var(--azul-claro);    /* degradê do fundo da seção Contato: fim */
+
+  /* Neutros quentes (camada pessoal, diferencia do site institucional) */
+  --papel:#F8F7F4;
+  --areia:#EEECE6;
+  --linha:#DDD9D0;
+  --tinta:#16181D;
+  --tinta-suave:#4F545E;
+  --branco:#FFFFFF;
+
+  /* Fundos escuros */
+  --azul-noite:#16191F;      /* rodapé e rodapé do cartão */
+  --azul-profundo:#2B3039;   /* fundo das fotos na seção Formação */
+
+  /* Textos sobre fundos escuros */
+  --sobre-escuro:#D9DDE3;
+  --sobre-escuro-2:#CBD0D8;
+  --sobre-escuro-3:#E1E4E9;
+  --sobre-escuro-suave:#9AA1AD;
+  --rodape-texto:#A9AFBA;
+  --rodape-suave:#8A919D;
+
+  /* Cores funcionais */
+  --whats:#128C4A;
+  --whats-escuro:#0f7a40;
+  --sobre-whats:#d6f3e3;
+  --linkedin:#0A66C2;
+  --alerta:#b4443c;          /* rótulo "O que dizem" */
+
+  /* Cartão de contato (/card) */
+  --chip-fundo:#E6F4F0;
+  --hover-fundo:#F3F4F5;
+  --hover-borda:#CED3DA;
+  --sombra-profunda:rgba(8,9,12,.45);
+
+  /* Sombras */
+  --sombra:0 18px 50px color-mix(in srgb,var(--azul-escuro) 14%,transparent);
+
+  --grafismo-forma:ceia;             /* 'ceia' (gota do CEIA) ou 'monograma' (formato externo do TS) */
+  --grafismo-escuro-alfa:.05;  /* opacidade do grafismo em fundos escuros (mesma do --padrao-escuro) */
+  --grafismo-claro-alfa:.042;  /* opacidade do grafismo animado em fundos claros */
+  /* Grafismo do CEIA em SVG. As cores ficam dentro do desenho (%23 = #):
+     escuro usa branco (%23FFFFFF) e claro usa o azul-escuro (%231B3983). */
+  --padrao-escuro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+  --padrao-claro:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='%2323272F' fill-opacity='0.05'%3E%3Cpath d='M2 24a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3Cpath d='M50 24a22 22 0 0 1 22-22 22 22 0 0 1 22 22v22H72a22 22 0 0 1-22-22z'/%3E%3Cpath d='M2 72a22 22 0 0 1 22-22 22 22 0 0 1 22 22 22 22 0 0 1-22 22H2V72z'/%3E%3Cpath d='M50 72a22 22 0 0 1 22-22h22v22a22 22 0 0 1-22 22 22 22 0 0 1-22-22z'/%3E%3C/g%3E%3C/svg%3E");
+}

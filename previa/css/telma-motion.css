@@ -1,0 +1,41 @@
+/* Telma Soares · Proposta 02 · somente a camada gráfica de fundo.
+ * Não define fontes, títulos, altura das seções ou o layout do conteúdo.
+ * Os SVGs mantêm a proporção original. Sem CSS que capture gestos de toque.
+ */
+[data-telma-motion] {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--telma-marfim, #FAF7F2);
+  background-image: url("../assets/fundos/s-amplo-claro.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+[data-telma-motion="signature"][data-telma-surface="dark"] {
+  background-color: var(--telma-petroleo, #143F49);
+  background-image: url("../assets/fundos/s-amplo-escuro.svg");
+}
+[data-telma-motion="field"] {
+  background-color: var(--telma-petroleo, #143F49);
+  background-image: url("../assets/fundos/trama-escura.svg");
+  background-repeat: repeat;
+  background-position: top left;
+  background-size: var(--telma-motion-field-width, 720px) auto;
+}
+[data-telma-motion="field"][data-telma-surface="light"] {
+  background-color: var(--telma-marfim, #FAF7F2);
+  background-image: url("../assets/fundos/trama-clara.svg");
+}
+[data-telma-motion].is-telma-motion-ready {
+  background-image: none;
+}
+[data-telma-motion] > .telma-motion-canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
