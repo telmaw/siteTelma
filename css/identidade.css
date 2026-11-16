@@ -222,6 +222,63 @@ footer a:hover{border-bottom-color:var(--telma-marfim)}
 /* ---------- Contato flutuante (celular) ---------- */
 .flutuante{border-radius:3px}
 
+/* ---------- Atualização editorial: trajetória, pesquisa, formação e liderança ----------
+   Só acomoda os novos textos nos componentes que já existiam. */
+
+/* abertura: o trecho em cobre ficou mais longo e precisa quebrar no celular */
+.hero h1{max-width:19ch;font-size:clamp(2.5rem,4.7vw,4rem)}
+.hero h1 em{white-space:normal}
+@media (min-width:960px){.hero .wrap{grid-template-columns:1.12fr .88fr}}
+
+/* trajetória: atalhos depois da biografia e título em cada marco da linha do tempo */
+.sobre .acoes-sobre{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 30px}
+.linha-tempo strong{display:block;font-weight:600;font-size:1rem;line-height:1.35;color:var(--azul-escuro);margin:2px 0}
+
+/* pesquisas selecionadas: reaproveita os cartões das frentes */
+.pesquisa{background:var(--areia)}
+.pesquisa-card h3{max-width:none}
+.pesquisa-card .subtitulo{flex:none;font-weight:600;font-size:.97rem;color:var(--azul-escuro);margin-bottom:10px}
+.pesquisa-card .resumo{flex:1}
+.pesquisa-card .credito{flex:none;font-size:.84rem;line-height:1.45;margin-bottom:12px}
+.pesquisa-card .link-cta{border-top:1px solid var(--linha);padding-top:6px}
+.fecho{margin:30px 0 0}
+
+/* formação: iniciativas com título, texto e link */
+.pontos li > div{min-width:0}
+.pontos h3,.formacao .materiais h3{font-family:var(--editorial);font-weight:400;font-size:1.35rem;line-height:1.2;color:var(--telma-marfim);margin:0 0 6px}
+.pontos p,.formacao .materiais p{margin:0 0 8px;font-size:.98rem}
+.formacao .materiais{margin-top:24px;padding:18px 20px;border-left:2px solid var(--acento);border-radius:0 var(--raio) var(--raio) 0;background:color-mix(in srgb,var(--telma-marfim) 6%,transparent)}
+
+/* ideias: fonte no lugar do rótulo antigo e link para a conversa */
+.objecao .rotulos .fonte{color:var(--azul)}
+.objecao .link-cta,.premio .link-cta{min-height:36px;font-size:.92rem}
+
+/* liderança: ações e rótulo de atribuição dentro de cada indicador */
+.numeros .acoes{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.num small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sobre-escuro-2);margin-bottom:8px}
+
+/* reconhecimentos em dois grupos, com duas colunas no computador */
+.grupo-premios{font-family:var(--texto);font-weight:700;font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--azul-escuro);margin:40px 0 0}
+.grupo-premios + .grade-premios{margin-top:16px}
+@media (min-width:960px){
+  .grade-premios.duas{grid-template-columns:repeat(2,1fr)}
+  .grade-premios.duas .premio.grande{grid-column:auto}
+}
+
+/* destaques: introdução no cabeçalho e cartão tipográfico para a pesquisa */
+.cabeca-linha .lead{margin:14px 0 0}
+.destaque-card .img.tipografico{display:flex;flex-direction:column;justify-content:flex-end;gap:8px;padding:22px 24px;background:var(--azul-escuro);color:var(--telma-marfim)}
+.destaque-card .img.tipografico::before{content:"";width:40px;height:2px;background:var(--acento)}
+.destaque-card .img.tipografico span{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sobre-escuro-2)}
+.destaque-card .img.tipografico b{font-family:var(--editorial);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.08}
+
+/* redes: com descrições mais longas, o atalho desce para a linha de baixo quando o cartão é estreito */
+.rede{flex-wrap:wrap}
+.rede > span:not(.ico):not(.ir){flex:1 1 120px}
+
+/* contato: rótulos de botão mais longos quebram alinhados à esquerda */
+.caminho .btn{text-align:left}
+
 /* movimento reduzido: o motor já mostra o fundo estático; aqui só garantimos os demais efeitos */
 @media (prefers-reduced-motion:reduce){
   .marquee{animation:none}
